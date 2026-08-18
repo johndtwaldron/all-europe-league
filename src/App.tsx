@@ -1,12 +1,14 @@
 import { useEffect, useMemo, useState } from 'react'
-import { ArrowDown, CalendarDays, ChevronRight, Database, RotateCcw, Shield, Sparkles, Trophy, Zap } from 'lucide-react'
+import { ArrowDown, CalendarDays, ChevronLeft, ChevronRight, Database, List, RotateCcw, Shield, Sparkles, Table2, Trophy, Zap } from 'lucide-react'
 import { seasonDatasets } from './data/seasons'
 import { loadSeasonManifest, type SeasonManifest } from './data/dataset'
 import { isValidProbabilityModel, simulationPresets, type OutcomeProbabilities, type SimulationPresetId } from './engine/probability'
 import { aelMatchweeks2026 } from './engine/calendar'
 import { assignProvisionalRatings } from './engine/ratings'
 import { generateSchedule, type GeneratedSchedule } from './engine/fixtures'
-import { simulateThrough, type Standing } from './engine/season'
+import { simulateThrough } from './engine/season'
+import { clubInitials, matchupClass } from './engine/presentation'
+import './crest.css'
 
 type ResultMode = 'real' | 'simulated'
 type Focus = 'AEL' | 'UCL' | 'UEL' | 'UECL'
@@ -36,7 +38,8 @@ export function App() {
   const [dataError, setDataError] = useState('')
   const [schedule, setSchedule] = useState<GeneratedSchedule | null>(null)
   const [completedMatchweeks, setCompletedMatchweeks] = useState(0)
-  const [standings, setStandings] = useState<Standing[]>([])
+  const [viewMatchweek, setViewMatchweek] = useState(1)
+  const [seasonView, setSeasonView] = useState<'table' | 'fixtures'>('table')
 
   useEffect(() => {
     const controller = new AbortController()
@@ -53,6 +56,7 @@ export function App() {
   const season = seasonDatasets.find((item) => item.id === seasonId) ?? seasonDatasets[0]
   const probabilityValid = isValidProbabilityModel(probabilities)
   const ratedClubs = useMemo(() => manifest ? assignProvisionalRatings(manifest.entries) : [], [manifest])
+  const viewedSeason = useMemo(() => schedule ? simulateThrough(schedule, ratedClubs, probabilities, viewMatchweek) : null, [schedule, ratedClubs, probabilities, viewMatchweek])
   const choosePreset = (id: SimulationPresetId) => {
     const selected = simulationPresets.find((preset) => preset.id === id)!
     setPresetId(id)
@@ -61,14 +65,13 @@ export function App() {
   const buildSchedule = () => {
     if (ratedClubs.length !== 108 || !probabilityValid) return
     const generated = generateSchedule(ratedClubs, seed)
-    setSchedule(generated); setCompletedMatchweeks(0); setStandings(simulateThrough(generated, ratedClubs, probabilities, 0).standings)
+    setSchedule(generated); setCompletedMatchweeks(0); setViewMatchweek(1); setSeasonView('table')
   }
   const advanceTo = (matchweek: number) => {
     if (!schedule) return
-    const progress = simulateThrough(schedule, ratedClubs, probabilities, matchweek)
-    setCompletedMatchweeks(matchweek); setStandings(progress.standings)
+    setCompletedMatchweeks(matchweek); setViewMatchweek(matchweek)
   }
-  useEffect(() => { setSchedule(null); setCompletedMatchweeks(0); setStandings([]) }, [seasonId, seed, presetId])
+  useEffect(() => { setSchedule(null); setCompletedMatchweeks(0); setViewMatchweek(1) }, [seasonId, seed, presetId])
 
   return (
     <main className={focus === 'AEL' ? '' : 'focus-mode'}>
@@ -153,12 +156,23 @@ export function App() {
           <header><div><p className="eyebrow">FIRST PLAYABLE AEL SEASON</p><h3>{schedule ? `Matchweek ${completedMatchweeks} of 8` : 'Generate the 378-match schedule'}</h3><small>Ratings are provisional and replaceable. The visible seed reproduces fixtures and results.</small></div><div className="play-actions"><button onClick={buildSchedule} disabled={resultMode === 'real' || !probabilityValid || ratedClubs.length !== 108}>{schedule ? 'Regenerate schedule' : 'Generate schedule'}</button>{schedule && completedMatchweeks < 8 && <button className="advance" onClick={() => advanceTo(completedMatchweeks + 1)}>Play Matchweek {completedMatchweeks + 1}</button>}{schedule && completedMatchweeks < 8 && <button onClick={() => advanceTo(8)}>Simulate all</button>}</div></header>
           {resultMode === 'real' && <div className="real-notice">Historical fields are loaded. Recorded fixture/result ingestion is the next data adapter; Real mode never substitutes simulated scores.</div>}
           {schedule && <>
-            <div className="week-progress">{schedule.matchweeks.map((fixtures, index) => <button key={index} className={completedMatchweeks >= index + 1 ? 'complete' : completedMatchweeks === index ? 'next' : ''} onClick={() => advanceTo(index + 1)}><span>MW {index + 1}</span><strong>{fixtures.length}</strong><small>matches</small></button>)}</div>
-            <div className="playable-grid">
-              <div className="fixture-preview"><span>NEXT FIXTURES</span>{(schedule.matchweeks[Math.min(completedMatchweeks, 7)] ?? []).slice(0, 6).map((fixture) => <div key={fixture.id}><strong>{fixture.home.name}</strong><i>v</i><strong>{fixture.away.name}</strong></div>)}</div>
-              <div className="standings-preview"><span>LIVE AEL TABLE</span>{(standings.length ? standings : simulateThrough(schedule, ratedClubs, probabilities, 0).standings).slice(0, 10).map((row, index) => <div key={row.club.id}><i>{index + 1}</i><strong>{row.club.name}</strong><small>{row.club.tier}</small><b>{row.points}</b></div>)}</div>
-              <div className="boundary-preview"><span>DESTINATION CUTS</span>{[[34,39,'UCL / UEL'],[70,75,'UEL / UECL']].map(([start,end,label]) => <section key={String(label)}><small>{label}</small>{(standings.length ? standings : simulateThrough(schedule, ratedClubs, probabilities, 0).standings).slice(Number(start)-1,Number(end)).map((row,index) => <div key={row.club.id}><i>{Number(start)+index}</i><strong>{row.club.name}</strong><b>{row.points}</b></div>)}</section>)}</div>
+            <div className="week-progress">{schedule.matchweeks.map((fixtures, index) => <button key={index} className={`${completedMatchweeks >= index + 1 ? 'complete' : completedMatchweeks === index ? 'next' : ''} ${viewMatchweek === index + 1 ? 'viewing' : ''}`} onClick={() => setViewMatchweek(index + 1)}><span>MW {index + 1}</span><strong>{fixtures.length}</strong><small>matches</small></button>)}</div>
+            <div className="season-toolbar">
+              <button onClick={() => setViewMatchweek((week) => Math.max(1, week - 1))} disabled={viewMatchweek === 1} aria-label="Previous matchweek"><ChevronLeft/></button>
+              <div><small>INSPECTING</small><strong>Matchweek {viewMatchweek}</strong><span>{aelMatchweeks2026[viewMatchweek - 1].dates}</span></div>
+              <button onClick={() => setViewMatchweek((week) => Math.min(8, week + 1))} disabled={viewMatchweek === 8} aria-label="Next matchweek"><ChevronRight/></button>
+              <div className="view-switch"><button className={seasonView === 'table' ? 'active' : ''} onClick={() => setSeasonView('table')}><Table2/>Table</button><button className={seasonView === 'fixtures' ? 'active' : ''} onClick={() => setSeasonView('fixtures')}><List/>Fixtures</button></div>
             </div>
+            <div className="colour-legend"><span className="matchup-aa">A × A</span><span className="matchup-ab">A × B</span><span className="matchup-ac">A × C</span><span className="matchup-bc">B × C</span><span className="matchup-mixed">ALL THREE · MIXED WEEK</span></div>
+            <div className={`season-stage ${seasonView}`}>
+              {seasonView === 'table' ? <div className="ael-table">
+                <header><span>#</span><span>CLUB</span><span>TIER</span><span>P</span><span>GD</span><span>PTS</span></header>
+                {viewedSeason?.standings.map((row, index) => <div className={`table-row destination-${index < 36 ? 'ucl' : index < 72 ? 'uel' : 'uecl'}`} key={row.club.id}><i>{index + 1}</i><span className="club-name"><b className={`club-crest tier-${row.club.tier.toLowerCase()}`}>{row.club.crestUrl ? <img src={row.club.crestUrl} alt=""/> : clubInitials(row.club.name)}</b><strong>{row.club.name}</strong></span><small className={`tier-pill tier-${row.club.tier.toLowerCase()}`}>{row.club.tier}</small><span>{row.played}</span><span>{row.goalsFor - row.goalsAgainst > 0 ? '+' : ''}{row.goalsFor - row.goalsAgainst}</span><b>{row.points}</b></div>)}
+              </div> : <div className="fixture-board">
+                {schedule.matchweeks[viewMatchweek - 1].map((fixture) => <article className={matchupClass(fixture.home, fixture.away)} key={fixture.id}><span className="club"><b className={`club-crest tier-${fixture.home.tier.toLowerCase()}`}>{clubInitials(fixture.home.name)}</b><strong>{fixture.home.name}</strong><small>{fixture.home.tier}</small></span><i>v</i><span className="club away"><b className={`club-crest tier-${fixture.away.tier.toLowerCase()}`}>{clubInitials(fixture.away.name)}</b><strong>{fixture.away.name}</strong><small>{fixture.away.tier}</small></span></article>)}
+              </div>}
+            </div>
+            <p className="crest-note">Crests currently use consistent club shields. Licensed or properly sourced artwork can drop into the reserved crest field without changing this layout.</p>
             {completedMatchweeks === 8 && <div className="handoff"><span>AEL COMPLETE</span><strong>The table is ready to populate the three stock knockout graphics.</strong><div>{['UCL · 1–36','UEL · 37–72','UECL · 73–108'].map((label) => <i key={label}>{label}</i>)}</div></div>}
           </>}
         </div>

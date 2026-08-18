@@ -5,6 +5,7 @@ export interface ClubEntry {
   name: string
   sourceCompetition: SourceCompetition
   recordType: 'club'
+  crestUrl?: string
 }
 
 export interface SlotEntry {
@@ -13,6 +14,7 @@ export interface SlotEntry {
   sourceCompetition: SourceCompetition
   recordType: 'slot'
   resolutionStatus: 'unresolved'
+  crestUrl?: string
 }
 
 export interface SeasonManifest {

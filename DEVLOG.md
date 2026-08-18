@@ -194,3 +194,10 @@ Turn the format discussion into a public, explorable GitHub project.
 ### Next
 
 - Implement deterministic competition types, a seeded random generator and mathematical rule tests.
+# 2026-08-18 — Logistics gate and combined-table presentation
+
+- Added CI tests for the eight-matchweek calendar contract, club double-bookings, repeat pairings, tier appearance totals and optional shared-venue/slot clashes.
+- Added a full 108-club table with UCL/UEL/UECL destination strata and tier-coloured shield placeholders.
+- Added previous/next matchweek navigation and an animated-ready table/fixtures view switch.
+- Added tier-matchup colour combinations, including an all-three mixed-week treatment.
+- Documented the boundary between internally validated AEL logistics and future domestic-calendar/venue ingestion.
