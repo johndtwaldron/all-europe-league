@@ -8,7 +8,8 @@
     "build": "tsc -b && vite build",
     "preview": "vite preview",
     "test": "vitest run",
-    "data:import": "node scripts/import-uefa-seasons.mjs"
+    "data:import": "node scripts/import-uefa-seasons.mjs && node scripts/build-2026-snapshot.mjs",
+    "data:snapshot": "node scripts/build-2026-snapshot.mjs"
   },
   "dependencies": {
     "@vitejs/plugin-react": "latest",

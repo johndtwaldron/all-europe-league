@@ -15,7 +15,7 @@ export const seasonDatasets: SeasonDatasetSummary[] = [
     id: '2026-27',
     label: '2026/27 live model',
     shortLabel: '2026/27',
-    description: 'Primary AEL model. Confirmed clubs plus unresolved qualifying slots until the August league-phase draws.',
+    description: 'Named field snapshot from the completed 2025/26 domestic season. Unresolved August paths show both clubs and crests.',
     fieldSize: 108,
     status: 'provisional',
     statusLabel: 'LIVE · PROVISIONAL',

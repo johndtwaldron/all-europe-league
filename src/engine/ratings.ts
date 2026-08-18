@@ -11,6 +11,9 @@ export interface RatedClub {
   tier: AelTier
   provisional: boolean
   crestUrl?: string
+  crestUrls?: string[]
+  qualificationLabel?: string
+  confirmed?: boolean
 }
 
 const bases: Record<SourceCompetition, number> = { UCL: 84, UEL: 64, UECL: 44 }
@@ -25,6 +28,9 @@ export function assignProvisionalRatings(entries: Array<ClubEntry | SlotEntry>):
     tier: 'C' as AelTier,
     provisional: true,
     crestUrl: entry.crestUrl,
+    crestUrls: entry.recordType === 'slot' ? entry.crestUrls : entry.crestUrl ? [entry.crestUrl] : undefined,
+    qualificationLabel: entry.qualificationLabel,
+    confirmed: entry.confirmed,
   })).sort((left, right) => right.rating - left.rating || left.name.localeCompare(right.name))
   return ordered.map((club, index) => ({ ...club, tier: index < 36 ? 'A' : index < 72 ? 'B' : 'C' }))
 }

@@ -1,783 +1,2224 @@
 {
-  "schemaVersion": 1,
+  "schemaVersion": 2,
   "season": "2026/27",
   "status": "live-provisional",
-  "fieldDefinition": "Provisional UEFA league-phase slots pending completion of qualifying",
+  "snapshotAt": "2026-08-18",
+  "fieldDefinition": "Named 2026/27 field snapshot after the 2025/26 domestic season; unresolved league-phase positions show the actual clubs contesting each route",
   "entryCount": 108,
-  "uniqueClubCount": 0,
+  "uniqueClubCount": 132,
   "provenance": [
     {
       "competition": "UCL",
-      "url": "https://www.uefa.com/uefachampionsleague/news/02a6-20d57cfcd03e-407c22a7f465-1000--2026-27-champions-league-teams-dates-draws-format-final/",
-      "retrievedAt": "2026-08-18T09:30:04.668Z"
+      "url": "https://www.uefa.com/uefachampionsleague/clubs/",
+      "retrievedAt": "2026-08-18T12:35:19.149Z"
     },
     {
       "competition": "UEL",
-      "url": "https://www.uefa.com/uefaeuropaleague/news/02a6-20d57d095740-e1e0b3de85df-1000--2026-27-europa-league-teams-dates-draws-format-final/",
-      "retrievedAt": "2026-08-18T09:30:04.668Z"
+      "url": "https://www.uefa.com/uefaeuropaleague/clubs/",
+      "retrievedAt": "2026-08-18T12:35:19.154Z"
     },
     {
       "competition": "UECL",
-      "url": "https://www.uefa.com/uefaconferenceleague/news/02a6-20e5e911587f-cc10425958b3-1000--conference-league-qualifying-fixtures-dates-how-it-works/",
-      "retrievedAt": "2026-08-18T09:30:04.668Z"
+      "url": "https://www.uefa.com/uefaconferenceleague/clubs/",
+      "retrievedAt": "2026-08-18T12:35:19.154Z"
     }
   ],
   "entries": [
     {
-      "id": "ucl-slot-01",
-      "name": "UCL qualifying slot 1",
+      "id": "arsenal",
+      "name": "Arsenal",
+      "sourceCompetition": "UCL",
+      "recordType": "club",
+      "crestUrl": "crests/uefa/52280.png",
+      "uefaId": "52280",
+      "qualificationLabel": "2025/26 domestic qualification · league phase confirmed",
+      "confirmed": true
+    },
+    {
+      "id": "aston-villa",
+      "name": "Aston Villa",
+      "sourceCompetition": "UCL",
+      "recordType": "club",
+      "crestUrl": "crests/uefa/52683.png",
+      "uefaId": "52683",
+      "qualificationLabel": "2025/26 domestic qualification · league phase confirmed",
+      "confirmed": true
+    },
+    {
+      "id": "atleti",
+      "name": "Atleti",
+      "sourceCompetition": "UCL",
+      "recordType": "club",
+      "crestUrl": "crests/uefa/50124.png",
+      "uefaId": "50124",
+      "qualificationLabel": "2025/26 domestic qualification · league phase confirmed",
+      "confirmed": true
+    },
+    {
+      "id": "b-dortmund",
+      "name": "B. Dortmund",
+      "sourceCompetition": "UCL",
+      "recordType": "club",
+      "crestUrl": "crests/uefa/52758.png",
+      "uefaId": "52758",
+      "qualificationLabel": "2025/26 domestic qualification · league phase confirmed",
+      "confirmed": true
+    },
+    {
+      "id": "barcelona",
+      "name": "Barcelona",
+      "sourceCompetition": "UCL",
+      "recordType": "club",
+      "crestUrl": "crests/uefa/50080.png",
+      "uefaId": "50080",
+      "qualificationLabel": "2025/26 domestic qualification · league phase confirmed",
+      "confirmed": true
+    },
+    {
+      "id": "bayern-munchen",
+      "name": "Bayern München",
+      "sourceCompetition": "UCL",
+      "recordType": "club",
+      "crestUrl": "crests/uefa/50037.png",
+      "uefaId": "50037",
+      "qualificationLabel": "2025/26 domestic qualification · league phase confirmed",
+      "confirmed": true
+    },
+    {
+      "id": "club-brugge",
+      "name": "Club Brugge",
+      "sourceCompetition": "UCL",
+      "recordType": "club",
+      "crestUrl": "crests/uefa/50043.png",
+      "uefaId": "50043",
+      "qualificationLabel": "2025/26 domestic qualification · league phase confirmed",
+      "confirmed": true
+    },
+    {
+      "id": "como",
+      "name": "Como",
+      "sourceCompetition": "UCL",
+      "recordType": "club",
+      "crestUrl": "crests/uefa/79946.png",
+      "uefaId": "79946",
+      "qualificationLabel": "2025/26 domestic qualification · league phase confirmed",
+      "confirmed": true
+    },
+    {
+      "id": "feyenoord",
+      "name": "Feyenoord",
+      "sourceCompetition": "UCL",
+      "recordType": "club",
+      "crestUrl": "crests/uefa/52749.png",
+      "uefaId": "52749",
+      "qualificationLabel": "2025/26 domestic qualification · league phase confirmed",
+      "confirmed": true
+    },
+    {
+      "id": "galatasaray",
+      "name": "Galatasaray",
+      "sourceCompetition": "UCL",
+      "recordType": "club",
+      "crestUrl": "crests/uefa/50067.png",
+      "uefaId": "50067",
+      "qualificationLabel": "2025/26 domestic qualification · league phase confirmed",
+      "confirmed": true
+    },
+    {
+      "id": "inter",
+      "name": "Inter",
+      "sourceCompetition": "UCL",
+      "recordType": "club",
+      "crestUrl": "crests/uefa/50138.png",
+      "uefaId": "50138",
+      "qualificationLabel": "2025/26 domestic qualification · league phase confirmed",
+      "confirmed": true
+    },
+    {
+      "id": "leipzig",
+      "name": "Leipzig",
+      "sourceCompetition": "UCL",
+      "recordType": "club",
+      "crestUrl": "crests/uefa/2603790.png",
+      "uefaId": "2603790",
+      "qualificationLabel": "2025/26 domestic qualification · league phase confirmed",
+      "confirmed": true
+    },
+    {
+      "id": "lens",
+      "name": "Lens",
+      "sourceCompetition": "UCL",
+      "recordType": "club",
+      "crestUrl": "crests/uefa/52277.png",
+      "uefaId": "52277",
+      "qualificationLabel": "2025/26 domestic qualification · league phase confirmed",
+      "confirmed": true
+    },
+    {
+      "id": "lille",
+      "name": "Lille",
+      "sourceCompetition": "UCL",
+      "recordType": "club",
+      "crestUrl": "crests/uefa/75797.png",
+      "uefaId": "75797",
+      "qualificationLabel": "2025/26 domestic qualification · league phase confirmed",
+      "confirmed": true
+    },
+    {
+      "id": "liverpool",
+      "name": "Liverpool",
+      "sourceCompetition": "UCL",
+      "recordType": "club",
+      "crestUrl": "crests/uefa/7889.png",
+      "uefaId": "7889",
+      "qualificationLabel": "2025/26 domestic qualification · league phase confirmed",
+      "confirmed": true
+    },
+    {
+      "id": "man-city",
+      "name": "Man City",
+      "sourceCompetition": "UCL",
+      "recordType": "club",
+      "crestUrl": "crests/uefa/52919.png",
+      "uefaId": "52919",
+      "qualificationLabel": "2025/26 domestic qualification · league phase confirmed",
+      "confirmed": true
+    },
+    {
+      "id": "man-utd",
+      "name": "Man Utd",
+      "sourceCompetition": "UCL",
+      "recordType": "club",
+      "crestUrl": "crests/uefa/52682.png",
+      "uefaId": "52682",
+      "qualificationLabel": "2025/26 domestic qualification · league phase confirmed",
+      "confirmed": true
+    },
+    {
+      "id": "napoli",
+      "name": "Napoli",
+      "sourceCompetition": "UCL",
+      "recordType": "club",
+      "crestUrl": "crests/uefa/50136.png",
+      "uefaId": "50136",
+      "qualificationLabel": "2025/26 domestic qualification · league phase confirmed",
+      "confirmed": true
+    },
+    {
+      "id": "paris",
+      "name": "Paris",
+      "sourceCompetition": "UCL",
+      "recordType": "club",
+      "crestUrl": "crests/uefa/52747.png",
+      "uefaId": "52747",
+      "qualificationLabel": "2025/26 domestic qualification · league phase confirmed",
+      "confirmed": true
+    },
+    {
+      "id": "porto",
+      "name": "Porto",
+      "sourceCompetition": "UCL",
+      "recordType": "club",
+      "crestUrl": "crests/uefa/50064.png",
+      "uefaId": "50064",
+      "qualificationLabel": "2025/26 domestic qualification · league phase confirmed",
+      "confirmed": true
+    },
+    {
+      "id": "psv",
+      "name": "PSV",
+      "sourceCompetition": "UCL",
+      "recordType": "club",
+      "crestUrl": "crests/uefa/50062.png",
+      "uefaId": "50062",
+      "qualificationLabel": "2025/26 domestic qualification · league phase confirmed",
+      "confirmed": true
+    },
+    {
+      "id": "real-betis",
+      "name": "Real Betis",
+      "sourceCompetition": "UCL",
+      "recordType": "club",
+      "crestUrl": "crests/uefa/52265.png",
+      "uefaId": "52265",
+      "qualificationLabel": "2025/26 domestic qualification · league phase confirmed",
+      "confirmed": true
+    },
+    {
+      "id": "real-madrid",
+      "name": "Real Madrid",
+      "sourceCompetition": "UCL",
+      "recordType": "club",
+      "crestUrl": "crests/uefa/50051.png",
+      "uefaId": "50051",
+      "qualificationLabel": "2025/26 domestic qualification · league phase confirmed",
+      "confirmed": true
+    },
+    {
+      "id": "roma",
+      "name": "Roma",
+      "sourceCompetition": "UCL",
+      "recordType": "club",
+      "crestUrl": "crests/uefa/50137.png",
+      "uefaId": "50137",
+      "qualificationLabel": "2025/26 domestic qualification · league phase confirmed",
+      "confirmed": true
+    },
+    {
+      "id": "shakhtar",
+      "name": "Shakhtar",
+      "sourceCompetition": "UCL",
+      "recordType": "club",
+      "crestUrl": "crests/uefa/52707.png",
+      "uefaId": "52707",
+      "qualificationLabel": "2025/26 domestic qualification · league phase confirmed",
+      "confirmed": true
+    },
+    {
+      "id": "slavia-praha",
+      "name": "Slavia Praha",
+      "sourceCompetition": "UCL",
+      "recordType": "club",
+      "crestUrl": "crests/uefa/52498.png",
+      "uefaId": "52498",
+      "qualificationLabel": "2025/26 domestic qualification · league phase confirmed",
+      "confirmed": true
+    },
+    {
+      "id": "sporting-cp",
+      "name": "Sporting CP",
+      "sourceCompetition": "UCL",
+      "recordType": "club",
+      "crestUrl": "crests/uefa/50149.png",
+      "uefaId": "50149",
+      "qualificationLabel": "2025/26 domestic qualification · league phase confirmed",
+      "confirmed": true
+    },
+    {
+      "id": "stuttgart",
+      "name": "Stuttgart",
+      "sourceCompetition": "UCL",
+      "recordType": "club",
+      "crestUrl": "crests/uefa/50107.png",
+      "uefaId": "50107",
+      "qualificationLabel": "2025/26 domestic qualification · league phase confirmed",
+      "confirmed": true
+    },
+    {
+      "id": "villarreal",
+      "name": "Villarreal",
+      "sourceCompetition": "UCL",
+      "recordType": "club",
+      "crestUrl": "crests/uefa/70691.png",
+      "uefaId": "70691",
+      "qualificationLabel": "2025/26 domestic qualification · league phase confirmed",
+      "confirmed": true
+    },
+    {
+      "id": "ucl-ucl-play-off-winner-01",
+      "name": "Levski Sofia / AEK Athens",
       "sourceCompetition": "UCL",
       "recordType": "slot",
-      "resolutionStatus": "unresolved"
+      "resolutionStatus": "unresolved",
+      "qualificationLabel": "UCL play-off winner",
+      "candidates": [
+        {
+          "id": "levski-sofia",
+          "name": "Levski Sofia",
+          "crestUrl": "crests/uefa/50044.png",
+          "uefaId": "50044"
+        },
+        {
+          "id": "aek-athens",
+          "name": "AEK Athens",
+          "crestUrl": "crests/uefa/50129.png",
+          "uefaId": "50129"
+        }
+      ],
+      "crestUrls": [
+        "crests/uefa/50044.png",
+        "crests/uefa/50129.png"
+      ],
+      "crestUrl": "crests/uefa/50044.png",
+      "confirmed": false
     },
     {
-      "id": "ucl-slot-02",
-      "name": "UCL qualifying slot 2",
+      "id": "ucl-ucl-play-off-winner-02",
+      "name": "GNK Dinamo / Viking",
       "sourceCompetition": "UCL",
       "recordType": "slot",
-      "resolutionStatus": "unresolved"
+      "resolutionStatus": "unresolved",
+      "qualificationLabel": "UCL play-off winner",
+      "candidates": [
+        {
+          "id": "gnk-dinamo",
+          "name": "GNK Dinamo",
+          "crestUrl": "crests/uefa/50164.png",
+          "uefaId": "50164"
+        },
+        {
+          "id": "viking",
+          "name": "Viking",
+          "crestUrl": "crests/uefa/52319.png",
+          "uefaId": "52319"
+        }
+      ],
+      "crestUrls": [
+        "crests/uefa/50164.png",
+        "crests/uefa/52319.png"
+      ],
+      "crestUrl": "crests/uefa/50164.png",
+      "confirmed": false
     },
     {
-      "id": "ucl-slot-03",
-      "name": "UCL qualifying slot 3",
+      "id": "ucl-ucl-play-off-winner-03",
+      "name": "Fenerbahçe / Lyon",
       "sourceCompetition": "UCL",
       "recordType": "slot",
-      "resolutionStatus": "unresolved"
+      "resolutionStatus": "unresolved",
+      "qualificationLabel": "UCL play-off winner",
+      "candidates": [
+        {
+          "id": "fenerbahce",
+          "name": "Fenerbahçe",
+          "crestUrl": "crests/uefa/52692.png",
+          "uefaId": "52692"
+        },
+        {
+          "id": "lyon",
+          "name": "Lyon",
+          "crestUrl": "crests/uefa/5312.png",
+          "uefaId": "5312"
+        }
+      ],
+      "crestUrls": [
+        "crests/uefa/52692.png",
+        "crests/uefa/5312.png"
+      ],
+      "crestUrl": "crests/uefa/52692.png",
+      "confirmed": false
     },
     {
-      "id": "ucl-slot-04",
-      "name": "UCL qualifying slot 4",
+      "id": "ucl-ucl-play-off-winner-04",
+      "name": "H. Beer-Sheva / Sabah",
       "sourceCompetition": "UCL",
       "recordType": "slot",
-      "resolutionStatus": "unresolved"
+      "resolutionStatus": "unresolved",
+      "qualificationLabel": "UCL play-off winner",
+      "candidates": [
+        {
+          "id": "h-beer-sheva",
+          "name": "H. Beer-Sheva",
+          "crestUrl": "crests/uefa/59340.png",
+          "uefaId": "59340"
+        },
+        {
+          "id": "sabah",
+          "name": "Sabah",
+          "crestUrl": "crests/uefa/2609356.png",
+          "uefaId": "2609356"
+        }
+      ],
+      "crestUrls": [
+        "crests/uefa/59340.png",
+        "crests/uefa/2609356.png"
+      ],
+      "crestUrl": "crests/uefa/59340.png",
+      "confirmed": false
     },
     {
-      "id": "ucl-slot-05",
-      "name": "UCL qualifying slot 5",
+      "id": "ucl-ucl-play-off-winner-05",
+      "name": "Celtic / LASK",
       "sourceCompetition": "UCL",
       "recordType": "slot",
-      "resolutionStatus": "unresolved"
+      "resolutionStatus": "unresolved",
+      "qualificationLabel": "UCL play-off winner",
+      "candidates": [
+        {
+          "id": "celtic",
+          "name": "Celtic",
+          "crestUrl": "crests/uefa/50050.png",
+          "uefaId": "50050"
+        },
+        {
+          "id": "lask",
+          "name": "LASK",
+          "crestUrl": "crests/uefa/63405.png",
+          "uefaId": "63405"
+        }
+      ],
+      "crestUrls": [
+        "crests/uefa/50050.png",
+        "crests/uefa/63405.png"
+      ],
+      "crestUrl": "crests/uefa/50050.png",
+      "confirmed": false
     },
     {
-      "id": "ucl-slot-06",
-      "name": "UCL qualifying slot 6",
+      "id": "ucl-ucl-play-off-winner-06",
+      "name": "S. Bratislava / Celje",
       "sourceCompetition": "UCL",
       "recordType": "slot",
-      "resolutionStatus": "unresolved"
+      "resolutionStatus": "unresolved",
+      "qualificationLabel": "UCL play-off winner",
+      "candidates": [
+        {
+          "id": "s-bratislava",
+          "name": "S. Bratislava",
+          "crestUrl": "crests/uefa/52797.png",
+          "uefaId": "52797"
+        },
+        {
+          "id": "celje",
+          "name": "Celje",
+          "crestUrl": "crests/uefa/59030.png",
+          "uefaId": "59030"
+        }
+      ],
+      "crestUrls": [
+        "crests/uefa/52797.png",
+        "crests/uefa/59030.png"
+      ],
+      "crestUrl": "crests/uefa/52797.png",
+      "confirmed": false
     },
     {
-      "id": "ucl-slot-07",
-      "name": "UCL qualifying slot 7",
+      "id": "ucl-ucl-play-off-winner-07",
+      "name": "N.E.C. / Bodø/Glimt",
       "sourceCompetition": "UCL",
       "recordType": "slot",
-      "resolutionStatus": "unresolved"
+      "resolutionStatus": "unresolved",
+      "qualificationLabel": "UCL play-off winner",
+      "candidates": [
+        {
+          "id": "n-e-c",
+          "name": "N.E.C.",
+          "crestUrl": "crests/uefa/52330.png",
+          "uefaId": "52330"
+        },
+        {
+          "id": "bod-glimt",
+          "name": "Bodø/Glimt",
+          "crestUrl": "crests/uefa/59333.png",
+          "uefaId": "59333"
+        }
+      ],
+      "crestUrls": [
+        "crests/uefa/52330.png",
+        "crests/uefa/59333.png"
+      ],
+      "crestUrl": "crests/uefa/52330.png",
+      "confirmed": false
     },
     {
-      "id": "ucl-slot-08",
-      "name": "UCL qualifying slot 8",
-      "sourceCompetition": "UCL",
-      "recordType": "slot",
-      "resolutionStatus": "unresolved"
+      "id": "az-alkmaar",
+      "name": "AZ Alkmaar",
+      "sourceCompetition": "UEL",
+      "recordType": "club",
+      "crestUrl": "crests/uefa/52327.png",
+      "uefaId": "52327",
+      "qualificationLabel": "2025/26 domestic qualification · league phase confirmed",
+      "confirmed": true
     },
     {
-      "id": "ucl-slot-09",
-      "name": "UCL qualifying slot 9",
-      "sourceCompetition": "UCL",
-      "recordType": "slot",
-      "resolutionStatus": "unresolved"
+      "id": "bournemouth",
+      "name": "Bournemouth",
+      "sourceCompetition": "UEL",
+      "recordType": "club",
+      "crestUrl": "crests/uefa/2601124.png",
+      "uefaId": "2601124",
+      "qualificationLabel": "2025/26 domestic qualification · league phase confirmed",
+      "confirmed": true
     },
     {
-      "id": "ucl-slot-10",
-      "name": "UCL qualifying slot 10",
-      "sourceCompetition": "UCL",
-      "recordType": "slot",
-      "resolutionStatus": "unresolved"
+      "id": "celta",
+      "name": "Celta",
+      "sourceCompetition": "UEL",
+      "recordType": "club",
+      "crestUrl": "crests/uefa/53043.png",
+      "uefaId": "53043",
+      "qualificationLabel": "2025/26 domestic qualification · league phase confirmed",
+      "confirmed": true
     },
     {
-      "id": "ucl-slot-11",
-      "name": "UCL qualifying slot 11",
-      "sourceCompetition": "UCL",
-      "recordType": "slot",
-      "resolutionStatus": "unresolved"
+      "id": "crystal-palace",
+      "name": "Crystal Palace",
+      "sourceCompetition": "UEL",
+      "recordType": "club",
+      "crestUrl": "crests/uefa/52916.png",
+      "uefaId": "52916",
+      "qualificationLabel": "2025/26 domestic qualification · league phase confirmed",
+      "confirmed": true
     },
     {
-      "id": "ucl-slot-12",
-      "name": "UCL qualifying slot 12",
-      "sourceCompetition": "UCL",
-      "recordType": "slot",
-      "resolutionStatus": "unresolved"
+      "id": "hoffenheim",
+      "name": "Hoffenheim",
+      "sourceCompetition": "UEL",
+      "recordType": "club",
+      "crestUrl": "crests/uefa/2600431.png",
+      "uefaId": "2600431",
+      "qualificationLabel": "2025/26 domestic qualification · league phase confirmed",
+      "confirmed": true
     },
     {
-      "id": "ucl-slot-13",
-      "name": "UCL qualifying slot 13",
-      "sourceCompetition": "UCL",
-      "recordType": "slot",
-      "resolutionStatus": "unresolved"
+      "id": "juventus",
+      "name": "Juventus",
+      "sourceCompetition": "UEL",
+      "recordType": "club",
+      "crestUrl": "crests/uefa/50139.png",
+      "uefaId": "50139",
+      "qualificationLabel": "2025/26 domestic qualification · league phase confirmed",
+      "confirmed": true
     },
     {
-      "id": "ucl-slot-14",
-      "name": "UCL qualifying slot 14",
-      "sourceCompetition": "UCL",
-      "recordType": "slot",
-      "resolutionStatus": "unresolved"
+      "id": "leverkusen",
+      "name": "Leverkusen",
+      "sourceCompetition": "UEL",
+      "recordType": "club",
+      "crestUrl": "crests/uefa/50109.png",
+      "uefaId": "50109",
+      "qualificationLabel": "2025/26 domestic qualification · league phase confirmed",
+      "confirmed": true
     },
     {
-      "id": "ucl-slot-15",
-      "name": "UCL qualifying slot 15",
-      "sourceCompetition": "UCL",
-      "recordType": "slot",
-      "resolutionStatus": "unresolved"
+      "id": "marseille",
+      "name": "Marseille",
+      "sourceCompetition": "UEL",
+      "recordType": "club",
+      "crestUrl": "crests/uefa/52748.png",
+      "uefaId": "52748",
+      "qualificationLabel": "2025/26 domestic qualification · league phase confirmed",
+      "confirmed": true
     },
     {
-      "id": "ucl-slot-16",
-      "name": "UCL qualifying slot 16",
-      "sourceCompetition": "UCL",
-      "recordType": "slot",
-      "resolutionStatus": "unresolved"
+      "id": "milan",
+      "name": "Milan",
+      "sourceCompetition": "UEL",
+      "recordType": "club",
+      "crestUrl": "crests/uefa/50058.png",
+      "uefaId": "50058",
+      "qualificationLabel": "2025/26 domestic qualification · league phase confirmed",
+      "confirmed": true
     },
     {
-      "id": "ucl-slot-17",
-      "name": "UCL qualifying slot 17",
-      "sourceCompetition": "UCL",
-      "recordType": "slot",
-      "resolutionStatus": "unresolved"
+      "id": "olympiacos",
+      "name": "Olympiacos",
+      "sourceCompetition": "UEL",
+      "recordType": "club",
+      "crestUrl": "crests/uefa/2610.png",
+      "uefaId": "2610",
+      "qualificationLabel": "2025/26 domestic qualification · league phase confirmed",
+      "confirmed": true
     },
     {
-      "id": "ucl-slot-18",
-      "name": "UCL qualifying slot 18",
-      "sourceCompetition": "UCL",
-      "recordType": "slot",
-      "resolutionStatus": "unresolved"
+      "id": "real-sociedad",
+      "name": "Real Sociedad",
+      "sourceCompetition": "UEL",
+      "recordType": "club",
+      "crestUrl": "crests/uefa/50123.png",
+      "uefaId": "50123",
+      "qualificationLabel": "2025/26 domestic qualification · league phase confirmed",
+      "confirmed": true
     },
     {
-      "id": "ucl-slot-19",
-      "name": "UCL qualifying slot 19",
-      "sourceCompetition": "UCL",
-      "recordType": "slot",
-      "resolutionStatus": "unresolved"
+      "id": "rennes",
+      "name": "Rennes",
+      "sourceCompetition": "UEL",
+      "recordType": "club",
+      "crestUrl": "crests/uefa/55031.png",
+      "uefaId": "55031",
+      "qualificationLabel": "2025/26 domestic qualification · league phase confirmed",
+      "confirmed": true
     },
     {
-      "id": "ucl-slot-20",
-      "name": "UCL qualifying slot 20",
-      "sourceCompetition": "UCL",
-      "recordType": "slot",
-      "resolutionStatus": "unresolved"
+      "id": "sparta-praha",
+      "name": "Sparta Praha",
+      "sourceCompetition": "UEL",
+      "recordType": "club",
+      "crestUrl": "crests/uefa/50033.png",
+      "uefaId": "50033",
+      "qualificationLabel": "2025/26 domestic qualification · league phase confirmed",
+      "confirmed": true
     },
     {
-      "id": "ucl-slot-21",
-      "name": "UCL qualifying slot 21",
-      "sourceCompetition": "UCL",
-      "recordType": "slot",
-      "resolutionStatus": "unresolved"
+      "id": "sturm-graz",
+      "name": "Sturm Graz",
+      "sourceCompetition": "UEL",
+      "recordType": "club",
+      "crestUrl": "crests/uefa/50111.png",
+      "uefaId": "50111",
+      "qualificationLabel": "2025/26 domestic qualification · league phase confirmed",
+      "confirmed": true
     },
     {
-      "id": "ucl-slot-22",
-      "name": "UCL qualifying slot 22",
-      "sourceCompetition": "UCL",
-      "recordType": "slot",
-      "resolutionStatus": "unresolved"
+      "id": "sunderland",
+      "name": "Sunderland",
+      "sourceCompetition": "UEL",
+      "recordType": "club",
+      "crestUrl": "crests/uefa/53360.png",
+      "uefaId": "53360",
+      "qualificationLabel": "2025/26 domestic qualification · league phase confirmed",
+      "confirmed": true
     },
     {
-      "id": "ucl-slot-23",
-      "name": "UCL qualifying slot 23",
-      "sourceCompetition": "UCL",
-      "recordType": "slot",
-      "resolutionStatus": "unresolved"
+      "id": "torreense",
+      "name": "Torreense",
+      "sourceCompetition": "UEL",
+      "recordType": "club",
+      "crestUrl": "crests/uefa/2603107.png",
+      "uefaId": "2603107",
+      "qualificationLabel": "2025/26 domestic qualification · league phase confirmed",
+      "confirmed": true
     },
     {
-      "id": "ucl-slot-24",
-      "name": "UCL qualifying slot 24",
-      "sourceCompetition": "UCL",
-      "recordType": "slot",
-      "resolutionStatus": "unresolved"
+      "id": "union-sg",
+      "name": "Union SG",
+      "sourceCompetition": "UEL",
+      "recordType": "club",
+      "crestUrl": "crests/uefa/64125.png",
+      "uefaId": "64125",
+      "qualificationLabel": "2025/26 domestic qualification · league phase confirmed",
+      "confirmed": true
     },
     {
-      "id": "ucl-slot-25",
-      "name": "UCL qualifying slot 25",
-      "sourceCompetition": "UCL",
-      "recordType": "slot",
-      "resolutionStatus": "unresolved"
-    },
-    {
-      "id": "ucl-slot-26",
-      "name": "UCL qualifying slot 26",
-      "sourceCompetition": "UCL",
-      "recordType": "slot",
-      "resolutionStatus": "unresolved"
-    },
-    {
-      "id": "ucl-slot-27",
-      "name": "UCL qualifying slot 27",
-      "sourceCompetition": "UCL",
-      "recordType": "slot",
-      "resolutionStatus": "unresolved"
-    },
-    {
-      "id": "ucl-slot-28",
-      "name": "UCL qualifying slot 28",
-      "sourceCompetition": "UCL",
-      "recordType": "slot",
-      "resolutionStatus": "unresolved"
-    },
-    {
-      "id": "ucl-slot-29",
-      "name": "UCL qualifying slot 29",
-      "sourceCompetition": "UCL",
-      "recordType": "slot",
-      "resolutionStatus": "unresolved"
-    },
-    {
-      "id": "ucl-slot-30",
-      "name": "UCL qualifying slot 30",
-      "sourceCompetition": "UCL",
-      "recordType": "slot",
-      "resolutionStatus": "unresolved"
-    },
-    {
-      "id": "ucl-slot-31",
-      "name": "UCL qualifying slot 31",
-      "sourceCompetition": "UCL",
-      "recordType": "slot",
-      "resolutionStatus": "unresolved"
-    },
-    {
-      "id": "ucl-slot-32",
-      "name": "UCL qualifying slot 32",
-      "sourceCompetition": "UCL",
-      "recordType": "slot",
-      "resolutionStatus": "unresolved"
-    },
-    {
-      "id": "ucl-slot-33",
-      "name": "UCL qualifying slot 33",
-      "sourceCompetition": "UCL",
-      "recordType": "slot",
-      "resolutionStatus": "unresolved"
-    },
-    {
-      "id": "ucl-slot-34",
-      "name": "UCL qualifying slot 34",
-      "sourceCompetition": "UCL",
-      "recordType": "slot",
-      "resolutionStatus": "unresolved"
-    },
-    {
-      "id": "ucl-slot-35",
-      "name": "UCL qualifying slot 35",
-      "sourceCompetition": "UCL",
-      "recordType": "slot",
-      "resolutionStatus": "unresolved"
-    },
-    {
-      "id": "ucl-slot-36",
-      "name": "UCL qualifying slot 36",
-      "sourceCompetition": "UCL",
-      "recordType": "slot",
-      "resolutionStatus": "unresolved"
-    },
-    {
-      "id": "uel-slot-01",
-      "name": "UEL qualifying slot 1",
+      "id": "uel-uel-play-off-winner-01",
+      "name": "Kairat Almaty / Anderlecht",
       "sourceCompetition": "UEL",
       "recordType": "slot",
-      "resolutionStatus": "unresolved"
+      "resolutionStatus": "unresolved",
+      "qualificationLabel": "UEL play-off winner",
+      "candidates": [
+        {
+          "id": "kairat-almaty",
+          "name": "Kairat Almaty",
+          "crestUrl": "crests/uefa/79970.png",
+          "uefaId": "79970"
+        },
+        {
+          "id": "anderlecht",
+          "name": "Anderlecht",
+          "crestUrl": "crests/uefa/50074.png",
+          "uefaId": "50074"
+        }
+      ],
+      "crestUrls": [
+        "crests/uefa/79970.png",
+        "crests/uefa/50074.png"
+      ],
+      "crestUrl": "crests/uefa/79970.png",
+      "confirmed": false
     },
     {
-      "id": "uel-slot-02",
-      "name": "UEL qualifying slot 2",
+      "id": "uel-uel-play-off-winner-02",
+      "name": "Jagiellonia / Iberia Tbilisi",
       "sourceCompetition": "UEL",
       "recordType": "slot",
-      "resolutionStatus": "unresolved"
+      "resolutionStatus": "unresolved",
+      "qualificationLabel": "UEL play-off winner",
+      "candidates": [
+        {
+          "id": "jagiellonia",
+          "name": "Jagiellonia",
+          "crestUrl": "crests/uefa/2600277.png",
+          "uefaId": "2600277"
+        },
+        {
+          "id": "iberia-tbilisi",
+          "name": "Iberia Tbilisi",
+          "crestUrl": "crests/uefa/2605905.png",
+          "uefaId": "2605905"
+        }
+      ],
+      "crestUrls": [
+        "crests/uefa/2600277.png",
+        "crests/uefa/2605905.png"
+      ],
+      "crestUrl": "crests/uefa/2600277.png",
+      "confirmed": false
     },
     {
-      "id": "uel-slot-03",
-      "name": "UEL qualifying slot 3",
+      "id": "uel-uel-play-off-winner-03",
+      "name": "Mjällby / Salzburg",
       "sourceCompetition": "UEL",
       "recordType": "slot",
-      "resolutionStatus": "unresolved"
+      "resolutionStatus": "unresolved",
+      "qualificationLabel": "UEL play-off winner",
+      "candidates": [
+        {
+          "id": "mjallby",
+          "name": "Mjällby",
+          "crestUrl": "crests/uefa/74233.png",
+          "uefaId": "74233"
+        },
+        {
+          "id": "salzburg",
+          "name": "Salzburg",
+          "crestUrl": "crests/uefa/50030.png",
+          "uefaId": "50030"
+        }
+      ],
+      "crestUrls": [
+        "crests/uefa/74233.png",
+        "crests/uefa/50030.png"
+      ],
+      "crestUrl": "crests/uefa/74233.png",
+      "confirmed": false
     },
     {
-      "id": "uel-slot-04",
-      "name": "UEL qualifying slot 4",
+      "id": "uel-uel-play-off-winner-04",
+      "name": "Trabzonspor / Ferencváros",
       "sourceCompetition": "UEL",
       "recordType": "slot",
-      "resolutionStatus": "unresolved"
+      "resolutionStatus": "unresolved",
+      "qualificationLabel": "UEL play-off winner",
+      "candidates": [
+        {
+          "id": "trabzonspor",
+          "name": "Trabzonspor",
+          "crestUrl": "crests/uefa/52731.png",
+          "uefaId": "52731"
+        },
+        {
+          "id": "ferencvaros",
+          "name": "Ferencváros",
+          "crestUrl": "crests/uefa/52298.png",
+          "uefaId": "52298"
+        }
+      ],
+      "crestUrls": [
+        "crests/uefa/52731.png",
+        "crests/uefa/52298.png"
+      ],
+      "crestUrl": "crests/uefa/52731.png",
+      "confirmed": false
     },
     {
-      "id": "uel-slot-05",
-      "name": "UEL qualifying slot 5",
+      "id": "uel-uel-play-off-winner-05",
+      "name": "U. Craiova / Ararat-Armenia",
       "sourceCompetition": "UEL",
       "recordType": "slot",
-      "resolutionStatus": "unresolved"
+      "resolutionStatus": "unresolved",
+      "qualificationLabel": "UEL play-off winner",
+      "candidates": [
+        {
+          "id": "u-craiova",
+          "name": "U. Craiova",
+          "crestUrl": "crests/uefa/2606501.png",
+          "uefaId": "2606501"
+        },
+        {
+          "id": "ararat-armenia",
+          "name": "Ararat-Armenia",
+          "crestUrl": "crests/uefa/2610304.png",
+          "uefaId": "2610304"
+        }
+      ],
+      "crestUrls": [
+        "crests/uefa/2606501.png",
+        "crests/uefa/2610304.png"
+      ],
+      "crestUrl": "crests/uefa/2606501.png",
+      "confirmed": false
     },
     {
-      "id": "uel-slot-06",
-      "name": "UEL qualifying slot 6",
+      "id": "uel-uel-play-off-winner-06",
+      "name": "Egnatia / Lillestrøm",
       "sourceCompetition": "UEL",
       "recordType": "slot",
-      "resolutionStatus": "unresolved"
+      "resolutionStatus": "unresolved",
+      "qualificationLabel": "UEL play-off winner",
+      "candidates": [
+        {
+          "id": "egnatia",
+          "name": "Egnatia",
+          "crestUrl": "crests/uefa/88148.png",
+          "uefaId": "88148"
+        },
+        {
+          "id": "lillestr-m",
+          "name": "Lillestrøm",
+          "crestUrl": "crests/uefa/52314.png",
+          "uefaId": "52314"
+        }
+      ],
+      "crestUrls": [
+        "crests/uefa/88148.png",
+        "crests/uefa/52314.png"
+      ],
+      "crestUrl": "crests/uefa/88148.png",
+      "confirmed": false
     },
     {
-      "id": "uel-slot-07",
-      "name": "UEL qualifying slot 7",
+      "id": "uel-uel-play-off-winner-07",
+      "name": "Beşiktaş / Kauno Žalgiris",
       "sourceCompetition": "UEL",
       "recordType": "slot",
-      "resolutionStatus": "unresolved"
+      "resolutionStatus": "unresolved",
+      "qualificationLabel": "UEL play-off winner",
+      "candidates": [
+        {
+          "id": "besiktas",
+          "name": "Beşiktaş",
+          "crestUrl": "crests/uefa/50157.png",
+          "uefaId": "50157"
+        },
+        {
+          "id": "kauno-zalgiris",
+          "name": "Kauno Žalgiris",
+          "crestUrl": "crests/uefa/2605907.png",
+          "uefaId": "2605907"
+        }
+      ],
+      "crestUrls": [
+        "crests/uefa/50157.png",
+        "crests/uefa/2605907.png"
+      ],
+      "crestUrl": "crests/uefa/50157.png",
+      "confirmed": false
     },
     {
-      "id": "uel-slot-08",
-      "name": "UEL qualifying slot 8",
+      "id": "uel-uel-play-off-winner-08",
+      "name": "Lech Poznań / Thun",
       "sourceCompetition": "UEL",
       "recordType": "slot",
-      "resolutionStatus": "unresolved"
+      "resolutionStatus": "unresolved",
+      "qualificationLabel": "UEL play-off winner",
+      "candidates": [
+        {
+          "id": "lech-poznan",
+          "name": "Lech Poznań",
+          "crestUrl": "crests/uefa/64227.png",
+          "uefaId": "64227"
+        },
+        {
+          "id": "thun",
+          "name": "Thun",
+          "crestUrl": "crests/uefa/80409.png",
+          "uefaId": "80409"
+        }
+      ],
+      "crestUrls": [
+        "crests/uefa/64227.png",
+        "crests/uefa/80409.png"
+      ],
+      "crestUrl": "crests/uefa/64227.png",
+      "confirmed": false
     },
     {
-      "id": "uel-slot-09",
-      "name": "UEL qualifying slot 9",
+      "id": "uel-uel-play-off-winner-09",
+      "name": "Sint-Truidense / Omonia",
       "sourceCompetition": "UEL",
       "recordType": "slot",
-      "resolutionStatus": "unresolved"
+      "resolutionStatus": "unresolved",
+      "qualificationLabel": "UEL play-off winner",
+      "candidates": [
+        {
+          "id": "sint-truidense",
+          "name": "Sint-Truidense",
+          "crestUrl": "crests/uefa/52883.png",
+          "uefaId": "52883"
+        },
+        {
+          "id": "omonia",
+          "name": "Omonia",
+          "crestUrl": "crests/uefa/50077.png",
+          "uefaId": "50077"
+        }
+      ],
+      "crestUrls": [
+        "crests/uefa/52883.png",
+        "crests/uefa/50077.png"
+      ],
+      "crestUrl": "crests/uefa/52883.png",
+      "confirmed": false
     },
     {
-      "id": "uel-slot-10",
-      "name": "UEL qualifying slot 10",
+      "id": "uel-uel-play-off-winner-10",
+      "name": "Crvena Zvezda / Viktoria Plzeň",
       "sourceCompetition": "UEL",
       "recordType": "slot",
-      "resolutionStatus": "unresolved"
+      "resolutionStatus": "unresolved",
+      "qualificationLabel": "UEL play-off winner",
+      "candidates": [
+        {
+          "id": "crvena-zvezda",
+          "name": "Crvena Zvezda",
+          "crestUrl": "crests/uefa/50069.png",
+          "uefaId": "50069"
+        },
+        {
+          "id": "viktoria-plzen",
+          "name": "Viktoria Plzeň",
+          "crestUrl": "crests/uefa/64388.png",
+          "uefaId": "64388"
+        }
+      ],
+      "crestUrls": [
+        "crests/uefa/50069.png",
+        "crests/uefa/64388.png"
+      ],
+      "crestUrl": "crests/uefa/50069.png",
+      "confirmed": false
     },
     {
-      "id": "uel-slot-11",
-      "name": "UEL qualifying slot 11",
+      "id": "uel-uel-play-off-winner-11",
+      "name": "OFI Crete / CSKA Sofia",
       "sourceCompetition": "UEL",
       "recordType": "slot",
-      "resolutionStatus": "unresolved"
+      "resolutionStatus": "unresolved",
+      "qualificationLabel": "UEL play-off winner",
+      "candidates": [
+        {
+          "id": "ofi-crete",
+          "name": "OFI Crete",
+          "crestUrl": "crests/uefa/52953.png",
+          "uefaId": "52953"
+        },
+        {
+          "id": "cska-sofia",
+          "name": "CSKA Sofia",
+          "crestUrl": "crests/uefa/2608297.png",
+          "uefaId": "2608297"
+        }
+      ],
+      "crestUrls": [
+        "crests/uefa/52953.png",
+        "crests/uefa/2608297.png"
+      ],
+      "crestUrl": "crests/uefa/52953.png",
+      "confirmed": false
     },
     {
-      "id": "uel-slot-12",
-      "name": "UEL qualifying slot 12",
+      "id": "uel-uel-play-off-winner-12",
+      "name": "Benfica / Aarhus",
       "sourceCompetition": "UEL",
       "recordType": "slot",
-      "resolutionStatus": "unresolved"
+      "resolutionStatus": "unresolved",
+      "qualificationLabel": "UEL play-off winner",
+      "candidates": [
+        {
+          "id": "benfica",
+          "name": "Benfica",
+          "crestUrl": "crests/uefa/50147.png",
+          "uefaId": "50147"
+        },
+        {
+          "id": "aarhus",
+          "name": "Aarhus",
+          "crestUrl": "crests/uefa/50019.png",
+          "uefaId": "50019"
+        }
+      ],
+      "crestUrls": [
+        "crests/uefa/50147.png",
+        "crests/uefa/50019.png"
+      ],
+      "crestUrl": "crests/uefa/50147.png",
+      "confirmed": false
     },
     {
-      "id": "uel-slot-13",
-      "name": "UEL qualifying slot 13",
+      "id": "uel-ucl-play-off-loser-transfer-01",
+      "name": "Levski Sofia / AEK Athens",
       "sourceCompetition": "UEL",
       "recordType": "slot",
-      "resolutionStatus": "unresolved"
+      "resolutionStatus": "unresolved",
+      "qualificationLabel": "UCL play-off loser transfer",
+      "candidates": [
+        {
+          "id": "levski-sofia",
+          "name": "Levski Sofia",
+          "crestUrl": "crests/uefa/50044.png",
+          "uefaId": "50044"
+        },
+        {
+          "id": "aek-athens",
+          "name": "AEK Athens",
+          "crestUrl": "crests/uefa/50129.png",
+          "uefaId": "50129"
+        }
+      ],
+      "crestUrls": [
+        "crests/uefa/50044.png",
+        "crests/uefa/50129.png"
+      ],
+      "crestUrl": "crests/uefa/50044.png",
+      "confirmed": false
     },
     {
-      "id": "uel-slot-14",
-      "name": "UEL qualifying slot 14",
+      "id": "uel-ucl-play-off-loser-transfer-02",
+      "name": "GNK Dinamo / Viking",
       "sourceCompetition": "UEL",
       "recordType": "slot",
-      "resolutionStatus": "unresolved"
+      "resolutionStatus": "unresolved",
+      "qualificationLabel": "UCL play-off loser transfer",
+      "candidates": [
+        {
+          "id": "gnk-dinamo",
+          "name": "GNK Dinamo",
+          "crestUrl": "crests/uefa/50164.png",
+          "uefaId": "50164"
+        },
+        {
+          "id": "viking",
+          "name": "Viking",
+          "crestUrl": "crests/uefa/52319.png",
+          "uefaId": "52319"
+        }
+      ],
+      "crestUrls": [
+        "crests/uefa/50164.png",
+        "crests/uefa/52319.png"
+      ],
+      "crestUrl": "crests/uefa/50164.png",
+      "confirmed": false
     },
     {
-      "id": "uel-slot-15",
-      "name": "UEL qualifying slot 15",
+      "id": "uel-ucl-play-off-loser-transfer-03",
+      "name": "Fenerbahçe / Lyon",
       "sourceCompetition": "UEL",
       "recordType": "slot",
-      "resolutionStatus": "unresolved"
+      "resolutionStatus": "unresolved",
+      "qualificationLabel": "UCL play-off loser transfer",
+      "candidates": [
+        {
+          "id": "fenerbahce",
+          "name": "Fenerbahçe",
+          "crestUrl": "crests/uefa/52692.png",
+          "uefaId": "52692"
+        },
+        {
+          "id": "lyon",
+          "name": "Lyon",
+          "crestUrl": "crests/uefa/5312.png",
+          "uefaId": "5312"
+        }
+      ],
+      "crestUrls": [
+        "crests/uefa/52692.png",
+        "crests/uefa/5312.png"
+      ],
+      "crestUrl": "crests/uefa/52692.png",
+      "confirmed": false
     },
     {
-      "id": "uel-slot-16",
-      "name": "UEL qualifying slot 16",
+      "id": "uel-ucl-play-off-loser-transfer-04",
+      "name": "H. Beer-Sheva / Sabah",
       "sourceCompetition": "UEL",
       "recordType": "slot",
-      "resolutionStatus": "unresolved"
+      "resolutionStatus": "unresolved",
+      "qualificationLabel": "UCL play-off loser transfer",
+      "candidates": [
+        {
+          "id": "h-beer-sheva",
+          "name": "H. Beer-Sheva",
+          "crestUrl": "crests/uefa/59340.png",
+          "uefaId": "59340"
+        },
+        {
+          "id": "sabah",
+          "name": "Sabah",
+          "crestUrl": "crests/uefa/2609356.png",
+          "uefaId": "2609356"
+        }
+      ],
+      "crestUrls": [
+        "crests/uefa/59340.png",
+        "crests/uefa/2609356.png"
+      ],
+      "crestUrl": "crests/uefa/59340.png",
+      "confirmed": false
     },
     {
-      "id": "uel-slot-17",
-      "name": "UEL qualifying slot 17",
+      "id": "uel-ucl-play-off-loser-transfer-05",
+      "name": "Celtic / LASK",
       "sourceCompetition": "UEL",
       "recordType": "slot",
-      "resolutionStatus": "unresolved"
+      "resolutionStatus": "unresolved",
+      "qualificationLabel": "UCL play-off loser transfer",
+      "candidates": [
+        {
+          "id": "celtic",
+          "name": "Celtic",
+          "crestUrl": "crests/uefa/50050.png",
+          "uefaId": "50050"
+        },
+        {
+          "id": "lask",
+          "name": "LASK",
+          "crestUrl": "crests/uefa/63405.png",
+          "uefaId": "63405"
+        }
+      ],
+      "crestUrls": [
+        "crests/uefa/50050.png",
+        "crests/uefa/63405.png"
+      ],
+      "crestUrl": "crests/uefa/50050.png",
+      "confirmed": false
     },
     {
-      "id": "uel-slot-18",
-      "name": "UEL qualifying slot 18",
+      "id": "uel-ucl-play-off-loser-transfer-06",
+      "name": "S. Bratislava / Celje",
       "sourceCompetition": "UEL",
       "recordType": "slot",
-      "resolutionStatus": "unresolved"
+      "resolutionStatus": "unresolved",
+      "qualificationLabel": "UCL play-off loser transfer",
+      "candidates": [
+        {
+          "id": "s-bratislava",
+          "name": "S. Bratislava",
+          "crestUrl": "crests/uefa/52797.png",
+          "uefaId": "52797"
+        },
+        {
+          "id": "celje",
+          "name": "Celje",
+          "crestUrl": "crests/uefa/59030.png",
+          "uefaId": "59030"
+        }
+      ],
+      "crestUrls": [
+        "crests/uefa/52797.png",
+        "crests/uefa/59030.png"
+      ],
+      "crestUrl": "crests/uefa/52797.png",
+      "confirmed": false
     },
     {
-      "id": "uel-slot-19",
-      "name": "UEL qualifying slot 19",
+      "id": "uel-ucl-play-off-loser-transfer-07",
+      "name": "N.E.C. / Bodø/Glimt",
       "sourceCompetition": "UEL",
       "recordType": "slot",
-      "resolutionStatus": "unresolved"
+      "resolutionStatus": "unresolved",
+      "qualificationLabel": "UCL play-off loser transfer",
+      "candidates": [
+        {
+          "id": "n-e-c",
+          "name": "N.E.C.",
+          "crestUrl": "crests/uefa/52330.png",
+          "uefaId": "52330"
+        },
+        {
+          "id": "bod-glimt",
+          "name": "Bodø/Glimt",
+          "crestUrl": "crests/uefa/59333.png",
+          "uefaId": "59333"
+        }
+      ],
+      "crestUrls": [
+        "crests/uefa/52330.png",
+        "crests/uefa/59333.png"
+      ],
+      "crestUrl": "crests/uefa/52330.png",
+      "confirmed": false
     },
     {
-      "id": "uel-slot-20",
-      "name": "UEL qualifying slot 20",
-      "sourceCompetition": "UEL",
-      "recordType": "slot",
-      "resolutionStatus": "unresolved"
-    },
-    {
-      "id": "uel-slot-21",
-      "name": "UEL qualifying slot 21",
-      "sourceCompetition": "UEL",
-      "recordType": "slot",
-      "resolutionStatus": "unresolved"
-    },
-    {
-      "id": "uel-slot-22",
-      "name": "UEL qualifying slot 22",
-      "sourceCompetition": "UEL",
-      "recordType": "slot",
-      "resolutionStatus": "unresolved"
-    },
-    {
-      "id": "uel-slot-23",
-      "name": "UEL qualifying slot 23",
-      "sourceCompetition": "UEL",
-      "recordType": "slot",
-      "resolutionStatus": "unresolved"
-    },
-    {
-      "id": "uel-slot-24",
-      "name": "UEL qualifying slot 24",
-      "sourceCompetition": "UEL",
-      "recordType": "slot",
-      "resolutionStatus": "unresolved"
-    },
-    {
-      "id": "uel-slot-25",
-      "name": "UEL qualifying slot 25",
-      "sourceCompetition": "UEL",
-      "recordType": "slot",
-      "resolutionStatus": "unresolved"
-    },
-    {
-      "id": "uel-slot-26",
-      "name": "UEL qualifying slot 26",
-      "sourceCompetition": "UEL",
-      "recordType": "slot",
-      "resolutionStatus": "unresolved"
-    },
-    {
-      "id": "uel-slot-27",
-      "name": "UEL qualifying slot 27",
-      "sourceCompetition": "UEL",
-      "recordType": "slot",
-      "resolutionStatus": "unresolved"
-    },
-    {
-      "id": "uel-slot-28",
-      "name": "UEL qualifying slot 28",
-      "sourceCompetition": "UEL",
-      "recordType": "slot",
-      "resolutionStatus": "unresolved"
-    },
-    {
-      "id": "uel-slot-29",
-      "name": "UEL qualifying slot 29",
-      "sourceCompetition": "UEL",
-      "recordType": "slot",
-      "resolutionStatus": "unresolved"
-    },
-    {
-      "id": "uel-slot-30",
-      "name": "UEL qualifying slot 30",
-      "sourceCompetition": "UEL",
-      "recordType": "slot",
-      "resolutionStatus": "unresolved"
-    },
-    {
-      "id": "uel-slot-31",
-      "name": "UEL qualifying slot 31",
-      "sourceCompetition": "UEL",
-      "recordType": "slot",
-      "resolutionStatus": "unresolved"
-    },
-    {
-      "id": "uel-slot-32",
-      "name": "UEL qualifying slot 32",
-      "sourceCompetition": "UEL",
-      "recordType": "slot",
-      "resolutionStatus": "unresolved"
-    },
-    {
-      "id": "uel-slot-33",
-      "name": "UEL qualifying slot 33",
-      "sourceCompetition": "UEL",
-      "recordType": "slot",
-      "resolutionStatus": "unresolved"
-    },
-    {
-      "id": "uel-slot-34",
-      "name": "UEL qualifying slot 34",
-      "sourceCompetition": "UEL",
-      "recordType": "slot",
-      "resolutionStatus": "unresolved"
-    },
-    {
-      "id": "uel-slot-35",
-      "name": "UEL qualifying slot 35",
-      "sourceCompetition": "UEL",
-      "recordType": "slot",
-      "resolutionStatus": "unresolved"
-    },
-    {
-      "id": "uel-slot-36",
-      "name": "UEL qualifying slot 36",
-      "sourceCompetition": "UEL",
-      "recordType": "slot",
-      "resolutionStatus": "unresolved"
-    },
-    {
-      "id": "uecl-slot-01",
-      "name": "UECL qualifying slot 1",
+      "id": "uecl-uecl-play-off-winner-01",
+      "name": "L. Red Imps / Larne",
       "sourceCompetition": "UECL",
       "recordType": "slot",
-      "resolutionStatus": "unresolved"
+      "resolutionStatus": "unresolved",
+      "qualificationLabel": "UECL play-off winner",
+      "candidates": [
+        {
+          "id": "l-red-imps",
+          "name": "L. Red Imps",
+          "crestUrl": "crests/uefa/2605572.png",
+          "uefaId": "2605572"
+        },
+        {
+          "id": "larne",
+          "name": "Larne",
+          "crestUrl": "crests/uefa/85009.png",
+          "uefaId": "85009"
+        }
+      ],
+      "crestUrls": [
+        "crests/uefa/2605572.png",
+        "crests/uefa/85009.png"
+      ],
+      "crestUrl": "crests/uefa/2605572.png",
+      "confirmed": false
     },
     {
-      "id": "uecl-slot-02",
-      "name": "UECL qualifying slot 2",
+      "id": "uecl-uecl-play-off-winner-02",
+      "name": "Klaksvík / Riga",
       "sourceCompetition": "UECL",
       "recordType": "slot",
-      "resolutionStatus": "unresolved"
+      "resolutionStatus": "unresolved",
+      "qualificationLabel": "UECL play-off winner",
+      "candidates": [
+        {
+          "id": "klaksvik",
+          "name": "Klaksvík",
+          "crestUrl": "crests/uefa/57475.png",
+          "uefaId": "57475"
+        },
+        {
+          "id": "riga",
+          "name": "Riga",
+          "crestUrl": "crests/uefa/2607924.png",
+          "uefaId": "2607924"
+        }
+      ],
+      "crestUrls": [
+        "crests/uefa/57475.png",
+        "crests/uefa/2607924.png"
+      ],
+      "crestUrl": "crests/uefa/57475.png",
+      "confirmed": false
     },
     {
-      "id": "uecl-slot-03",
-      "name": "UECL qualifying slot 3",
+      "id": "uecl-uecl-play-off-winner-03",
+      "name": "Víkingur R. / Borac",
       "sourceCompetition": "UECL",
       "recordType": "slot",
-      "resolutionStatus": "unresolved"
+      "resolutionStatus": "unresolved",
+      "qualificationLabel": "UECL play-off winner",
+      "candidates": [
+        {
+          "id": "vikingur-r",
+          "name": "Víkingur R.",
+          "crestUrl": "crests/uefa/52697.png",
+          "uefaId": "52697"
+        },
+        {
+          "id": "borac",
+          "name": "Borac",
+          "crestUrl": "crests/uefa/50104.png",
+          "uefaId": "50104"
+        }
+      ],
+      "crestUrls": [
+        "crests/uefa/52697.png",
+        "crests/uefa/50104.png"
+      ],
+      "crestUrl": "crests/uefa/52697.png",
+      "confirmed": false
     },
     {
-      "id": "uecl-slot-04",
-      "name": "UECL qualifying slot 4",
+      "id": "uecl-uecl-play-off-winner-04",
+      "name": "Drita / Inter Escaldes",
       "sourceCompetition": "UECL",
       "recordType": "slot",
-      "resolutionStatus": "unresolved"
+      "resolutionStatus": "unresolved",
+      "qualificationLabel": "UECL play-off winner",
+      "candidates": [
+        {
+          "id": "drita",
+          "name": "Drita",
+          "crestUrl": "crests/uefa/2608290.png",
+          "uefaId": "2608290"
+        },
+        {
+          "id": "inter-escaldes",
+          "name": "Inter Escaldes",
+          "crestUrl": "crests/uefa/63401.png",
+          "uefaId": "63401"
+        }
+      ],
+      "crestUrls": [
+        "crests/uefa/2608290.png",
+        "crests/uefa/63401.png"
+      ],
+      "crestUrl": "crests/uefa/2608290.png",
+      "confirmed": false
     },
     {
-      "id": "uecl-slot-05",
-      "name": "UECL qualifying slot 5",
+      "id": "uecl-uecl-play-off-winner-05",
+      "name": "Shamrock Rovers / KuPS Kuopio",
       "sourceCompetition": "UECL",
       "recordType": "slot",
-      "resolutionStatus": "unresolved"
+      "resolutionStatus": "unresolved",
+      "qualificationLabel": "UECL play-off winner",
+      "candidates": [
+        {
+          "id": "shamrock-rovers",
+          "name": "Shamrock Rovers",
+          "crestUrl": "crests/uefa/52381.png",
+          "uefaId": "52381"
+        },
+        {
+          "id": "kups-kuopio",
+          "name": "KuPS Kuopio",
+          "crestUrl": "crests/uefa/52350.png",
+          "uefaId": "52350"
+        }
+      ],
+      "crestUrls": [
+        "crests/uefa/52381.png",
+        "crests/uefa/52350.png"
+      ],
+      "crestUrl": "crests/uefa/52381.png",
+      "confirmed": false
     },
     {
-      "id": "uecl-slot-06",
-      "name": "UECL qualifying slot 6",
+      "id": "uecl-uecl-play-off-winner-06",
+      "name": "Inter Turku / Copenhagen",
       "sourceCompetition": "UECL",
       "recordType": "slot",
-      "resolutionStatus": "unresolved"
+      "resolutionStatus": "unresolved",
+      "qualificationLabel": "UECL play-off winner",
+      "candidates": [
+        {
+          "id": "inter-turku",
+          "name": "Inter Turku",
+          "crestUrl": "crests/uefa/64161.png",
+          "uefaId": "64161"
+        },
+        {
+          "id": "copenhagen",
+          "name": "Copenhagen",
+          "crestUrl": "crests/uefa/52709.png",
+          "uefaId": "52709"
+        }
+      ],
+      "crestUrls": [
+        "crests/uefa/64161.png",
+        "crests/uefa/52709.png"
+      ],
+      "crestUrl": "crests/uefa/64161.png",
+      "confirmed": false
     },
     {
-      "id": "uecl-slot-07",
-      "name": "UECL qualifying slot 7",
+      "id": "uecl-uecl-play-off-winner-07",
+      "name": "Tromsø / Brighton",
       "sourceCompetition": "UECL",
       "recordType": "slot",
-      "resolutionStatus": "unresolved"
+      "resolutionStatus": "unresolved",
+      "qualificationLabel": "UECL play-off winner",
+      "candidates": [
+        {
+          "id": "troms",
+          "name": "Tromsø",
+          "crestUrl": "crests/uefa/53001.png",
+          "uefaId": "53001"
+        },
+        {
+          "id": "brighton",
+          "name": "Brighton",
+          "crestUrl": "crests/uefa/2601105.png",
+          "uefaId": "2601105"
+        }
+      ],
+      "crestUrls": [
+        "crests/uefa/53001.png",
+        "crests/uefa/2601105.png"
+      ],
+      "crestUrl": "crests/uefa/53001.png",
+      "confirmed": false
     },
     {
-      "id": "uecl-slot-08",
-      "name": "UECL qualifying slot 8",
+      "id": "uecl-uecl-play-off-winner-08",
+      "name": "Midtjylland / Rijeka",
       "sourceCompetition": "UECL",
       "recordType": "slot",
-      "resolutionStatus": "unresolved"
+      "resolutionStatus": "unresolved",
+      "qualificationLabel": "UECL play-off winner",
+      "candidates": [
+        {
+          "id": "midtjylland",
+          "name": "Midtjylland",
+          "crestUrl": "crests/uefa/75795.png",
+          "uefaId": "75795"
+        },
+        {
+          "id": "rijeka",
+          "name": "Rijeka",
+          "crestUrl": "crests/uefa/52356.png",
+          "uefaId": "52356"
+        }
+      ],
+      "crestUrls": [
+        "crests/uefa/75795.png",
+        "crests/uefa/52356.png"
+      ],
+      "crestUrl": "crests/uefa/75795.png",
+      "confirmed": false
     },
     {
-      "id": "uecl-slot-09",
-      "name": "UECL qualifying slot 9",
+      "id": "uecl-uecl-play-off-winner-09",
+      "name": "Nordsjælland / St. Gallen",
       "sourceCompetition": "UECL",
       "recordType": "slot",
-      "resolutionStatus": "unresolved"
+      "resolutionStatus": "unresolved",
+      "qualificationLabel": "UECL play-off winner",
+      "candidates": [
+        {
+          "id": "nordsj-lland",
+          "name": "Nordsjælland",
+          "crestUrl": "crests/uefa/79940.png",
+          "uefaId": "79940"
+        },
+        {
+          "id": "st-gallen",
+          "name": "St. Gallen",
+          "crestUrl": "crests/uefa/51151.png",
+          "uefaId": "51151"
+        }
+      ],
+      "crestUrls": [
+        "crests/uefa/79940.png",
+        "crests/uefa/51151.png"
+      ],
+      "crestUrl": "crests/uefa/79940.png",
+      "confirmed": false
     },
     {
-      "id": "uecl-slot-10",
-      "name": "UECL qualifying slot 10",
+      "id": "uecl-uecl-play-off-winner-10",
+      "name": "PAOK / Brann",
       "sourceCompetition": "UECL",
       "recordType": "slot",
-      "resolutionStatus": "unresolved"
+      "resolutionStatus": "unresolved",
+      "qualificationLabel": "UECL play-off winner",
+      "candidates": [
+        {
+          "id": "paok",
+          "name": "PAOK",
+          "crestUrl": "crests/uefa/50130.png",
+          "uefaId": "50130"
+        },
+        {
+          "id": "brann",
+          "name": "Brann",
+          "crestUrl": "crests/uefa/52770.png",
+          "uefaId": "52770"
+        }
+      ],
+      "crestUrls": [
+        "crests/uefa/50130.png",
+        "crests/uefa/52770.png"
+      ],
+      "crestUrl": "crests/uefa/50130.png",
+      "confirmed": false
     },
     {
-      "id": "uecl-slot-11",
-      "name": "UECL qualifying slot 11",
+      "id": "uecl-uecl-play-off-winner-11",
+      "name": "Górnik Zabrze / Monaco",
       "sourceCompetition": "UECL",
       "recordType": "slot",
-      "resolutionStatus": "unresolved"
+      "resolutionStatus": "unresolved",
+      "qualificationLabel": "UECL play-off winner",
+      "candidates": [
+        {
+          "id": "gornik-zabrze",
+          "name": "Górnik Zabrze",
+          "crestUrl": "crests/uefa/50063.png",
+          "uefaId": "50063"
+        },
+        {
+          "id": "monaco",
+          "name": "Monaco",
+          "crestUrl": "crests/uefa/50023.png",
+          "uefaId": "50023"
+        }
+      ],
+      "crestUrls": [
+        "crests/uefa/50063.png",
+        "crests/uefa/50023.png"
+      ],
+      "crestUrl": "crests/uefa/50063.png",
+      "confirmed": false
     },
     {
-      "id": "uecl-slot-12",
-      "name": "UECL qualifying slot 12",
+      "id": "uecl-uecl-play-off-winner-12",
+      "name": "Twente / Qarabağ",
       "sourceCompetition": "UECL",
       "recordType": "slot",
-      "resolutionStatus": "unresolved"
+      "resolutionStatus": "unresolved",
+      "qualificationLabel": "UECL play-off winner",
+      "candidates": [
+        {
+          "id": "twente",
+          "name": "Twente",
+          "crestUrl": "crests/uefa/52818.png",
+          "uefaId": "52818"
+        },
+        {
+          "id": "qarabag",
+          "name": "Qarabağ",
+          "crestUrl": "crests/uefa/60609.png",
+          "uefaId": "60609"
+        }
+      ],
+      "crestUrls": [
+        "crests/uefa/52818.png",
+        "crests/uefa/60609.png"
+      ],
+      "crestUrl": "crests/uefa/52818.png",
+      "confirmed": false
     },
     {
-      "id": "uecl-slot-13",
-      "name": "UECL qualifying slot 13",
+      "id": "uecl-uecl-play-off-winner-13",
+      "name": "Sion / Ajax",
       "sourceCompetition": "UECL",
       "recordType": "slot",
-      "resolutionStatus": "unresolved"
+      "resolutionStatus": "unresolved",
+      "qualificationLabel": "UECL play-off winner",
+      "candidates": [
+        {
+          "id": "sion",
+          "name": "Sion",
+          "crestUrl": "crests/uefa/52824.png",
+          "uefaId": "52824"
+        },
+        {
+          "id": "ajax",
+          "name": "Ajax",
+          "crestUrl": "crests/uefa/50143.png",
+          "uefaId": "50143"
+        }
+      ],
+      "crestUrls": [
+        "crests/uefa/52824.png",
+        "crests/uefa/50143.png"
+      ],
+      "crestUrl": "crests/uefa/52824.png",
+      "confirmed": false
     },
     {
-      "id": "uecl-slot-14",
-      "name": "UECL qualifying slot 14",
+      "id": "uecl-uecl-play-off-winner-14",
+      "name": "Motherwell / Freiburg",
       "sourceCompetition": "UECL",
       "recordType": "slot",
-      "resolutionStatus": "unresolved"
+      "resolutionStatus": "unresolved",
+      "qualificationLabel": "UECL play-off winner",
+      "candidates": [
+        {
+          "id": "motherwell",
+          "name": "Motherwell",
+          "crestUrl": "crests/uefa/53035.png",
+          "uefaId": "53035"
+        },
+        {
+          "id": "freiburg",
+          "name": "Freiburg",
+          "crestUrl": "crests/uefa/59880.png",
+          "uefaId": "59880"
+        }
+      ],
+      "crestUrls": [
+        "crests/uefa/53035.png",
+        "crests/uefa/59880.png"
+      ],
+      "crestUrl": "crests/uefa/53035.png",
+      "confirmed": false
     },
     {
-      "id": "uecl-slot-15",
-      "name": "UECL qualifying slot 15",
+      "id": "uecl-uecl-play-off-winner-15",
+      "name": "Gent / Hibernian",
       "sourceCompetition": "UECL",
       "recordType": "slot",
-      "resolutionStatus": "unresolved"
+      "resolutionStatus": "unresolved",
+      "qualificationLabel": "UECL play-off winner",
+      "candidates": [
+        {
+          "id": "gent",
+          "name": "Gent",
+          "crestUrl": "crests/uefa/4608.png",
+          "uefaId": "4608"
+        },
+        {
+          "id": "hibernian",
+          "name": "Hibernian",
+          "crestUrl": "crests/uefa/52821.png",
+          "uefaId": "52821"
+        }
+      ],
+      "crestUrls": [
+        "crests/uefa/4608.png",
+        "crests/uefa/52821.png"
+      ],
+      "crestUrl": "crests/uefa/4608.png",
+      "confirmed": false
     },
     {
-      "id": "uecl-slot-16",
-      "name": "UECL qualifying slot 16",
+      "id": "uecl-uecl-play-off-winner-16",
+      "name": "Atalanta / H. Tel-Aviv",
       "sourceCompetition": "UECL",
       "recordType": "slot",
-      "resolutionStatus": "unresolved"
+      "resolutionStatus": "unresolved",
+      "qualificationLabel": "UECL play-off winner",
+      "candidates": [
+        {
+          "id": "atalanta",
+          "name": "Atalanta",
+          "crestUrl": "crests/uefa/52816.png",
+          "uefaId": "52816"
+        },
+        {
+          "id": "h-tel-aviv",
+          "name": "H. Tel-Aviv",
+          "crestUrl": "crests/uefa/59869.png",
+          "uefaId": "59869"
+        }
+      ],
+      "crestUrls": [
+        "crests/uefa/52816.png",
+        "crests/uefa/59869.png"
+      ],
+      "crestUrl": "crests/uefa/52816.png",
+      "confirmed": false
     },
     {
-      "id": "uecl-slot-17",
-      "name": "UECL qualifying slot 17",
+      "id": "uecl-uecl-play-off-winner-17",
+      "name": "Panathinaikos / Hradec Králové",
       "sourceCompetition": "UECL",
       "recordType": "slot",
-      "resolutionStatus": "unresolved"
+      "resolutionStatus": "unresolved",
+      "qualificationLabel": "UECL play-off winner",
+      "candidates": [
+        {
+          "id": "panathinaikos",
+          "name": "Panathinaikos",
+          "crestUrl": "crests/uefa/50084.png",
+          "uefaId": "50084"
+        },
+        {
+          "id": "hradec-kralove",
+          "name": "Hradec Králové",
+          "crestUrl": "crests/uefa/59878.png",
+          "uefaId": "59878"
+        }
+      ],
+      "crestUrls": [
+        "crests/uefa/50084.png",
+        "crests/uefa/59878.png"
+      ],
+      "crestUrl": "crests/uefa/50084.png",
+      "confirmed": false
     },
     {
-      "id": "uecl-slot-18",
-      "name": "UECL qualifying slot 18",
+      "id": "uecl-uecl-play-off-winner-18",
+      "name": "Lugano / M. Tel-Aviv",
       "sourceCompetition": "UECL",
       "recordType": "slot",
-      "resolutionStatus": "unresolved"
+      "resolutionStatus": "unresolved",
+      "qualificationLabel": "UECL play-off winner",
+      "candidates": [
+        {
+          "id": "lugano",
+          "name": "Lugano",
+          "crestUrl": "crests/uefa/8538.png",
+          "uefaId": "8538"
+        },
+        {
+          "id": "m-tel-aviv",
+          "name": "M. Tel-Aviv",
+          "crestUrl": "crests/uefa/57477.png",
+          "uefaId": "57477"
+        }
+      ],
+      "crestUrls": [
+        "crests/uefa/8538.png",
+        "crests/uefa/57477.png"
+      ],
+      "crestUrl": "crests/uefa/8538.png",
+      "confirmed": false
     },
     {
-      "id": "uecl-slot-19",
-      "name": "UECL qualifying slot 19",
+      "id": "uecl-uecl-play-off-winner-19",
+      "name": "Hearts / SK Rapid",
       "sourceCompetition": "UECL",
       "recordType": "slot",
-      "resolutionStatus": "unresolved"
+      "resolutionStatus": "unresolved",
+      "qualificationLabel": "UECL play-off winner",
+      "candidates": [
+        {
+          "id": "hearts",
+          "name": "Hearts",
+          "crestUrl": "crests/uefa/50120.png",
+          "uefaId": "50120"
+        },
+        {
+          "id": "sk-rapid",
+          "name": "SK Rapid",
+          "crestUrl": "crests/uefa/50042.png",
+          "uefaId": "50042"
+        }
+      ],
+      "crestUrls": [
+        "crests/uefa/50120.png",
+        "crests/uefa/50042.png"
+      ],
+      "crestUrl": "crests/uefa/50120.png",
+      "confirmed": false
     },
     {
-      "id": "uecl-slot-20",
-      "name": "UECL qualifying slot 20",
+      "id": "uecl-uecl-play-off-winner-20",
+      "name": "Rangers / Jablonec",
       "sourceCompetition": "UECL",
       "recordType": "slot",
-      "resolutionStatus": "unresolved"
+      "resolutionStatus": "unresolved",
+      "qualificationLabel": "UECL play-off winner",
+      "candidates": [
+        {
+          "id": "rangers",
+          "name": "Rangers",
+          "crestUrl": "crests/uefa/50121.png",
+          "uefaId": "50121"
+        },
+        {
+          "id": "jablonec",
+          "name": "Jablonec",
+          "crestUrl": "crests/uefa/62169.png",
+          "uefaId": "62169"
+        }
+      ],
+      "crestUrls": [
+        "crests/uefa/50121.png",
+        "crests/uefa/62169.png"
+      ],
+      "crestUrl": "crests/uefa/50121.png",
+      "confirmed": false
     },
     {
-      "id": "uecl-slot-21",
-      "name": "UECL qualifying slot 21",
+      "id": "uecl-uecl-play-off-winner-21",
+      "name": "Hajduk Split / Raków",
       "sourceCompetition": "UECL",
       "recordType": "slot",
-      "resolutionStatus": "unresolved"
+      "resolutionStatus": "unresolved",
+      "qualificationLabel": "UECL play-off winner",
+      "candidates": [
+        {
+          "id": "hajduk-split",
+          "name": "Hajduk Split",
+          "crestUrl": "crests/uefa/52359.png",
+          "uefaId": "52359"
+        },
+        {
+          "id": "rakow",
+          "name": "Raków",
+          "crestUrl": "crests/uefa/60566.png",
+          "uefaId": "60566"
+        }
+      ],
+      "crestUrls": [
+        "crests/uefa/52359.png",
+        "crests/uefa/60566.png"
+      ],
+      "crestUrl": "crests/uefa/52359.png",
+      "confirmed": false
     },
     {
-      "id": "uecl-slot-22",
-      "name": "UECL qualifying slot 22",
+      "id": "uecl-uecl-play-off-winner-22",
+      "name": "Dinamo City / Pafos",
       "sourceCompetition": "UECL",
       "recordType": "slot",
-      "resolutionStatus": "unresolved"
+      "resolutionStatus": "unresolved",
+      "qualificationLabel": "UECL play-off winner",
+      "candidates": [
+        {
+          "id": "dinamo-city",
+          "name": "Dinamo City",
+          "crestUrl": "crests/uefa/52792.png",
+          "uefaId": "52792"
+        },
+        {
+          "id": "pafos",
+          "name": "Pafos",
+          "crestUrl": "crests/uefa/2609532.png",
+          "uefaId": "2609532"
+        }
+      ],
+      "crestUrls": [
+        "crests/uefa/52792.png",
+        "crests/uefa/2609532.png"
+      ],
+      "crestUrl": "crests/uefa/52792.png",
+      "confirmed": false
     },
     {
-      "id": "uecl-slot-23",
-      "name": "UECL qualifying slot 23",
+      "id": "uecl-uecl-play-off-winner-23",
+      "name": "Braga / Austria Wien",
       "sourceCompetition": "UECL",
       "recordType": "slot",
-      "resolutionStatus": "unresolved"
+      "resolutionStatus": "unresolved",
+      "qualificationLabel": "UECL play-off winner",
+      "candidates": [
+        {
+          "id": "braga",
+          "name": "Braga",
+          "crestUrl": "crests/uefa/52336.png",
+          "uefaId": "52336"
+        },
+        {
+          "id": "austria-wien",
+          "name": "Austria Wien",
+          "crestUrl": "crests/uefa/50110.png",
+          "uefaId": "50110"
+        }
+      ],
+      "crestUrls": [
+        "crests/uefa/52336.png",
+        "crests/uefa/50110.png"
+      ],
+      "crestUrl": "crests/uefa/52336.png",
+      "confirmed": false
     },
     {
-      "id": "uecl-slot-24",
-      "name": "UECL qualifying slot 24",
+      "id": "uecl-uecl-play-off-winner-24",
+      "name": "Getafe / Partizan",
       "sourceCompetition": "UECL",
       "recordType": "slot",
-      "resolutionStatus": "unresolved"
+      "resolutionStatus": "unresolved",
+      "qualificationLabel": "UECL play-off winner",
+      "candidates": [
+        {
+          "id": "getafe",
+          "name": "Getafe",
+          "crestUrl": "crests/uefa/87960.png",
+          "uefaId": "87960"
+        },
+        {
+          "id": "partizan",
+          "name": "Partizan",
+          "crestUrl": "crests/uefa/50162.png",
+          "uefaId": "50162"
+        }
+      ],
+      "crestUrls": [
+        "crests/uefa/87960.png",
+        "crests/uefa/50162.png"
+      ],
+      "crestUrl": "crests/uefa/87960.png",
+      "confirmed": false
     },
     {
-      "id": "uecl-slot-25",
-      "name": "UECL qualifying slot 25",
+      "id": "uecl-uel-play-off-loser-transfer-01",
+      "name": "Kairat Almaty / Anderlecht",
       "sourceCompetition": "UECL",
       "recordType": "slot",
-      "resolutionStatus": "unresolved"
+      "resolutionStatus": "unresolved",
+      "qualificationLabel": "UEL play-off loser transfer",
+      "candidates": [
+        {
+          "id": "kairat-almaty",
+          "name": "Kairat Almaty",
+          "crestUrl": "crests/uefa/79970.png",
+          "uefaId": "79970"
+        },
+        {
+          "id": "anderlecht",
+          "name": "Anderlecht",
+          "crestUrl": "crests/uefa/50074.png",
+          "uefaId": "50074"
+        }
+      ],
+      "crestUrls": [
+        "crests/uefa/79970.png",
+        "crests/uefa/50074.png"
+      ],
+      "crestUrl": "crests/uefa/79970.png",
+      "confirmed": false
     },
     {
-      "id": "uecl-slot-26",
-      "name": "UECL qualifying slot 26",
+      "id": "uecl-uel-play-off-loser-transfer-02",
+      "name": "Jagiellonia / Iberia Tbilisi",
       "sourceCompetition": "UECL",
       "recordType": "slot",
-      "resolutionStatus": "unresolved"
+      "resolutionStatus": "unresolved",
+      "qualificationLabel": "UEL play-off loser transfer",
+      "candidates": [
+        {
+          "id": "jagiellonia",
+          "name": "Jagiellonia",
+          "crestUrl": "crests/uefa/2600277.png",
+          "uefaId": "2600277"
+        },
+        {
+          "id": "iberia-tbilisi",
+          "name": "Iberia Tbilisi",
+          "crestUrl": "crests/uefa/2605905.png",
+          "uefaId": "2605905"
+        }
+      ],
+      "crestUrls": [
+        "crests/uefa/2600277.png",
+        "crests/uefa/2605905.png"
+      ],
+      "crestUrl": "crests/uefa/2600277.png",
+      "confirmed": false
     },
     {
-      "id": "uecl-slot-27",
-      "name": "UECL qualifying slot 27",
+      "id": "uecl-uel-play-off-loser-transfer-03",
+      "name": "Mjällby / Salzburg",
       "sourceCompetition": "UECL",
       "recordType": "slot",
-      "resolutionStatus": "unresolved"
+      "resolutionStatus": "unresolved",
+      "qualificationLabel": "UEL play-off loser transfer",
+      "candidates": [
+        {
+          "id": "mjallby",
+          "name": "Mjällby",
+          "crestUrl": "crests/uefa/74233.png",
+          "uefaId": "74233"
+        },
+        {
+          "id": "salzburg",
+          "name": "Salzburg",
+          "crestUrl": "crests/uefa/50030.png",
+          "uefaId": "50030"
+        }
+      ],
+      "crestUrls": [
+        "crests/uefa/74233.png",
+        "crests/uefa/50030.png"
+      ],
+      "crestUrl": "crests/uefa/74233.png",
+      "confirmed": false
     },
     {
-      "id": "uecl-slot-28",
-      "name": "UECL qualifying slot 28",
+      "id": "uecl-uel-play-off-loser-transfer-04",
+      "name": "Trabzonspor / Ferencváros",
       "sourceCompetition": "UECL",
       "recordType": "slot",
-      "resolutionStatus": "unresolved"
+      "resolutionStatus": "unresolved",
+      "qualificationLabel": "UEL play-off loser transfer",
+      "candidates": [
+        {
+          "id": "trabzonspor",
+          "name": "Trabzonspor",
+          "crestUrl": "crests/uefa/52731.png",
+          "uefaId": "52731"
+        },
+        {
+          "id": "ferencvaros",
+          "name": "Ferencváros",
+          "crestUrl": "crests/uefa/52298.png",
+          "uefaId": "52298"
+        }
+      ],
+      "crestUrls": [
+        "crests/uefa/52731.png",
+        "crests/uefa/52298.png"
+      ],
+      "crestUrl": "crests/uefa/52731.png",
+      "confirmed": false
     },
     {
-      "id": "uecl-slot-29",
-      "name": "UECL qualifying slot 29",
+      "id": "uecl-uel-play-off-loser-transfer-05",
+      "name": "U. Craiova / Ararat-Armenia",
       "sourceCompetition": "UECL",
       "recordType": "slot",
-      "resolutionStatus": "unresolved"
+      "resolutionStatus": "unresolved",
+      "qualificationLabel": "UEL play-off loser transfer",
+      "candidates": [
+        {
+          "id": "u-craiova",
+          "name": "U. Craiova",
+          "crestUrl": "crests/uefa/2606501.png",
+          "uefaId": "2606501"
+        },
+        {
+          "id": "ararat-armenia",
+          "name": "Ararat-Armenia",
+          "crestUrl": "crests/uefa/2610304.png",
+          "uefaId": "2610304"
+        }
+      ],
+      "crestUrls": [
+        "crests/uefa/2606501.png",
+        "crests/uefa/2610304.png"
+      ],
+      "crestUrl": "crests/uefa/2606501.png",
+      "confirmed": false
     },
     {
-      "id": "uecl-slot-30",
-      "name": "UECL qualifying slot 30",
+      "id": "uecl-uel-play-off-loser-transfer-06",
+      "name": "Egnatia / Lillestrøm",
       "sourceCompetition": "UECL",
       "recordType": "slot",
-      "resolutionStatus": "unresolved"
+      "resolutionStatus": "unresolved",
+      "qualificationLabel": "UEL play-off loser transfer",
+      "candidates": [
+        {
+          "id": "egnatia",
+          "name": "Egnatia",
+          "crestUrl": "crests/uefa/88148.png",
+          "uefaId": "88148"
+        },
+        {
+          "id": "lillestr-m",
+          "name": "Lillestrøm",
+          "crestUrl": "crests/uefa/52314.png",
+          "uefaId": "52314"
+        }
+      ],
+      "crestUrls": [
+        "crests/uefa/88148.png",
+        "crests/uefa/52314.png"
+      ],
+      "crestUrl": "crests/uefa/88148.png",
+      "confirmed": false
     },
     {
-      "id": "uecl-slot-31",
-      "name": "UECL qualifying slot 31",
+      "id": "uecl-uel-play-off-loser-transfer-07",
+      "name": "Beşiktaş / Kauno Žalgiris",
       "sourceCompetition": "UECL",
       "recordType": "slot",
-      "resolutionStatus": "unresolved"
+      "resolutionStatus": "unresolved",
+      "qualificationLabel": "UEL play-off loser transfer",
+      "candidates": [
+        {
+          "id": "besiktas",
+          "name": "Beşiktaş",
+          "crestUrl": "crests/uefa/50157.png",
+          "uefaId": "50157"
+        },
+        {
+          "id": "kauno-zalgiris",
+          "name": "Kauno Žalgiris",
+          "crestUrl": "crests/uefa/2605907.png",
+          "uefaId": "2605907"
+        }
+      ],
+      "crestUrls": [
+        "crests/uefa/50157.png",
+        "crests/uefa/2605907.png"
+      ],
+      "crestUrl": "crests/uefa/50157.png",
+      "confirmed": false
     },
     {
-      "id": "uecl-slot-32",
-      "name": "UECL qualifying slot 32",
+      "id": "uecl-uel-play-off-loser-transfer-08",
+      "name": "Lech Poznań / Thun",
       "sourceCompetition": "UECL",
       "recordType": "slot",
-      "resolutionStatus": "unresolved"
+      "resolutionStatus": "unresolved",
+      "qualificationLabel": "UEL play-off loser transfer",
+      "candidates": [
+        {
+          "id": "lech-poznan",
+          "name": "Lech Poznań",
+          "crestUrl": "crests/uefa/64227.png",
+          "uefaId": "64227"
+        },
+        {
+          "id": "thun",
+          "name": "Thun",
+          "crestUrl": "crests/uefa/80409.png",
+          "uefaId": "80409"
+        }
+      ],
+      "crestUrls": [
+        "crests/uefa/64227.png",
+        "crests/uefa/80409.png"
+      ],
+      "crestUrl": "crests/uefa/64227.png",
+      "confirmed": false
     },
     {
-      "id": "uecl-slot-33",
-      "name": "UECL qualifying slot 33",
+      "id": "uecl-uel-play-off-loser-transfer-09",
+      "name": "Sint-Truidense / Omonia",
       "sourceCompetition": "UECL",
       "recordType": "slot",
-      "resolutionStatus": "unresolved"
+      "resolutionStatus": "unresolved",
+      "qualificationLabel": "UEL play-off loser transfer",
+      "candidates": [
+        {
+          "id": "sint-truidense",
+          "name": "Sint-Truidense",
+          "crestUrl": "crests/uefa/52883.png",
+          "uefaId": "52883"
+        },
+        {
+          "id": "omonia",
+          "name": "Omonia",
+          "crestUrl": "crests/uefa/50077.png",
+          "uefaId": "50077"
+        }
+      ],
+      "crestUrls": [
+        "crests/uefa/52883.png",
+        "crests/uefa/50077.png"
+      ],
+      "crestUrl": "crests/uefa/52883.png",
+      "confirmed": false
     },
     {
-      "id": "uecl-slot-34",
-      "name": "UECL qualifying slot 34",
+      "id": "uecl-uel-play-off-loser-transfer-10",
+      "name": "Crvena Zvezda / Viktoria Plzeň",
       "sourceCompetition": "UECL",
       "recordType": "slot",
-      "resolutionStatus": "unresolved"
+      "resolutionStatus": "unresolved",
+      "qualificationLabel": "UEL play-off loser transfer",
+      "candidates": [
+        {
+          "id": "crvena-zvezda",
+          "name": "Crvena Zvezda",
+          "crestUrl": "crests/uefa/50069.png",
+          "uefaId": "50069"
+        },
+        {
+          "id": "viktoria-plzen",
+          "name": "Viktoria Plzeň",
+          "crestUrl": "crests/uefa/64388.png",
+          "uefaId": "64388"
+        }
+      ],
+      "crestUrls": [
+        "crests/uefa/50069.png",
+        "crests/uefa/64388.png"
+      ],
+      "crestUrl": "crests/uefa/50069.png",
+      "confirmed": false
     },
     {
-      "id": "uecl-slot-35",
-      "name": "UECL qualifying slot 35",
+      "id": "uecl-uel-play-off-loser-transfer-11",
+      "name": "OFI Crete / CSKA Sofia",
       "sourceCompetition": "UECL",
       "recordType": "slot",
-      "resolutionStatus": "unresolved"
+      "resolutionStatus": "unresolved",
+      "qualificationLabel": "UEL play-off loser transfer",
+      "candidates": [
+        {
+          "id": "ofi-crete",
+          "name": "OFI Crete",
+          "crestUrl": "crests/uefa/52953.png",
+          "uefaId": "52953"
+        },
+        {
+          "id": "cska-sofia",
+          "name": "CSKA Sofia",
+          "crestUrl": "crests/uefa/2608297.png",
+          "uefaId": "2608297"
+        }
+      ],
+      "crestUrls": [
+        "crests/uefa/52953.png",
+        "crests/uefa/2608297.png"
+      ],
+      "crestUrl": "crests/uefa/52953.png",
+      "confirmed": false
     },
     {
-      "id": "uecl-slot-36",
-      "name": "UECL qualifying slot 36",
+      "id": "uecl-uel-play-off-loser-transfer-12",
+      "name": "Benfica / Aarhus",
       "sourceCompetition": "UECL",
       "recordType": "slot",
-      "resolutionStatus": "unresolved"
+      "resolutionStatus": "unresolved",
+      "qualificationLabel": "UEL play-off loser transfer",
+      "candidates": [
+        {
+          "id": "benfica",
+          "name": "Benfica",
+          "crestUrl": "crests/uefa/50147.png",
+          "uefaId": "50147"
+        },
+        {
+          "id": "aarhus",
+          "name": "Aarhus",
+          "crestUrl": "crests/uefa/50019.png",
+          "uefaId": "50019"
+        }
+      ],
+      "crestUrls": [
+        "crests/uefa/50147.png",
+        "crests/uefa/50019.png"
+      ],
+      "crestUrl": "crests/uefa/50147.png",
+      "confirmed": false
     }
   ]
 }

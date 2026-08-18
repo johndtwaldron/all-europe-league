@@ -201,3 +201,10 @@ Turn the format discussion into a public, explorable GitHub project.
 - Added previous/next matchweek navigation and an animated-ready table/fixtures view switch.
 - Added tier-matchup colour combinations, including an all-three mixed-week treatment.
 - Documented the boundary between internally validated AEL logistics and future domestic-calendar/venue ingestion.
+# 2026-08-18 — Phase One club identity snapshot
+
+- Replaced all generic 2026/27 qualifying slots with 132 actual named clubs across 108 field positions.
+- Marked the snapshot as dated 18 August 2026: 46 positions are confirmed and unresolved positions show both clubs contesting the relevant route.
+- Cached 132 official UEFA crest images locally for reliable GitHub Pages rendering.
+- Added overlapping crest treatment, qualification-path labels, provisional markers and provenance metadata.
+- Added a reproducible snapshot builder so the field can be refreshed after the 27–28 August league-phase confirmations.
