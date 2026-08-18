@@ -2,6 +2,45 @@
 
 This journal records product decisions, experiments, evidence, reversals and open questions. Newest entries appear first.
 
+## 2026-08-18 — Simulation contract, calendar and ground advantage
+
+### Goal
+
+Separate real and simulated results, make simulation probabilities editable, and define how AEL fits into the 2026 calendar and rewards higher finishers.
+
+### Decisions
+
+- Real mode replays recorded results; simulated mode generates alternatives.
+- Provide Hierarchy 75, Level field and Underdog 75 presets.
+- Store probabilities as editable configuration that must total 100%.
+- Complete eight AEL matchweeks by Christmas; Tier B has one bye and Tier C has two.
+- Populate stock UCL, UEL and UECL knockout graphics from the final AEL table.
+- Higher AEL seed hosts January ties and plays the second leg at home thereafter.
+
+### Work completed
+
+- Added editable probability models and deterministic outcome bands.
+- Added Real/Simulated mode controls.
+- Added the working eight-matchweek 2026 calendar graphic.
+- Added visible ground-advantage rules.
+- Added simulation and calendar documentation.
+
+### Evidence
+
+- Tier workloads total 378 AEL matches.
+- Six 47-match weeks plus two 48-match weeks equal 378.
+- Probability presets and invalid-total handling are unit tested.
+
+### Open questions
+
+- Exact club-strength rating source and rating-gap treatment.
+- Actual-result ingestion for real replay mode.
+- Calendar conflict optimisation across domestic competitions.
+
+### Next
+
+- Add ratings and tier assignment, then generate the first seeded AEL fixtures and final-table knockout graphics.
+
 ## 2026-08-18 — Official UEFA season importer
 
 ### Goal
