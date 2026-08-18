@@ -2,6 +2,46 @@
 
 This journal records product decisions, experiments, evidence, reversals and open questions. Newest entries appear first.
 
+## 2026-08-18 — First playable AEL season
+
+### Goal
+
+Turn the format explorer into a deterministic, playable 108-club league phase.
+
+### Decisions
+
+- Use a replaceable provisional rating adapter until official coefficients are imported.
+- Assign exactly 36 clubs to each initial tier by rating order.
+- Generate all fixtures from the visible random seed.
+- Preserve exact 8/7/6 appearance totals and prohibit repeat opponents.
+- Show the top ten and both destination cut lines after every matchweek.
+
+### Work completed
+
+- Added deterministic random, rating, tier, fixture, result and standings engines.
+- Added an eight-matchweek schedule generator containing 378 matches.
+- Added Generate, Play Next Matchweek, jump-to-week and Simulate All controls.
+- Added live standings, fixture previews and UCL/UEL/UECL boundary views.
+- Added the completed-table handoff to stock knockout graphics.
+
+### Evidence
+
+- Every Tier A club receives eight matches, Tier B seven and Tier C six.
+- All 378 pairings are unique.
+- Identical seeds produce identical schedules.
+- A complete 2025/26 season was generated and simulated without browser errors.
+- Thirteen unit tests pass.
+
+### Open questions
+
+- Replace source-competition proxy ratings with dated UEFA coefficients and domestic-finishing data.
+- Add association constraints once association metadata is populated.
+- Expand stock knockout handoff into the full visual bracket component.
+
+### Next
+
+- Import coefficients and associations, then render the populated UCL, UEL and UECL January graphics.
+
 ## 2026-08-18 — Simulation contract, calendar and ground advantage
 
 ### Goal

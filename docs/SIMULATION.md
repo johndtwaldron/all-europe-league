@@ -52,3 +52,19 @@ Each graphic populates positions 1–8, 9–16, 17–28 and 29–36 within its o
 - Finals are played at neutral venues.
 
 The rule is automatic. Clubs do not choose leg order.
+
+## First playable engine
+
+The first implementation provides:
+
+- deterministic provisional ratings;
+- exact 36/36/36 initial tier assignment;
+- seeded fixture generation;
+- 378 unique pairings across eight matchweeks;
+- exact Tier A/B/C appearance counts of 8/7/6;
+- deterministic probability-driven results;
+- live points, goal difference and standings;
+- UCL/UEL and UEL/UECL boundary views;
+- final-table handoff to the three knockout graphics.
+
+The provisional rating adapter uses a source-competition baseline plus a small stable club-specific variation. It exists to test the engine and is visibly labelled provisional. It will be replaced by a dated coefficient/domestic-performance model without changing the fixture or simulation interfaces.
