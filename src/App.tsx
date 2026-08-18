@@ -1,9 +1,11 @@
 import { useEffect, useMemo, useState } from 'react'
-import { ArrowDown, ChevronRight, RotateCcw, Shield, Sparkles, Trophy, Zap } from 'lucide-react'
+import { ArrowDown, CalendarDays, ChevronRight, Database, RotateCcw, Shield, Sparkles, Trophy, Zap } from 'lucide-react'
 import { seasonDatasets } from './data/seasons'
 import { loadSeasonManifest, type SeasonManifest } from './data/dataset'
+import { isValidProbabilityModel, simulationPresets, type OutcomeProbabilities, type SimulationPresetId } from './engine/probability'
+import { aelMatchweeks2026 } from './engine/calendar'
 
-type Scenario = 'Hierarchy' | 'Balanced' | 'Chaos'
+type ResultMode = 'real' | 'simulated'
 type Focus = 'AEL' | 'UCL' | 'UEL' | 'UECL'
 
 const destinations = [
@@ -12,11 +14,7 @@ const destinations = [
   { id: 'UECL' as const, range: '73–108', name: 'Conference League', colour: '#36d39a', route: 'Open European path' },
 ]
 
-const scenarios: { name: Scenario; description: string; icon: typeof Shield }[] = [
-  { name: 'Hierarchy', description: 'Established strength usually holds.', icon: Shield },
-  { name: 'Balanced', description: 'Credible movement with real jeopardy.', icon: Sparkles },
-  { name: 'Chaos', description: 'Giants fall. Outsiders surge.', icon: Zap },
-]
+const presetIcons = { hierarchy: Shield, equal: Sparkles, underdog: Zap }
 
 const dots = Array.from({ length: 108 }, (_, index) => ({
   rank: index + 1,
@@ -25,7 +23,9 @@ const dots = Array.from({ length: 108 }, (_, index) => ({
 }))
 
 export function App() {
-  const [scenario, setScenario] = useState<Scenario>('Balanced')
+  const [resultMode, setResultMode] = useState<ResultMode>('simulated')
+  const [presetId, setPresetId] = useState<SimulationPresetId>('hierarchy')
+  const [probabilities, setProbabilities] = useState<OutcomeProbabilities>(simulationPresets[0].probabilities)
   const [focus, setFocus] = useState<Focus>('AEL')
   const [seed, setSeed] = useState(260826)
   const [seasonId, setSeasonId] = useState('2026-27')
@@ -45,6 +45,12 @@ export function App() {
   const focusMeta = useMemo(() => destinations.find((item) => item.id === focus), [focus])
   const focusColour = focusMeta?.colour ?? '#e8f0ff'
   const season = seasonDatasets.find((item) => item.id === seasonId) ?? seasonDatasets[0]
+  const probabilityValid = isValidProbabilityModel(probabilities)
+  const choosePreset = (id: SimulationPresetId) => {
+    const selected = simulationPresets.find((preset) => preset.id === id)!
+    setPresetId(id)
+    setProbabilities(selected.probabilities)
+  }
 
   return (
     <main className={focus === 'AEL' ? '' : 'focus-mode'}>
@@ -114,8 +120,15 @@ export function App() {
           {manifest ? <><span><strong>{manifest.entryCount}</strong> verified entries</span><span><strong>{manifest.uniqueClubCount}</strong> resolved clubs</span>{(['UCL','UEL','UECL'] as const).map((competition) => <span key={competition}><strong>{manifest.entries.filter((entry) => entry.sourceCompetition === competition).length}</strong> {competition}</span>)}<div>{manifest.entries.slice(0, 7).map((entry) => <i key={entry.id}>{entry.name}</i>)}</div></> : <span>{dataError || 'Loading season manifest…'}</span>}
         </div>
 
-        <div className="scenario-grid">
-          {scenarios.map(({ name, description, icon: Icon }) => <button key={name} className={scenario === name ? 'scenario selected' : 'scenario'} onClick={() => setScenario(name)}><Icon/><span><strong>{name}</strong><small>{description}</small></span>{scenario === name && <i>ACTIVE</i>}</button>)}
+        <div className="mode-switch"><button className={resultMode === 'real' ? 'active' : ''} onClick={() => setResultMode('real')}><Database/>Real results</button><button className={resultMode === 'simulated' ? 'active' : ''} onClick={() => setResultMode('simulated')}><Zap/>Simulated results</button><span>{resultMode === 'real' ? 'Replay recorded historical outcomes' : 'Generate a reproducible alternative season'}</span></div>
+
+        <div className={resultMode === 'simulated' ? 'scenario-grid' : 'scenario-grid disabled'}>
+          {simulationPresets.map(({ id, name, description }) => { const Icon = presetIcons[id]; return <button key={id} className={presetId === id ? 'scenario selected' : 'scenario'} onClick={() => choosePreset(id)} disabled={resultMode === 'real'}><Icon/><span><strong>{name}</strong><small>{description}</small></span>{presetId === id && resultMode === 'simulated' && <i>ACTIVE</i>}</button> })}
+        </div>
+
+        <div className={resultMode === 'simulated' ? 'probability-editor' : 'probability-editor disabled'}>
+          <header><div><span>EDIT PROBABILITY MODEL</span><strong>{probabilityValid ? 'Total · 100%' : `Invalid total · ${(probabilities.favouredWin + probabilities.draw + probabilities.underdogWin).toFixed(1)}%`}</strong></div><small>Applied when teams have different strength ratings. Equal-strength matches use the level-field model.</small></header>
+          {([['favouredWin','Stronger wins'],['draw','Draw'],['underdogWin','Smaller wins']] as const).map(([key,label]) => <label key={key}><span>{label}<strong>{probabilities[key].toFixed(1)}%</strong></span><input type="range" min="0" max="100" step="0.5" value={probabilities[key]} disabled={resultMode === 'real'} onChange={(event) => setProbabilities((current) => ({ ...current, [key]: Number(event.target.value) }))}/></label>)}
         </div>
 
         <div className={focus === 'AEL' ? 'destination-grid' : 'destination-grid focused'}>
@@ -137,6 +150,14 @@ export function App() {
             <div className="final"><span>1–8</span><strong>Round of 16</strong><small>Direct entry</small></div>
           </div>
         </div>
+
+        <div className="calendar-panel">
+          <header><div><p className="eyebrow">WORKING 2026 CALENDAR</p><h3>Eight matchweeks. Finished by Christmas.</h3></div><span><CalendarDays/>378 AEL matches</span></header>
+          <div className="matchweeks">{aelMatchweeks2026.map((week) => <div key={week.id}><span>MW {week.id}</span><strong>{week.dates}</strong><small>{week.matches} matches</small></div>)}</div>
+          <p>Tier A plays all eight matchweeks. Tier B receives one scheduled bye; Tier C receives two. Exact dates remain a modelling assumption and must be tested against domestic cups, policing, venue and rest constraints.</p>
+        </div>
+
+        <div className="advantage-panel"><div><p className="eyebrow">MERIT CARRIES FORWARD</p><h3>Higher finish, stronger ground advantage.</h3></div><div className="advantage-rules"><span><strong>JANUARY</strong>Higher AEL seed hosts every single-match tie.</span><span><strong>R16 · QF · SF</strong>Higher original AEL seed plays the second leg at home.</span><span><strong>FINAL</strong>Neutral venue. No ranking advantage.</span></div></div>
       </section>
 
       <section className="method shell" id="method">
