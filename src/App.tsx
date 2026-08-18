@@ -4,6 +4,9 @@ import { seasonDatasets } from './data/seasons'
 import { loadSeasonManifest, type SeasonManifest } from './data/dataset'
 import { isValidProbabilityModel, simulationPresets, type OutcomeProbabilities, type SimulationPresetId } from './engine/probability'
 import { aelMatchweeks2026 } from './engine/calendar'
+import { assignProvisionalRatings } from './engine/ratings'
+import { generateSchedule, type GeneratedSchedule } from './engine/fixtures'
+import { simulateThrough, type Standing } from './engine/season'
 
 type ResultMode = 'real' | 'simulated'
 type Focus = 'AEL' | 'UCL' | 'UEL' | 'UECL'
@@ -31,6 +34,9 @@ export function App() {
   const [seasonId, setSeasonId] = useState('2026-27')
   const [manifest, setManifest] = useState<SeasonManifest | null>(null)
   const [dataError, setDataError] = useState('')
+  const [schedule, setSchedule] = useState<GeneratedSchedule | null>(null)
+  const [completedMatchweeks, setCompletedMatchweeks] = useState(0)
+  const [standings, setStandings] = useState<Standing[]>([])
 
   useEffect(() => {
     const controller = new AbortController()
@@ -46,11 +52,23 @@ export function App() {
   const focusColour = focusMeta?.colour ?? '#e8f0ff'
   const season = seasonDatasets.find((item) => item.id === seasonId) ?? seasonDatasets[0]
   const probabilityValid = isValidProbabilityModel(probabilities)
+  const ratedClubs = useMemo(() => manifest ? assignProvisionalRatings(manifest.entries) : [], [manifest])
   const choosePreset = (id: SimulationPresetId) => {
     const selected = simulationPresets.find((preset) => preset.id === id)!
     setPresetId(id)
     setProbabilities(selected.probabilities)
   }
+  const buildSchedule = () => {
+    if (ratedClubs.length !== 108 || !probabilityValid) return
+    const generated = generateSchedule(ratedClubs, seed)
+    setSchedule(generated); setCompletedMatchweeks(0); setStandings(simulateThrough(generated, ratedClubs, probabilities, 0).standings)
+  }
+  const advanceTo = (matchweek: number) => {
+    if (!schedule) return
+    const progress = simulateThrough(schedule, ratedClubs, probabilities, matchweek)
+    setCompletedMatchweeks(matchweek); setStandings(progress.standings)
+  }
+  useEffect(() => { setSchedule(null); setCompletedMatchweeks(0); setStandings([]) }, [seasonId, seed, presetId])
 
   return (
     <main className={focus === 'AEL' ? '' : 'focus-mode'}>
@@ -129,6 +147,20 @@ export function App() {
         <div className={resultMode === 'simulated' ? 'probability-editor' : 'probability-editor disabled'}>
           <header><div><span>EDIT PROBABILITY MODEL</span><strong>{probabilityValid ? 'Total · 100%' : `Invalid total · ${(probabilities.favouredWin + probabilities.draw + probabilities.underdogWin).toFixed(1)}%`}</strong></div><small>Applied when teams have different strength ratings. Equal-strength matches use the level-field model.</small></header>
           {([['favouredWin','Stronger wins'],['draw','Draw'],['underdogWin','Smaller wins']] as const).map(([key,label]) => <label key={key}><span>{label}<strong>{probabilities[key].toFixed(1)}%</strong></span><input type="range" min="0" max="100" step="0.5" value={probabilities[key]} disabled={resultMode === 'real'} onChange={(event) => setProbabilities((current) => ({ ...current, [key]: Number(event.target.value) }))}/></label>)}
+        </div>
+
+        <div className="playable-panel">
+          <header><div><p className="eyebrow">FIRST PLAYABLE AEL SEASON</p><h3>{schedule ? `Matchweek ${completedMatchweeks} of 8` : 'Generate the 378-match schedule'}</h3><small>Ratings are provisional and replaceable. The visible seed reproduces fixtures and results.</small></div><div className="play-actions"><button onClick={buildSchedule} disabled={resultMode === 'real' || !probabilityValid || ratedClubs.length !== 108}>{schedule ? 'Regenerate schedule' : 'Generate schedule'}</button>{schedule && completedMatchweeks < 8 && <button className="advance" onClick={() => advanceTo(completedMatchweeks + 1)}>Play Matchweek {completedMatchweeks + 1}</button>}{schedule && completedMatchweeks < 8 && <button onClick={() => advanceTo(8)}>Simulate all</button>}</div></header>
+          {resultMode === 'real' && <div className="real-notice">Historical fields are loaded. Recorded fixture/result ingestion is the next data adapter; Real mode never substitutes simulated scores.</div>}
+          {schedule && <>
+            <div className="week-progress">{schedule.matchweeks.map((fixtures, index) => <button key={index} className={completedMatchweeks >= index + 1 ? 'complete' : completedMatchweeks === index ? 'next' : ''} onClick={() => advanceTo(index + 1)}><span>MW {index + 1}</span><strong>{fixtures.length}</strong><small>matches</small></button>)}</div>
+            <div className="playable-grid">
+              <div className="fixture-preview"><span>NEXT FIXTURES</span>{(schedule.matchweeks[Math.min(completedMatchweeks, 7)] ?? []).slice(0, 6).map((fixture) => <div key={fixture.id}><strong>{fixture.home.name}</strong><i>v</i><strong>{fixture.away.name}</strong></div>)}</div>
+              <div className="standings-preview"><span>LIVE AEL TABLE</span>{(standings.length ? standings : simulateThrough(schedule, ratedClubs, probabilities, 0).standings).slice(0, 10).map((row, index) => <div key={row.club.id}><i>{index + 1}</i><strong>{row.club.name}</strong><small>{row.club.tier}</small><b>{row.points}</b></div>)}</div>
+              <div className="boundary-preview"><span>DESTINATION CUTS</span>{[[34,39,'UCL / UEL'],[70,75,'UEL / UECL']].map(([start,end,label]) => <section key={String(label)}><small>{label}</small>{(standings.length ? standings : simulateThrough(schedule, ratedClubs, probabilities, 0).standings).slice(Number(start)-1,Number(end)).map((row,index) => <div key={row.club.id}><i>{Number(start)+index}</i><strong>{row.club.name}</strong><b>{row.points}</b></div>)}</section>)}</div>
+            </div>
+            {completedMatchweeks === 8 && <div className="handoff"><span>AEL COMPLETE</span><strong>The table is ready to populate the three stock knockout graphics.</strong><div>{['UCL · 1–36','UEL · 37–72','UECL · 73–108'].map((label) => <i key={label}>{label}</i>)}</div></div>}
+          </>}
         </div>
 
         <div className={focus === 'AEL' ? 'destination-grid' : 'destination-grid focused'}>
