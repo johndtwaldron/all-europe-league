@@ -1,5 +1,6 @@
 import { useMemo, useState } from 'react'
 import { ArrowDown, ChevronRight, RotateCcw, Shield, Sparkles, Trophy, Zap } from 'lucide-react'
+import { seasonDatasets } from './data/seasons'
 
 type Scenario = 'Hierarchy' | 'Balanced' | 'Chaos'
 type Focus = 'AEL' | 'UCL' | 'UEL' | 'UECL'
@@ -26,12 +27,14 @@ export function App() {
   const [scenario, setScenario] = useState<Scenario>('Balanced')
   const [focus, setFocus] = useState<Focus>('AEL')
   const [seed, setSeed] = useState(260826)
+  const [seasonId, setSeasonId] = useState('2026-27')
 
   const focusMeta = useMemo(() => destinations.find((item) => item.id === focus), [focus])
   const focusColour = focusMeta?.colour ?? '#e8f0ff'
+  const season = seasonDatasets.find((item) => item.id === seasonId) ?? seasonDatasets[0]
 
   return (
-    <main>
+    <main className={focus === 'AEL' ? '' : 'focus-mode'}>
       <nav className="nav shell">
         <button className="brand" onClick={() => setFocus('AEL')} aria-label="All-Europe League home">
           <span className="brand-mark">AEL</span>
@@ -87,14 +90,26 @@ export function App() {
           <div className="seed"><span>SIMULATION SEED</span><strong>{seed}</strong><button onClick={() => setSeed(Math.floor(Math.random() * 900000) + 100000)} aria-label="Generate new seed"><RotateCcw size={15}/></button></div>
         </header>
 
+        <div className="season-bar">
+          <div><span>SEASON DATASET</span><strong>{season.label}</strong><small>{season.description}</small></div>
+          <div className="season-options">
+            {seasonDatasets.map((item) => <button key={item.id} className={seasonId === item.id ? 'active' : ''} onClick={() => setSeasonId(item.id)}>{item.shortLabel}</button>)}
+          </div>
+          <span className={`data-status ${season.status}`}>{season.statusLabel}</span>
+        </div>
+
         <div className="scenario-grid">
           {scenarios.map(({ name, description, icon: Icon }) => <button key={name} className={scenario === name ? 'scenario selected' : 'scenario'} onClick={() => setScenario(name)}><Icon/><span><strong>{name}</strong><small>{description}</small></span>{scenario === name && <i>ACTIVE</i>}</button>)}
         </div>
 
-        <div className="destination-grid">
+        <div className={focus === 'AEL' ? 'destination-grid' : 'destination-grid focused'}>
           {destinations.map((item) => <button key={item.id} className={focus === item.id ? 'destination selected' : 'destination'} style={{ '--accent': item.colour } as React.CSSProperties} onClick={() => setFocus(focus === item.id ? 'AEL' : item.id)}>
             <span className="rank">{item.range}</span><span className="cup-code">{item.id}</span><strong>{item.name}</strong><small>{item.route}</small><span className="zoom">FOCUS <ChevronRight size={14}/></span>
           </button>)}
+        </div>
+
+        <div className={focusMeta ? 'focus-reveal visible' : 'focus-reveal'} style={{ '--accent': focusColour } as React.CSSProperties}>
+          {focusMeta && <><button className="close-focus" onClick={() => setFocus('AEL')}>RETURN TO AEL</button><span>{focusMeta.range} · AEL TABLE</span><h3>{focusMeta.id} comes to the fore.</h3><p>The selected 36-club destination now owns the stage. Its January ladder uses the same sporting logic as the other competitions, while the other paths recede without disappearing from the system.</p><div><strong>1–8</strong> direct · <strong>9–16</strong> one win · <strong>17–28</strong> two wins · <strong>29–36</strong> three wins</div></>}
         </div>
 
         <div className="january-panel">

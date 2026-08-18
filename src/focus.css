@@ -1,0 +1,23 @@
+.season-bar{display:grid;grid-template-columns:1fr auto auto;align-items:center;gap:24px;margin-bottom:12px;padding:16px 18px;border:1px solid var(--line);border-radius:10px;background:rgba(255,255,255,.018)}
+.season-bar>div:first-child{display:grid;grid-template-columns:auto 1fr;gap:3px 12px}
+.season-bar span,.season-bar small{font:700 8px 'Space Grotesk';letter-spacing:1.4px;color:#66748a}
+.season-bar strong{font:600 13px 'Space Grotesk'}
+.season-bar small{grid-column:2;font-family:'DM Sans';font-weight:400;letter-spacing:0}
+.season-options{display:flex;gap:4px}
+.season-options button{border:1px solid transparent;border-radius:6px;padding:8px 9px;background:transparent;color:#69778c;font:600 9px 'Space Grotesk';cursor:pointer}
+.season-options button.active{border-color:rgba(81,157,248,.36);background:rgba(59,137,233,.1);color:#dce9f9}
+.data-status{padding:7px 9px;border-radius:20px;border:1px solid var(--line);white-space:nowrap}
+.data-status.provisional{color:#f2bd67;border-color:rgba(242,189,103,.28)}
+.data-status.complete{color:#48d5a2}.data-status.historical{color:#80a9dc}
+.destination,.scenario,.january-panel,.season-bar{transition:opacity .9s cubic-bezier(.16,1,.3,1),transform .9s cubic-bezier(.16,1,.3,1),filter .9s cubic-bezier(.16,1,.3,1),box-shadow .9s cubic-bezier(.16,1,.3,1)}
+.destination-grid.focused .destination:not(.selected){opacity:.11;transform:scale(.84) translateY(28px);filter:blur(2.5px);pointer-events:none}
+.destination-grid.focused .destination.selected{transform:scale(1.055) translateY(-12px);z-index:3;box-shadow:0 30px 75px color-mix(in srgb,var(--accent) 18%,transparent),inset 0 0 0 1px color-mix(in srgb,var(--accent) 72%,transparent)}
+.focus-mode .scenario-grid,.focus-mode .season-bar{opacity:.32;transform:translateY(-10px);filter:saturate(.5)}
+.focus-mode .january-panel{transform:translateY(22px)}
+.focus-reveal{max-height:0;opacity:0;overflow:hidden;margin-top:0;padding:0 34px;border:1px solid transparent;border-radius:12px;transform:translateY(28px);transition:max-height 1s cubic-bezier(.16,1,.3,1),opacity .7s ease,transform 1s cubic-bezier(.16,1,.3,1),margin .7s,padding .7s,border-color .7s}
+.focus-reveal.visible{max-height:320px;opacity:1;transform:none;margin-top:20px;padding:30px 34px;border-color:color-mix(in srgb,var(--accent) 28%,transparent);background:linear-gradient(120deg,color-mix(in srgb,var(--accent) 10%,#090d18),#080b14)}
+.focus-reveal>span{font:700 9px 'Space Grotesk';letter-spacing:1.6px;color:var(--accent)}
+.focus-reveal h3{font:600 30px 'Space Grotesk';margin:9px 0}.focus-reveal p{max-width:720px;color:#8e9aaf;font-size:13px;line-height:1.6}
+.focus-reveal>div{font-size:11px;color:#7f8ca0}.focus-reveal>div strong{color:#dce5f3}
+.close-focus{float:right;border:1px solid color-mix(in srgb,var(--accent) 32%,transparent);border-radius:7px;background:transparent;color:var(--accent);padding:8px 10px;font:700 8px 'Space Grotesk';letter-spacing:1.2px;cursor:pointer}
+@media(max-width:850px){.season-bar{grid-template-columns:1fr}.season-bar>div:first-child{grid-template-columns:1fr}.season-bar small{grid-column:1}.destination-grid.focused .destination:not(.selected){display:none}.destination-grid.focused .destination.selected{transform:translateY(-8px)}.focus-reveal.visible{max-height:430px}.season-options{flex-wrap:wrap}}

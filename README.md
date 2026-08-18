@@ -37,7 +37,7 @@ npm test
 
 ## Open development
 
-See [DEVLOG.md](DEVLOG.md) for the development narrative and [docs/SPEC.md](docs/SPEC.md) for the working product specification.
+See [DEVLOG.md](DEVLOG.md) for the development narrative, [docs/SPEC.md](docs/SPEC.md) for the working product specification, and [docs/DATA.md](docs/DATA.md) for historical-season compatibility and provenance rules.
 
 ## Independence notice
 
