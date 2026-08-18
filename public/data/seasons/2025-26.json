@@ -1,0 +1,675 @@
+{
+  "schemaVersion": 1,
+  "season": "2025/26",
+  "status": "historical-complete",
+  "fieldDefinition": "Actual UEFA league-phase participants",
+  "entryCount": 108,
+  "uniqueClubCount": 108,
+  "provenance": [
+    {
+      "competition": "UCL",
+      "url": "https://www.uefa.com/uefachampionsleague/news/029c-1e92123f27d7-f1c1fabba5f1-1000--champions-league-league-phase-draw-all-36-teams-learn-their/",
+      "retrievedAt": "2026-08-18T09:30:04.573Z"
+    },
+    {
+      "competition": "UEL",
+      "url": "https://www.uefa.com/uefaeuropaleague/news/029c-1e921c539af1-ca9dedf0bcf6-1000/",
+      "retrievedAt": "2026-08-18T09:30:04.616Z"
+    },
+    {
+      "competition": "UECL",
+      "url": "https://www.uefa.com/uefaconferenceleague/news/029c-1e92246e7a6f-e273155cc9d3-1000--2025-26-conference-league-league-phase-draw-contenders-learn/",
+      "retrievedAt": "2026-08-18T09:30:04.667Z"
+    }
+  ],
+  "entries": [
+    {
+      "id": "ajax",
+      "name": "Ajax",
+      "sourceCompetition": "UCL",
+      "recordType": "club"
+    },
+    {
+      "id": "arsenal",
+      "name": "Arsenal",
+      "sourceCompetition": "UCL",
+      "recordType": "club"
+    },
+    {
+      "id": "atalanta",
+      "name": "Atalanta",
+      "sourceCompetition": "UCL",
+      "recordType": "club"
+    },
+    {
+      "id": "athletic-club",
+      "name": "Athletic Club",
+      "sourceCompetition": "UCL",
+      "recordType": "club"
+    },
+    {
+      "id": "atletico-de-madrid",
+      "name": "Atlético de Madrid",
+      "sourceCompetition": "UCL",
+      "recordType": "club"
+    },
+    {
+      "id": "borussia-dortmund",
+      "name": "Borussia Dortmund",
+      "sourceCompetition": "UCL",
+      "recordType": "club"
+    },
+    {
+      "id": "barcelona",
+      "name": "Barcelona",
+      "sourceCompetition": "UCL",
+      "recordType": "club"
+    },
+    {
+      "id": "bayern-munchen",
+      "name": "Bayern München",
+      "sourceCompetition": "UCL",
+      "recordType": "club"
+    },
+    {
+      "id": "benfica",
+      "name": "Benfica",
+      "sourceCompetition": "UCL",
+      "recordType": "club"
+    },
+    {
+      "id": "bod-glimt",
+      "name": "Bodø/Glimt",
+      "sourceCompetition": "UCL",
+      "recordType": "club"
+    },
+    {
+      "id": "chelsea",
+      "name": "Chelsea",
+      "sourceCompetition": "UCL",
+      "recordType": "club"
+    },
+    {
+      "id": "club-brugge",
+      "name": "Club Brugge",
+      "sourceCompetition": "UCL",
+      "recordType": "club"
+    },
+    {
+      "id": "copenhagen",
+      "name": "Copenhagen",
+      "sourceCompetition": "UCL",
+      "recordType": "club"
+    },
+    {
+      "id": "eintracht-frankfurt",
+      "name": "Eintracht Frankfurt",
+      "sourceCompetition": "UCL",
+      "recordType": "club"
+    },
+    {
+      "id": "galatasaray",
+      "name": "Galatasaray",
+      "sourceCompetition": "UCL",
+      "recordType": "club"
+    },
+    {
+      "id": "inter",
+      "name": "Inter",
+      "sourceCompetition": "UCL",
+      "recordType": "club"
+    },
+    {
+      "id": "juventus",
+      "name": "Juventus",
+      "sourceCompetition": "UCL",
+      "recordType": "club"
+    },
+    {
+      "id": "kairat-almaty",
+      "name": "Kairat Almaty",
+      "sourceCompetition": "UCL",
+      "recordType": "club"
+    },
+    {
+      "id": "leverkusen",
+      "name": "Leverkusen",
+      "sourceCompetition": "UCL",
+      "recordType": "club"
+    },
+    {
+      "id": "liverpool",
+      "name": "Liverpool",
+      "sourceCompetition": "UCL",
+      "recordType": "club"
+    },
+    {
+      "id": "manchester-city",
+      "name": "Manchester City",
+      "sourceCompetition": "UCL",
+      "recordType": "club"
+    },
+    {
+      "id": "marseille",
+      "name": "Marseille",
+      "sourceCompetition": "UCL",
+      "recordType": "club"
+    },
+    {
+      "id": "monaco",
+      "name": "Monaco",
+      "sourceCompetition": "UCL",
+      "recordType": "club"
+    },
+    {
+      "id": "napoli",
+      "name": "Napoli",
+      "sourceCompetition": "UCL",
+      "recordType": "club"
+    },
+    {
+      "id": "newcastle",
+      "name": "Newcastle",
+      "sourceCompetition": "UCL",
+      "recordType": "club"
+    },
+    {
+      "id": "olympiacos",
+      "name": "Olympiacos",
+      "sourceCompetition": "UCL",
+      "recordType": "club"
+    },
+    {
+      "id": "pafos",
+      "name": "Pafos",
+      "sourceCompetition": "UCL",
+      "recordType": "club"
+    },
+    {
+      "id": "paris-saint-germain",
+      "name": "Paris Saint-Germain",
+      "sourceCompetition": "UCL",
+      "recordType": "club"
+    },
+    {
+      "id": "psv",
+      "name": "PSV",
+      "sourceCompetition": "UCL",
+      "recordType": "club"
+    },
+    {
+      "id": "qarabag",
+      "name": "Qarabağ",
+      "sourceCompetition": "UCL",
+      "recordType": "club"
+    },
+    {
+      "id": "real-madrid",
+      "name": "Real Madrid",
+      "sourceCompetition": "UCL",
+      "recordType": "club"
+    },
+    {
+      "id": "slavia-praha",
+      "name": "Slavia Praha",
+      "sourceCompetition": "UCL",
+      "recordType": "club"
+    },
+    {
+      "id": "sporting-cp",
+      "name": "Sporting CP",
+      "sourceCompetition": "UCL",
+      "recordType": "club"
+    },
+    {
+      "id": "tottenham",
+      "name": "Tottenham",
+      "sourceCompetition": "UCL",
+      "recordType": "club"
+    },
+    {
+      "id": "union-saint-gilloise",
+      "name": "Union Saint-Gilloise",
+      "sourceCompetition": "UCL",
+      "recordType": "club"
+    },
+    {
+      "id": "villarreal",
+      "name": "Villarreal",
+      "sourceCompetition": "UCL",
+      "recordType": "club"
+    },
+    {
+      "id": "aston-villa",
+      "name": "Aston Villa",
+      "sourceCompetition": "UEL",
+      "recordType": "club"
+    },
+    {
+      "id": "basel",
+      "name": "Basel",
+      "sourceCompetition": "UEL",
+      "recordType": "club"
+    },
+    {
+      "id": "bologna",
+      "name": "Bologna",
+      "sourceCompetition": "UEL",
+      "recordType": "club"
+    },
+    {
+      "id": "braga",
+      "name": "Braga",
+      "sourceCompetition": "UEL",
+      "recordType": "club"
+    },
+    {
+      "id": "brann",
+      "name": "Brann",
+      "sourceCompetition": "UEL",
+      "recordType": "club"
+    },
+    {
+      "id": "celta",
+      "name": "Celta",
+      "sourceCompetition": "UEL",
+      "recordType": "club"
+    },
+    {
+      "id": "celtic",
+      "name": "Celtic",
+      "sourceCompetition": "UEL",
+      "recordType": "club"
+    },
+    {
+      "id": "crvena-zvezda",
+      "name": "Crvena Zvezda",
+      "sourceCompetition": "UEL",
+      "recordType": "club"
+    },
+    {
+      "id": "fcsb",
+      "name": "FCSB",
+      "sourceCompetition": "UEL",
+      "recordType": "club"
+    },
+    {
+      "id": "fenerbahce",
+      "name": "Fenerbahçe",
+      "sourceCompetition": "UEL",
+      "recordType": "club"
+    },
+    {
+      "id": "ferencvaros",
+      "name": "Ferencváros",
+      "sourceCompetition": "UEL",
+      "recordType": "club"
+    },
+    {
+      "id": "feyenoord",
+      "name": "Feyenoord",
+      "sourceCompetition": "UEL",
+      "recordType": "club"
+    },
+    {
+      "id": "freiburg",
+      "name": "Freiburg",
+      "sourceCompetition": "UEL",
+      "recordType": "club"
+    },
+    {
+      "id": "genk",
+      "name": "Genk",
+      "sourceCompetition": "UEL",
+      "recordType": "club"
+    },
+    {
+      "id": "gnk-dinamo",
+      "name": "GNK Dinamo",
+      "sourceCompetition": "UEL",
+      "recordType": "club"
+    },
+    {
+      "id": "go-ahead-eagles",
+      "name": "Go Ahead Eagles",
+      "sourceCompetition": "UEL",
+      "recordType": "club"
+    },
+    {
+      "id": "lille",
+      "name": "Lille",
+      "sourceCompetition": "UEL",
+      "recordType": "club"
+    },
+    {
+      "id": "ludogorets",
+      "name": "Ludogorets",
+      "sourceCompetition": "UEL",
+      "recordType": "club"
+    },
+    {
+      "id": "lyon",
+      "name": "Lyon",
+      "sourceCompetition": "UEL",
+      "recordType": "club"
+    },
+    {
+      "id": "maccabi-tel-aviv",
+      "name": "Maccabi Tel-Aviv",
+      "sourceCompetition": "UEL",
+      "recordType": "club"
+    },
+    {
+      "id": "malmo",
+      "name": "Malmö",
+      "sourceCompetition": "UEL",
+      "recordType": "club"
+    },
+    {
+      "id": "midtjylland",
+      "name": "Midtjylland",
+      "sourceCompetition": "UEL",
+      "recordType": "club"
+    },
+    {
+      "id": "nice",
+      "name": "Nice",
+      "sourceCompetition": "UEL",
+      "recordType": "club"
+    },
+    {
+      "id": "nottingham-forest",
+      "name": "Nottingham Forest",
+      "sourceCompetition": "UEL",
+      "recordType": "club"
+    },
+    {
+      "id": "panathinaikos",
+      "name": "Panathinaikos",
+      "sourceCompetition": "UEL",
+      "recordType": "club"
+    },
+    {
+      "id": "paok",
+      "name": "PAOK",
+      "sourceCompetition": "UEL",
+      "recordType": "club"
+    },
+    {
+      "id": "porto",
+      "name": "Porto",
+      "sourceCompetition": "UEL",
+      "recordType": "club"
+    },
+    {
+      "id": "rangers",
+      "name": "Rangers",
+      "sourceCompetition": "UEL",
+      "recordType": "club"
+    },
+    {
+      "id": "real-betis",
+      "name": "Real Betis",
+      "sourceCompetition": "UEL",
+      "recordType": "club"
+    },
+    {
+      "id": "roma",
+      "name": "Roma",
+      "sourceCompetition": "UEL",
+      "recordType": "club"
+    },
+    {
+      "id": "salzburg",
+      "name": "Salzburg",
+      "sourceCompetition": "UEL",
+      "recordType": "club"
+    },
+    {
+      "id": "sturm-graz",
+      "name": "Sturm Graz",
+      "sourceCompetition": "UEL",
+      "recordType": "club"
+    },
+    {
+      "id": "stuttgart",
+      "name": "Stuttgart",
+      "sourceCompetition": "UEL",
+      "recordType": "club"
+    },
+    {
+      "id": "utrecht",
+      "name": "Utrecht",
+      "sourceCompetition": "UEL",
+      "recordType": "club"
+    },
+    {
+      "id": "viktoria-plzen",
+      "name": "Viktoria Plzeň",
+      "sourceCompetition": "UEL",
+      "recordType": "club"
+    },
+    {
+      "id": "young-boys",
+      "name": "Young Boys",
+      "sourceCompetition": "UEL",
+      "recordType": "club"
+    },
+    {
+      "id": "aberdeen",
+      "name": "Aberdeen",
+      "sourceCompetition": "UECL",
+      "recordType": "club"
+    },
+    {
+      "id": "aek-athens",
+      "name": "AEK Athens",
+      "sourceCompetition": "UECL",
+      "recordType": "club"
+    },
+    {
+      "id": "aek-larnaca",
+      "name": "AEK Larnaca",
+      "sourceCompetition": "UECL",
+      "recordType": "club"
+    },
+    {
+      "id": "az-alkmaar",
+      "name": "AZ Alkmaar",
+      "sourceCompetition": "UECL",
+      "recordType": "club"
+    },
+    {
+      "id": "brei-ablik",
+      "name": "Breiðablik",
+      "sourceCompetition": "UECL",
+      "recordType": "club"
+    },
+    {
+      "id": "celje",
+      "name": "Celje",
+      "sourceCompetition": "UECL",
+      "recordType": "club"
+    },
+    {
+      "id": "crystal-palace",
+      "name": "Crystal Palace",
+      "sourceCompetition": "UECL",
+      "recordType": "club"
+    },
+    {
+      "id": "drita",
+      "name": "Drita",
+      "sourceCompetition": "UECL",
+      "recordType": "club"
+    },
+    {
+      "id": "dynamo-kyiv",
+      "name": "Dynamo Kyiv",
+      "sourceCompetition": "UECL",
+      "recordType": "club"
+    },
+    {
+      "id": "fiorentina",
+      "name": "Fiorentina",
+      "sourceCompetition": "UECL",
+      "recordType": "club"
+    },
+    {
+      "id": "hacken",
+      "name": "Häcken",
+      "sourceCompetition": "UECL",
+      "recordType": "club"
+    },
+    {
+      "id": "hamrun-spartans",
+      "name": "Hamrun Spartans",
+      "sourceCompetition": "UECL",
+      "recordType": "club"
+    },
+    {
+      "id": "jagiellonia",
+      "name": "Jagiellonia",
+      "sourceCompetition": "UECL",
+      "recordType": "club"
+    },
+    {
+      "id": "kups-kuopio",
+      "name": "KuPS Kuopio",
+      "sourceCompetition": "UECL",
+      "recordType": "club"
+    },
+    {
+      "id": "l-red-imps",
+      "name": "L. Red Imps",
+      "sourceCompetition": "UECL",
+      "recordType": "club"
+    },
+    {
+      "id": "lausanne-sport",
+      "name": "Lausanne-Sport",
+      "sourceCompetition": "UECL",
+      "recordType": "club"
+    },
+    {
+      "id": "lech-poznan",
+      "name": "Lech Poznań",
+      "sourceCompetition": "UECL",
+      "recordType": "club"
+    },
+    {
+      "id": "legia-warszawa",
+      "name": "Legia Warszawa",
+      "sourceCompetition": "UECL",
+      "recordType": "club"
+    },
+    {
+      "id": "mainz",
+      "name": "Mainz",
+      "sourceCompetition": "UECL",
+      "recordType": "club"
+    },
+    {
+      "id": "noah",
+      "name": "Noah",
+      "sourceCompetition": "UECL",
+      "recordType": "club"
+    },
+    {
+      "id": "omonoia",
+      "name": "Omonoia",
+      "sourceCompetition": "UECL",
+      "recordType": "club"
+    },
+    {
+      "id": "rakow",
+      "name": "Raków",
+      "sourceCompetition": "UECL",
+      "recordType": "club"
+    },
+    {
+      "id": "rayo-vallecano",
+      "name": "Rayo Vallecano",
+      "sourceCompetition": "UECL",
+      "recordType": "club"
+    },
+    {
+      "id": "rijeka",
+      "name": "Rijeka",
+      "sourceCompetition": "UECL",
+      "recordType": "club"
+    },
+    {
+      "id": "s-bratislava",
+      "name": "S. Bratislava",
+      "sourceCompetition": "UECL",
+      "recordType": "club"
+    },
+    {
+      "id": "samsunspor",
+      "name": "Samsunspor",
+      "sourceCompetition": "UECL",
+      "recordType": "club"
+    },
+    {
+      "id": "shakhtar",
+      "name": "Shakhtar",
+      "sourceCompetition": "UECL",
+      "recordType": "club"
+    },
+    {
+      "id": "shamrock-rovers",
+      "name": "Shamrock Rovers",
+      "sourceCompetition": "UECL",
+      "recordType": "club"
+    },
+    {
+      "id": "shelbourne",
+      "name": "Shelbourne",
+      "sourceCompetition": "UECL",
+      "recordType": "club"
+    },
+    {
+      "id": "shkendija",
+      "name": "Shkëndija",
+      "sourceCompetition": "UECL",
+      "recordType": "club"
+    },
+    {
+      "id": "sigma-olomouc",
+      "name": "Sigma Olomouc",
+      "sourceCompetition": "UECL",
+      "recordType": "club"
+    },
+    {
+      "id": "sk-rapid",
+      "name": "SK Rapid",
+      "sourceCompetition": "UECL",
+      "recordType": "club"
+    },
+    {
+      "id": "sparta-praha",
+      "name": "Sparta Praha",
+      "sourceCompetition": "UECL",
+      "recordType": "club"
+    },
+    {
+      "id": "strasbourg",
+      "name": "Strasbourg",
+      "sourceCompetition": "UECL",
+      "recordType": "club"
+    },
+    {
+      "id": "u-craiova",
+      "name": "U. Craiova",
+      "sourceCompetition": "UECL",
+      "recordType": "club"
+    },
+    {
+      "id": "zrinjski",
+      "name": "Zrinjski",
+      "sourceCompetition": "UECL",
+      "recordType": "club"
+    }
+  ]
+}

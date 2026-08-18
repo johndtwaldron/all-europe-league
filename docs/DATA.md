@@ -55,6 +55,16 @@ Every season file must record:
 - unresolved slots;
 - manual corrections with an explanation.
 
+## Reproducible import
+
+The checked-in manifests can be regenerated with:
+
+```bash
+npm run data:import
+```
+
+The importer reads the official UEFA league-phase draw pages and refuses to write a historical season unless it finds exactly 36 clubs in UCL, 36 in UEL and 36 in UECL. The generated files live in `public/data/seasons/` so the static GitHub Pages application can load them without a backend.
+
 ## Initial official references
 
 - [UEFA explanation of the 36/36/36 format](https://www.uefa.com/uefaeuropaleague/news/0268-12157d69ce2d-9f011c70f6fa-1000--new-europa-league-format-explained/)
@@ -62,4 +72,3 @@ Every season file must record:
 - [UEFA 2026/27 Champions League overview](https://www.uefa.com/uefachampionsleague/news/02a6-20d57cfcd03e-407c22a7f465-1000--2026-27-champions-league-teams-dates-draws-format-final/)
 - [UEFA 2026/27 Europa League overview](https://www.uefa.com/uefaeuropaleague/news/02a6-20d57d095740-e1e0b3de85df-1000--2026-27-europa-league-teams-dates-draws-format-final/)
 - [UEFA 2026/27 Conference League qualifying overview](https://www.uefa.com/uefaconferenceleague/news/02a6-20e5e911587f-cc10425958b3-1000--conference-league-qualifying-fixtures-dates-how-it-works/)
-

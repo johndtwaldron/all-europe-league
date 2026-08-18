@@ -2,6 +2,45 @@
 
 This journal records product decisions, experiments, evidence, reversals and open questions. Newest entries appear first.
 
+## 2026-08-18 — Official UEFA season importer
+
+### Goal
+
+Replace placeholder season metadata with reproducible, machine-readable league-phase fields.
+
+### Decisions
+
+- Extract club names from official UEFA league-phase draw pages.
+- Store source competition and provenance on every season manifest.
+- Fail the import unless every competition produces exactly 36 entries.
+- Represent unresolved 2026/27 places as typed slots rather than guessed clubs.
+
+### Work completed
+
+- Added a reproducible UEFA page importer.
+- Generated complete 108-entry manifests for 2024/25 and 2025/26.
+- Generated a 108-slot provisional manifest for 2026/27.
+- Added runtime manifest validation and an interface data-proof strip.
+- Exposed resolved-club and UCL/UEL/UECL counts in the format explorer.
+
+### Evidence
+
+- 2024/25: 108 entries and 108 unique clubs.
+- 2025/26: 108 entries and 108 unique clubs.
+- 2026/27: 108 typed provisional slots.
+- Production build and six unit tests pass.
+- Browser verification loads all 108 resolved 2025/26 clubs without errors.
+
+### Open questions
+
+- Populate associations and qualification routes on each club entry.
+- Resolve 2026/27 slots incrementally as qualifying concludes.
+- Select and freeze a pre-season strength-rating source.
+
+### Next
+
+- Add association metadata, club ratings and initial AEL tier allocation.
+
 ## 2026-08-18 — Historical fields and cinematic competition focus
 
 ### Goal
