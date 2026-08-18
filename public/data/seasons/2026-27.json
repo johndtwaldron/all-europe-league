@@ -1,0 +1,783 @@
+{
+  "schemaVersion": 1,
+  "season": "2026/27",
+  "status": "live-provisional",
+  "fieldDefinition": "Provisional UEFA league-phase slots pending completion of qualifying",
+  "entryCount": 108,
+  "uniqueClubCount": 0,
+  "provenance": [
+    {
+      "competition": "UCL",
+      "url": "https://www.uefa.com/uefachampionsleague/news/02a6-20d57cfcd03e-407c22a7f465-1000--2026-27-champions-league-teams-dates-draws-format-final/",
+      "retrievedAt": "2026-08-18T09:30:04.668Z"
+    },
+    {
+      "competition": "UEL",
+      "url": "https://www.uefa.com/uefaeuropaleague/news/02a6-20d57d095740-e1e0b3de85df-1000--2026-27-europa-league-teams-dates-draws-format-final/",
+      "retrievedAt": "2026-08-18T09:30:04.668Z"
+    },
+    {
+      "competition": "UECL",
+      "url": "https://www.uefa.com/uefaconferenceleague/news/02a6-20e5e911587f-cc10425958b3-1000--conference-league-qualifying-fixtures-dates-how-it-works/",
+      "retrievedAt": "2026-08-18T09:30:04.668Z"
+    }
+  ],
+  "entries": [
+    {
+      "id": "ucl-slot-01",
+      "name": "UCL qualifying slot 1",
+      "sourceCompetition": "UCL",
+      "recordType": "slot",
+      "resolutionStatus": "unresolved"
+    },
+    {
+      "id": "ucl-slot-02",
+      "name": "UCL qualifying slot 2",
+      "sourceCompetition": "UCL",
+      "recordType": "slot",
+      "resolutionStatus": "unresolved"
+    },
+    {
+      "id": "ucl-slot-03",
+      "name": "UCL qualifying slot 3",
+      "sourceCompetition": "UCL",
+      "recordType": "slot",
+      "resolutionStatus": "unresolved"
+    },
+    {
+      "id": "ucl-slot-04",
+      "name": "UCL qualifying slot 4",
+      "sourceCompetition": "UCL",
+      "recordType": "slot",
+      "resolutionStatus": "unresolved"
+    },
+    {
+      "id": "ucl-slot-05",
+      "name": "UCL qualifying slot 5",
+      "sourceCompetition": "UCL",
+      "recordType": "slot",
+      "resolutionStatus": "unresolved"
+    },
+    {
+      "id": "ucl-slot-06",
+      "name": "UCL qualifying slot 6",
+      "sourceCompetition": "UCL",
+      "recordType": "slot",
+      "resolutionStatus": "unresolved"
+    },
+    {
+      "id": "ucl-slot-07",
+      "name": "UCL qualifying slot 7",
+      "sourceCompetition": "UCL",
+      "recordType": "slot",
+      "resolutionStatus": "unresolved"
+    },
+    {
+      "id": "ucl-slot-08",
+      "name": "UCL qualifying slot 8",
+      "sourceCompetition": "UCL",
+      "recordType": "slot",
+      "resolutionStatus": "unresolved"
+    },
+    {
+      "id": "ucl-slot-09",
+      "name": "UCL qualifying slot 9",
+      "sourceCompetition": "UCL",
+      "recordType": "slot",
+      "resolutionStatus": "unresolved"
+    },
+    {
+      "id": "ucl-slot-10",
+      "name": "UCL qualifying slot 10",
+      "sourceCompetition": "UCL",
+      "recordType": "slot",
+      "resolutionStatus": "unresolved"
+    },
+    {
+      "id": "ucl-slot-11",
+      "name": "UCL qualifying slot 11",
+      "sourceCompetition": "UCL",
+      "recordType": "slot",
+      "resolutionStatus": "unresolved"
+    },
+    {
+      "id": "ucl-slot-12",
+      "name": "UCL qualifying slot 12",
+      "sourceCompetition": "UCL",
+      "recordType": "slot",
+      "resolutionStatus": "unresolved"
+    },
+    {
+      "id": "ucl-slot-13",
+      "name": "UCL qualifying slot 13",
+      "sourceCompetition": "UCL",
+      "recordType": "slot",
+      "resolutionStatus": "unresolved"
+    },
+    {
+      "id": "ucl-slot-14",
+      "name": "UCL qualifying slot 14",
+      "sourceCompetition": "UCL",
+      "recordType": "slot",
+      "resolutionStatus": "unresolved"
+    },
+    {
+      "id": "ucl-slot-15",
+      "name": "UCL qualifying slot 15",
+      "sourceCompetition": "UCL",
+      "recordType": "slot",
+      "resolutionStatus": "unresolved"
+    },
+    {
+      "id": "ucl-slot-16",
+      "name": "UCL qualifying slot 16",
+      "sourceCompetition": "UCL",
+      "recordType": "slot",
+      "resolutionStatus": "unresolved"
+    },
+    {
+      "id": "ucl-slot-17",
+      "name": "UCL qualifying slot 17",
+      "sourceCompetition": "UCL",
+      "recordType": "slot",
+      "resolutionStatus": "unresolved"
+    },
+    {
+      "id": "ucl-slot-18",
+      "name": "UCL qualifying slot 18",
+      "sourceCompetition": "UCL",
+      "recordType": "slot",
+      "resolutionStatus": "unresolved"
+    },
+    {
+      "id": "ucl-slot-19",
+      "name": "UCL qualifying slot 19",
+      "sourceCompetition": "UCL",
+      "recordType": "slot",
+      "resolutionStatus": "unresolved"
+    },
+    {
+      "id": "ucl-slot-20",
+      "name": "UCL qualifying slot 20",
+      "sourceCompetition": "UCL",
+      "recordType": "slot",
+      "resolutionStatus": "unresolved"
+    },
+    {
+      "id": "ucl-slot-21",
+      "name": "UCL qualifying slot 21",
+      "sourceCompetition": "UCL",
+      "recordType": "slot",
+      "resolutionStatus": "unresolved"
+    },
+    {
+      "id": "ucl-slot-22",
+      "name": "UCL qualifying slot 22",
+      "sourceCompetition": "UCL",
+      "recordType": "slot",
+      "resolutionStatus": "unresolved"
+    },
+    {
+      "id": "ucl-slot-23",
+      "name": "UCL qualifying slot 23",
+      "sourceCompetition": "UCL",
+      "recordType": "slot",
+      "resolutionStatus": "unresolved"
+    },
+    {
+      "id": "ucl-slot-24",
+      "name": "UCL qualifying slot 24",
+      "sourceCompetition": "UCL",
+      "recordType": "slot",
+      "resolutionStatus": "unresolved"
+    },
+    {
+      "id": "ucl-slot-25",
+      "name": "UCL qualifying slot 25",
+      "sourceCompetition": "UCL",
+      "recordType": "slot",
+      "resolutionStatus": "unresolved"
+    },
+    {
+      "id": "ucl-slot-26",
+      "name": "UCL qualifying slot 26",
+      "sourceCompetition": "UCL",
+      "recordType": "slot",
+      "resolutionStatus": "unresolved"
+    },
+    {
+      "id": "ucl-slot-27",
+      "name": "UCL qualifying slot 27",
+      "sourceCompetition": "UCL",
+      "recordType": "slot",
+      "resolutionStatus": "unresolved"
+    },
+    {
+      "id": "ucl-slot-28",
+      "name": "UCL qualifying slot 28",
+      "sourceCompetition": "UCL",
+      "recordType": "slot",
+      "resolutionStatus": "unresolved"
+    },
+    {
+      "id": "ucl-slot-29",
+      "name": "UCL qualifying slot 29",
+      "sourceCompetition": "UCL",
+      "recordType": "slot",
+      "resolutionStatus": "unresolved"
+    },
+    {
+      "id": "ucl-slot-30",
+      "name": "UCL qualifying slot 30",
+      "sourceCompetition": "UCL",
+      "recordType": "slot",
+      "resolutionStatus": "unresolved"
+    },
+    {
+      "id": "ucl-slot-31",
+      "name": "UCL qualifying slot 31",
+      "sourceCompetition": "UCL",
+      "recordType": "slot",
+      "resolutionStatus": "unresolved"
+    },
+    {
+      "id": "ucl-slot-32",
+      "name": "UCL qualifying slot 32",
+      "sourceCompetition": "UCL",
+      "recordType": "slot",
+      "resolutionStatus": "unresolved"
+    },
+    {
+      "id": "ucl-slot-33",
+      "name": "UCL qualifying slot 33",
+      "sourceCompetition": "UCL",
+      "recordType": "slot",
+      "resolutionStatus": "unresolved"
+    },
+    {
+      "id": "ucl-slot-34",
+      "name": "UCL qualifying slot 34",
+      "sourceCompetition": "UCL",
+      "recordType": "slot",
+      "resolutionStatus": "unresolved"
+    },
+    {
+      "id": "ucl-slot-35",
+      "name": "UCL qualifying slot 35",
+      "sourceCompetition": "UCL",
+      "recordType": "slot",
+      "resolutionStatus": "unresolved"
+    },
+    {
+      "id": "ucl-slot-36",
+      "name": "UCL qualifying slot 36",
+      "sourceCompetition": "UCL",
+      "recordType": "slot",
+      "resolutionStatus": "unresolved"
+    },
+    {
+      "id": "uel-slot-01",
+      "name": "UEL qualifying slot 1",
+      "sourceCompetition": "UEL",
+      "recordType": "slot",
+      "resolutionStatus": "unresolved"
+    },
+    {
+      "id": "uel-slot-02",
+      "name": "UEL qualifying slot 2",
+      "sourceCompetition": "UEL",
+      "recordType": "slot",
+      "resolutionStatus": "unresolved"
+    },
+    {
+      "id": "uel-slot-03",
+      "name": "UEL qualifying slot 3",
+      "sourceCompetition": "UEL",
+      "recordType": "slot",
+      "resolutionStatus": "unresolved"
+    },
+    {
+      "id": "uel-slot-04",
+      "name": "UEL qualifying slot 4",
+      "sourceCompetition": "UEL",
+      "recordType": "slot",
+      "resolutionStatus": "unresolved"
+    },
+    {
+      "id": "uel-slot-05",
+      "name": "UEL qualifying slot 5",
+      "sourceCompetition": "UEL",
+      "recordType": "slot",
+      "resolutionStatus": "unresolved"
+    },
+    {
+      "id": "uel-slot-06",
+      "name": "UEL qualifying slot 6",
+      "sourceCompetition": "UEL",
+      "recordType": "slot",
+      "resolutionStatus": "unresolved"
+    },
+    {
+      "id": "uel-slot-07",
+      "name": "UEL qualifying slot 7",
+      "sourceCompetition": "UEL",
+      "recordType": "slot",
+      "resolutionStatus": "unresolved"
+    },
+    {
+      "id": "uel-slot-08",
+      "name": "UEL qualifying slot 8",
+      "sourceCompetition": "UEL",
+      "recordType": "slot",
+      "resolutionStatus": "unresolved"
+    },
+    {
+      "id": "uel-slot-09",
+      "name": "UEL qualifying slot 9",
+      "sourceCompetition": "UEL",
+      "recordType": "slot",
+      "resolutionStatus": "unresolved"
+    },
+    {
+      "id": "uel-slot-10",
+      "name": "UEL qualifying slot 10",
+      "sourceCompetition": "UEL",
+      "recordType": "slot",
+      "resolutionStatus": "unresolved"
+    },
+    {
+      "id": "uel-slot-11",
+      "name": "UEL qualifying slot 11",
+      "sourceCompetition": "UEL",
+      "recordType": "slot",
+      "resolutionStatus": "unresolved"
+    },
+    {
+      "id": "uel-slot-12",
+      "name": "UEL qualifying slot 12",
+      "sourceCompetition": "UEL",
+      "recordType": "slot",
+      "resolutionStatus": "unresolved"
+    },
+    {
+      "id": "uel-slot-13",
+      "name": "UEL qualifying slot 13",
+      "sourceCompetition": "UEL",
+      "recordType": "slot",
+      "resolutionStatus": "unresolved"
+    },
+    {
+      "id": "uel-slot-14",
+      "name": "UEL qualifying slot 14",
+      "sourceCompetition": "UEL",
+      "recordType": "slot",
+      "resolutionStatus": "unresolved"
+    },
+    {
+      "id": "uel-slot-15",
+      "name": "UEL qualifying slot 15",
+      "sourceCompetition": "UEL",
+      "recordType": "slot",
+      "resolutionStatus": "unresolved"
+    },
+    {
+      "id": "uel-slot-16",
+      "name": "UEL qualifying slot 16",
+      "sourceCompetition": "UEL",
+      "recordType": "slot",
+      "resolutionStatus": "unresolved"
+    },
+    {
+      "id": "uel-slot-17",
+      "name": "UEL qualifying slot 17",
+      "sourceCompetition": "UEL",
+      "recordType": "slot",
+      "resolutionStatus": "unresolved"
+    },
+    {
+      "id": "uel-slot-18",
+      "name": "UEL qualifying slot 18",
+      "sourceCompetition": "UEL",
+      "recordType": "slot",
+      "resolutionStatus": "unresolved"
+    },
+    {
+      "id": "uel-slot-19",
+      "name": "UEL qualifying slot 19",
+      "sourceCompetition": "UEL",
+      "recordType": "slot",
+      "resolutionStatus": "unresolved"
+    },
+    {
+      "id": "uel-slot-20",
+      "name": "UEL qualifying slot 20",
+      "sourceCompetition": "UEL",
+      "recordType": "slot",
+      "resolutionStatus": "unresolved"
+    },
+    {
+      "id": "uel-slot-21",
+      "name": "UEL qualifying slot 21",
+      "sourceCompetition": "UEL",
+      "recordType": "slot",
+      "resolutionStatus": "unresolved"
+    },
+    {
+      "id": "uel-slot-22",
+      "name": "UEL qualifying slot 22",
+      "sourceCompetition": "UEL",
+      "recordType": "slot",
+      "resolutionStatus": "unresolved"
+    },
+    {
+      "id": "uel-slot-23",
+      "name": "UEL qualifying slot 23",
+      "sourceCompetition": "UEL",
+      "recordType": "slot",
+      "resolutionStatus": "unresolved"
+    },
+    {
+      "id": "uel-slot-24",
+      "name": "UEL qualifying slot 24",
+      "sourceCompetition": "UEL",
+      "recordType": "slot",
+      "resolutionStatus": "unresolved"
+    },
+    {
+      "id": "uel-slot-25",
+      "name": "UEL qualifying slot 25",
+      "sourceCompetition": "UEL",
+      "recordType": "slot",
+      "resolutionStatus": "unresolved"
+    },
+    {
+      "id": "uel-slot-26",
+      "name": "UEL qualifying slot 26",
+      "sourceCompetition": "UEL",
+      "recordType": "slot",
+      "resolutionStatus": "unresolved"
+    },
+    {
+      "id": "uel-slot-27",
+      "name": "UEL qualifying slot 27",
+      "sourceCompetition": "UEL",
+      "recordType": "slot",
+      "resolutionStatus": "unresolved"
+    },
+    {
+      "id": "uel-slot-28",
+      "name": "UEL qualifying slot 28",
+      "sourceCompetition": "UEL",
+      "recordType": "slot",
+      "resolutionStatus": "unresolved"
+    },
+    {
+      "id": "uel-slot-29",
+      "name": "UEL qualifying slot 29",
+      "sourceCompetition": "UEL",
+      "recordType": "slot",
+      "resolutionStatus": "unresolved"
+    },
+    {
+      "id": "uel-slot-30",
+      "name": "UEL qualifying slot 30",
+      "sourceCompetition": "UEL",
+      "recordType": "slot",
+      "resolutionStatus": "unresolved"
+    },
+    {
+      "id": "uel-slot-31",
+      "name": "UEL qualifying slot 31",
+      "sourceCompetition": "UEL",
+      "recordType": "slot",
+      "resolutionStatus": "unresolved"
+    },
+    {
+      "id": "uel-slot-32",
+      "name": "UEL qualifying slot 32",
+      "sourceCompetition": "UEL",
+      "recordType": "slot",
+      "resolutionStatus": "unresolved"
+    },
+    {
+      "id": "uel-slot-33",
+      "name": "UEL qualifying slot 33",
+      "sourceCompetition": "UEL",
+      "recordType": "slot",
+      "resolutionStatus": "unresolved"
+    },
+    {
+      "id": "uel-slot-34",
+      "name": "UEL qualifying slot 34",
+      "sourceCompetition": "UEL",
+      "recordType": "slot",
+      "resolutionStatus": "unresolved"
+    },
+    {
+      "id": "uel-slot-35",
+      "name": "UEL qualifying slot 35",
+      "sourceCompetition": "UEL",
+      "recordType": "slot",
+      "resolutionStatus": "unresolved"
+    },
+    {
+      "id": "uel-slot-36",
+      "name": "UEL qualifying slot 36",
+      "sourceCompetition": "UEL",
+      "recordType": "slot",
+      "resolutionStatus": "unresolved"
+    },
+    {
+      "id": "uecl-slot-01",
+      "name": "UECL qualifying slot 1",
+      "sourceCompetition": "UECL",
+      "recordType": "slot",
+      "resolutionStatus": "unresolved"
+    },
+    {
+      "id": "uecl-slot-02",
+      "name": "UECL qualifying slot 2",
+      "sourceCompetition": "UECL",
+      "recordType": "slot",
+      "resolutionStatus": "unresolved"
+    },
+    {
+      "id": "uecl-slot-03",
+      "name": "UECL qualifying slot 3",
+      "sourceCompetition": "UECL",
+      "recordType": "slot",
+      "resolutionStatus": "unresolved"
+    },
+    {
+      "id": "uecl-slot-04",
+      "name": "UECL qualifying slot 4",
+      "sourceCompetition": "UECL",
+      "recordType": "slot",
+      "resolutionStatus": "unresolved"
+    },
+    {
+      "id": "uecl-slot-05",
+      "name": "UECL qualifying slot 5",
+      "sourceCompetition": "UECL",
+      "recordType": "slot",
+      "resolutionStatus": "unresolved"
+    },
+    {
+      "id": "uecl-slot-06",
+      "name": "UECL qualifying slot 6",
+      "sourceCompetition": "UECL",
+      "recordType": "slot",
+      "resolutionStatus": "unresolved"
+    },
+    {
+      "id": "uecl-slot-07",
+      "name": "UECL qualifying slot 7",
+      "sourceCompetition": "UECL",
+      "recordType": "slot",
+      "resolutionStatus": "unresolved"
+    },
+    {
+      "id": "uecl-slot-08",
+      "name": "UECL qualifying slot 8",
+      "sourceCompetition": "UECL",
+      "recordType": "slot",
+      "resolutionStatus": "unresolved"
+    },
+    {
+      "id": "uecl-slot-09",
+      "name": "UECL qualifying slot 9",
+      "sourceCompetition": "UECL",
+      "recordType": "slot",
+      "resolutionStatus": "unresolved"
+    },
+    {
+      "id": "uecl-slot-10",
+      "name": "UECL qualifying slot 10",
+      "sourceCompetition": "UECL",
+      "recordType": "slot",
+      "resolutionStatus": "unresolved"
+    },
+    {
+      "id": "uecl-slot-11",
+      "name": "UECL qualifying slot 11",
+      "sourceCompetition": "UECL",
+      "recordType": "slot",
+      "resolutionStatus": "unresolved"
+    },
+    {
+      "id": "uecl-slot-12",
+      "name": "UECL qualifying slot 12",
+      "sourceCompetition": "UECL",
+      "recordType": "slot",
+      "resolutionStatus": "unresolved"
+    },
+    {
+      "id": "uecl-slot-13",
+      "name": "UECL qualifying slot 13",
+      "sourceCompetition": "UECL",
+      "recordType": "slot",
+      "resolutionStatus": "unresolved"
+    },
+    {
+      "id": "uecl-slot-14",
+      "name": "UECL qualifying slot 14",
+      "sourceCompetition": "UECL",
+      "recordType": "slot",
+      "resolutionStatus": "unresolved"
+    },
+    {
+      "id": "uecl-slot-15",
+      "name": "UECL qualifying slot 15",
+      "sourceCompetition": "UECL",
+      "recordType": "slot",
+      "resolutionStatus": "unresolved"
+    },
+    {
+      "id": "uecl-slot-16",
+      "name": "UECL qualifying slot 16",
+      "sourceCompetition": "UECL",
+      "recordType": "slot",
+      "resolutionStatus": "unresolved"
+    },
+    {
+      "id": "uecl-slot-17",
+      "name": "UECL qualifying slot 17",
+      "sourceCompetition": "UECL",
+      "recordType": "slot",
+      "resolutionStatus": "unresolved"
+    },
+    {
+      "id": "uecl-slot-18",
+      "name": "UECL qualifying slot 18",
+      "sourceCompetition": "UECL",
+      "recordType": "slot",
+      "resolutionStatus": "unresolved"
+    },
+    {
+      "id": "uecl-slot-19",
+      "name": "UECL qualifying slot 19",
+      "sourceCompetition": "UECL",
+      "recordType": "slot",
+      "resolutionStatus": "unresolved"
+    },
+    {
+      "id": "uecl-slot-20",
+      "name": "UECL qualifying slot 20",
+      "sourceCompetition": "UECL",
+      "recordType": "slot",
+      "resolutionStatus": "unresolved"
+    },
+    {
+      "id": "uecl-slot-21",
+      "name": "UECL qualifying slot 21",
+      "sourceCompetition": "UECL",
+      "recordType": "slot",
+      "resolutionStatus": "unresolved"
+    },
+    {
+      "id": "uecl-slot-22",
+      "name": "UECL qualifying slot 22",
+      "sourceCompetition": "UECL",
+      "recordType": "slot",
+      "resolutionStatus": "unresolved"
+    },
+    {
+      "id": "uecl-slot-23",
+      "name": "UECL qualifying slot 23",
+      "sourceCompetition": "UECL",
+      "recordType": "slot",
+      "resolutionStatus": "unresolved"
+    },
+    {
+      "id": "uecl-slot-24",
+      "name": "UECL qualifying slot 24",
+      "sourceCompetition": "UECL",
+      "recordType": "slot",
+      "resolutionStatus": "unresolved"
+    },
+    {
+      "id": "uecl-slot-25",
+      "name": "UECL qualifying slot 25",
+      "sourceCompetition": "UECL",
+      "recordType": "slot",
+      "resolutionStatus": "unresolved"
+    },
+    {
+      "id": "uecl-slot-26",
+      "name": "UECL qualifying slot 26",
+      "sourceCompetition": "UECL",
+      "recordType": "slot",
+      "resolutionStatus": "unresolved"
+    },
+    {
+      "id": "uecl-slot-27",
+      "name": "UECL qualifying slot 27",
+      "sourceCompetition": "UECL",
+      "recordType": "slot",
+      "resolutionStatus": "unresolved"
+    },
+    {
+      "id": "uecl-slot-28",
+      "name": "UECL qualifying slot 28",
+      "sourceCompetition": "UECL",
+      "recordType": "slot",
+      "resolutionStatus": "unresolved"
+    },
+    {
+      "id": "uecl-slot-29",
+      "name": "UECL qualifying slot 29",
+      "sourceCompetition": "UECL",
+      "recordType": "slot",
+      "resolutionStatus": "unresolved"
+    },
+    {
+      "id": "uecl-slot-30",
+      "name": "UECL qualifying slot 30",
+      "sourceCompetition": "UECL",
+      "recordType": "slot",
+      "resolutionStatus": "unresolved"
+    },
+    {
+      "id": "uecl-slot-31",
+      "name": "UECL qualifying slot 31",
+      "sourceCompetition": "UECL",
+      "recordType": "slot",
+      "resolutionStatus": "unresolved"
+    },
+    {
+      "id": "uecl-slot-32",
+      "name": "UECL qualifying slot 32",
+      "sourceCompetition": "UECL",
+      "recordType": "slot",
+      "resolutionStatus": "unresolved"
+    },
+    {
+      "id": "uecl-slot-33",
+      "name": "UECL qualifying slot 33",
+      "sourceCompetition": "UECL",
+      "recordType": "slot",
+      "resolutionStatus": "unresolved"
+    },
+    {
+      "id": "uecl-slot-34",
+      "name": "UECL qualifying slot 34",
+      "sourceCompetition": "UECL",
+      "recordType": "slot",
+      "resolutionStatus": "unresolved"
+    },
+    {
+      "id": "uecl-slot-35",
+      "name": "UECL qualifying slot 35",
+      "sourceCompetition": "UECL",
+      "recordType": "slot",
+      "resolutionStatus": "unresolved"
+    },
+    {
+      "id": "uecl-slot-36",
+      "name": "UECL qualifying slot 36",
+      "sourceCompetition": "UECL",
+      "recordType": "slot",
+      "resolutionStatus": "unresolved"
+    }
+  ]
+}

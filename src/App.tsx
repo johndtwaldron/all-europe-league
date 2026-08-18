@@ -1,6 +1,7 @@
-import { useMemo, useState } from 'react'
+import { useEffect, useMemo, useState } from 'react'
 import { ArrowDown, ChevronRight, RotateCcw, Shield, Sparkles, Trophy, Zap } from 'lucide-react'
 import { seasonDatasets } from './data/seasons'
+import { loadSeasonManifest, type SeasonManifest } from './data/dataset'
 
 type Scenario = 'Hierarchy' | 'Balanced' | 'Chaos'
 type Focus = 'AEL' | 'UCL' | 'UEL' | 'UECL'
@@ -28,6 +29,18 @@ export function App() {
   const [focus, setFocus] = useState<Focus>('AEL')
   const [seed, setSeed] = useState(260826)
   const [seasonId, setSeasonId] = useState('2026-27')
+  const [manifest, setManifest] = useState<SeasonManifest | null>(null)
+  const [dataError, setDataError] = useState('')
+
+  useEffect(() => {
+    const controller = new AbortController()
+    setManifest(null)
+    setDataError('')
+    loadSeasonManifest(seasonId, controller.signal).then(setManifest).catch((error: unknown) => {
+      if (!controller.signal.aborted) setDataError(error instanceof Error ? error.message : 'Dataset unavailable')
+    })
+    return () => controller.abort()
+  }, [seasonId])
 
   const focusMeta = useMemo(() => destinations.find((item) => item.id === focus), [focus])
   const focusColour = focusMeta?.colour ?? '#e8f0ff'
@@ -96,6 +109,9 @@ export function App() {
             {seasonDatasets.map((item) => <button key={item.id} className={seasonId === item.id ? 'active' : ''} onClick={() => setSeasonId(item.id)}>{item.shortLabel}</button>)}
           </div>
           <span className={`data-status ${season.status}`}>{season.statusLabel}</span>
+        </div>
+        <div className="dataset-proof" aria-live="polite">
+          {manifest ? <><span><strong>{manifest.entryCount}</strong> verified entries</span><span><strong>{manifest.uniqueClubCount}</strong> resolved clubs</span>{(['UCL','UEL','UECL'] as const).map((competition) => <span key={competition}><strong>{manifest.entries.filter((entry) => entry.sourceCompetition === competition).length}</strong> {competition}</span>)}<div>{manifest.entries.slice(0, 7).map((entry) => <i key={entry.id}>{entry.name}</i>)}</div></> : <span>{dataError || 'Loading season manifest…'}</span>}
         </div>
 
         <div className="scenario-grid">
