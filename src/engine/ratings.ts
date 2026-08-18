@@ -10,6 +10,7 @@ export interface RatedClub {
   rating: number
   tier: AelTier
   provisional: boolean
+  crestUrl?: string
 }
 
 const bases: Record<SourceCompetition, number> = { UCL: 84, UEL: 64, UECL: 44 }
@@ -23,6 +24,7 @@ export function assignProvisionalRatings(entries: Array<ClubEntry | SlotEntry>):
     rating: bases[entry.sourceCompetition] + ((hashSeed(entry.id) % 801) / 100 - 4),
     tier: 'C' as AelTier,
     provisional: true,
+    crestUrl: entry.crestUrl,
   })).sort((left, right) => right.rating - left.rating || left.name.localeCompare(right.name))
   return ordered.map((club, index) => ({ ...club, tier: index < 36 ? 'A' : index < 72 ? 'B' : 'C' }))
 }
