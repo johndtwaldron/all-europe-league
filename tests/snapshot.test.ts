@@ -26,4 +26,9 @@ describe('2026/27 named field snapshot', () => {
       expect(entry.qualificationLabel).toBeTruthy()
     })
   })
+
+  it('uses concise parenthetical route labels across all three tiers', () => {
+    const labels = new Set(snapshot.entries.filter((entry) => entry.recordType === 'slot').map((entry) => entry.qualificationLabel))
+    expect(labels).toEqual(new Set(['UCL play-off', 'UEL play-off', 'UECL play-off', 'UCL loser → UEL', 'UEL loser → UECL']))
+  })
 })
