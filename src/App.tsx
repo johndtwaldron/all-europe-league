@@ -27,6 +27,11 @@ const dots = Array.from({ length: 108 }, (_, index) => ({
   ring: 118 + (index % 6) * 11,
 }))
 
+function ClubBadge({ club }: { club: { name: string; tier: string; crestUrl?: string; crestUrls?: string[] } }) {
+  const crests = club.crestUrls?.length ? club.crestUrls : club.crestUrl ? [club.crestUrl] : []
+  return <span className={`club-badge-stack ${crests.length > 1 ? 'contested' : ''}`}>{crests.length ? crests.slice(0, 2).map((crest, index) => <b className={`club-crest tier-${club.tier.toLowerCase()}`} key={crest}><img src={`${import.meta.env.BASE_URL}${crest}`} alt={index === 0 ? `${club.name} crest` : ''}/></b>) : <b className={`club-crest tier-${club.tier.toLowerCase()}`}>{clubInitials(club.name)}</b>}</span>
+}
+
 export function App() {
   const [resultMode, setResultMode] = useState<ResultMode>('simulated')
   const [presetId, setPresetId] = useState<SimulationPresetId>('hierarchy')
@@ -138,7 +143,7 @@ export function App() {
           <span className={`data-status ${season.status}`}>{season.statusLabel}</span>
         </div>
         <div className="dataset-proof" aria-live="polite">
-          {manifest ? <><span><strong>{manifest.entryCount}</strong> verified entries</span><span><strong>{manifest.uniqueClubCount}</strong> resolved clubs</span>{(['UCL','UEL','UECL'] as const).map((competition) => <span key={competition}><strong>{manifest.entries.filter((entry) => entry.sourceCompetition === competition).length}</strong> {competition}</span>)}<div>{manifest.entries.slice(0, 7).map((entry) => <i key={entry.id}>{entry.name}</i>)}</div></> : <span>{dataError || 'Loading season manifest…'}</span>}
+          {manifest ? <><span><strong>{manifest.entryCount}</strong> field positions</span><span><strong>{manifest.uniqueClubCount}</strong> named clubs{manifest.snapshotAt ? ` · ${manifest.snapshotAt}` : ''}</span>{(['UCL','UEL','UECL'] as const).map((competition) => <span key={competition}><strong>{manifest.entries.filter((entry) => entry.sourceCompetition === competition).length}</strong> {competition}</span>)}<div>{manifest.entries.slice(0, 7).map((entry) => <i key={entry.id}>{entry.name}</i>)}</div></> : <span>{dataError || 'Loading season manifest…'}</span>}
         </div>
 
         <div className="mode-switch"><button className={resultMode === 'real' ? 'active' : ''} onClick={() => setResultMode('real')}><Database/>Real results</button><button className={resultMode === 'simulated' ? 'active' : ''} onClick={() => setResultMode('simulated')}><Zap/>Simulated results</button><span>{resultMode === 'real' ? 'Replay recorded historical outcomes' : 'Generate a reproducible alternative season'}</span></div>
@@ -167,12 +172,12 @@ export function App() {
             <div className={`season-stage ${seasonView}`}>
               {seasonView === 'table' ? <div className="ael-table">
                 <header><span>#</span><span>CLUB</span><span>TIER</span><span>P</span><span>GD</span><span>PTS</span></header>
-                {viewedSeason?.standings.map((row, index) => <div className={`table-row destination-${index < 36 ? 'ucl' : index < 72 ? 'uel' : 'uecl'}`} key={row.club.id}><i>{index + 1}</i><span className="club-name"><b className={`club-crest tier-${row.club.tier.toLowerCase()}`}>{row.club.crestUrl ? <img src={row.club.crestUrl} alt=""/> : clubInitials(row.club.name)}</b><strong>{row.club.name}</strong></span><small className={`tier-pill tier-${row.club.tier.toLowerCase()}`}>{row.club.tier}</small><span>{row.played}</span><span>{row.goalsFor - row.goalsAgainst > 0 ? '+' : ''}{row.goalsFor - row.goalsAgainst}</span><b>{row.points}</b></div>)}
+                {viewedSeason?.standings.map((row, index) => <div className={`table-row destination-${index < 36 ? 'ucl' : index < 72 ? 'uel' : 'uecl'} ${row.club.confirmed === false ? 'provisional-club' : ''}`} key={row.club.id} title={row.club.qualificationLabel}><i>{index + 1}</i><span className="club-name"><ClubBadge club={row.club}/><span><strong>{row.club.name}</strong>{row.club.qualificationLabel && <em>({row.club.qualificationLabel})</em>}</span></span><small className={`tier-pill tier-${row.club.tier.toLowerCase()}`}>{row.club.tier}</small><span>{row.played}</span><span>{row.goalsFor - row.goalsAgainst > 0 ? '+' : ''}{row.goalsFor - row.goalsAgainst}</span><b>{row.points}</b></div>)}
               </div> : <div className="fixture-board">
-                {schedule.matchweeks[viewMatchweek - 1].map((fixture) => <article className={matchupClass(fixture.home, fixture.away)} key={fixture.id}><span className="club"><b className={`club-crest tier-${fixture.home.tier.toLowerCase()}`}>{clubInitials(fixture.home.name)}</b><strong>{fixture.home.name}</strong><small>{fixture.home.tier}</small></span><i>v</i><span className="club away"><b className={`club-crest tier-${fixture.away.tier.toLowerCase()}`}>{clubInitials(fixture.away.name)}</b><strong>{fixture.away.name}</strong><small>{fixture.away.tier}</small></span></article>)}
+                {schedule.matchweeks[viewMatchweek - 1].map((fixture) => <article className={matchupClass(fixture.home, fixture.away)} key={fixture.id}><span className="club"><ClubBadge club={fixture.home}/><strong>{fixture.home.name}</strong><small>{fixture.home.tier}</small></span><i>v</i><span className="club away"><ClubBadge club={fixture.away}/><strong>{fixture.away.name}</strong><small>{fixture.away.tier}</small></span></article>)}
               </div>}
             </div>
-            <p className="crest-note">Crests currently use consistent club shields. Licensed or properly sourced artwork can drop into the reserved crest field without changing this layout.</p>
+            <p className="crest-note">Official UEFA club imagery cached for this dated snapshot. Overlapping crests mark an unresolved qualifying path; hover a table row to inspect its route.</p>
             {completedMatchweeks === 8 && <div className="handoff"><span>AEL COMPLETE</span><strong>The table is ready to populate the three stock knockout graphics.</strong><div>{['UCL · 1–36','UEL · 37–72','UECL · 73–108'].map((label) => <i key={label}>{label}</i>)}</div></div>}
           </>}
         </div>
