@@ -1,4 +1,3 @@
-export type SimulationPresetId = 'hierarchy' | 'equal' | 'underdog'
 export type MatchOutcome = 'favoured-win' | 'draw' | 'underdog-win'
 
 export interface OutcomeProbabilities {
@@ -7,18 +6,20 @@ export interface OutcomeProbabilities {
   underdogWin: number
 }
 
-export interface SimulationPreset {
-  id: SimulationPresetId
-  name: string
-  description: string
-  probabilities: OutcomeProbabilities
+export function balanceToProbabilities(balance: number): OutcomeProbabilities {
+  const amount = Math.min(100, Math.max(0, balance)) / 100
+  const favouredWin = 100 / 3 + amount * (75 - 100 / 3)
+  const draw = 100 / 3 + amount * (15 - 100 / 3)
+  return { favouredWin, draw, underdogWin: 100 - favouredWin - draw }
 }
 
-export const simulationPresets: SimulationPreset[] = [
-  { id: 'hierarchy', name: 'Hierarchy 75', description: 'The stronger team wins three matches in four.', probabilities: { favouredWin: 75, draw: 15, underdogWin: 10 } },
-  { id: 'equal', name: 'Level field', description: 'Every team has an equal win, draw or loss chance.', probabilities: { favouredWin: 33.34, draw: 33.33, underdogWin: 33.33 } },
-  { id: 'underdog', name: 'Underdog 75', description: 'The smaller team wins three matches in four.', probabilities: { favouredWin: 10, draw: 15, underdogWin: 75 } },
-]
+export function balanceLabel(balance: number) {
+  if (balance <= 20) return 'Level field'
+  if (balance <= 40) return 'Open'
+  if (balance <= 60) return 'Balanced'
+  if (balance <= 80) return 'Hierarchical'
+  return 'Strong hierarchy'
+}
 
 export function isValidProbabilityModel(model: OutcomeProbabilities) {
   const values = [model.favouredWin, model.draw, model.underdogWin]

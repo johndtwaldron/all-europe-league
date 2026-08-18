@@ -213,3 +213,10 @@ Turn the format discussion into a public, explorable GitHub project.
 - Standardised every unresolved field position as `Team A / Team B (route)` in both the AEL table and matchweek fixtures.
 - Shortened route labels to UCL/UEL/UECL play-off and explicit loser-transfer arrows.
 - Kept paired crests as the visual marker until each tie resolves to one club.
+# 2026-08-18 — Balance slider, table strata and January branches
+
+- Replaced three scenario presets and three probability controls with one competitive-balance slider.
+- Defined a continuous 33/33/33 level field through to a 75/15/10 hierarchy while retaining randomness at every setting.
+- Added twelve colour-intensity strata across the UCL, UEL and UECL table blocks, with dashed destination boundaries and increasingly muted January routes.
+- Added reusable post-Matchweek-8 UCL, UEL and UECL branch views covering Wild Card, Qualification, Final Play-off and Round of 16 entry.
+- Added tests for slider interpolation, rank strata and the shared 4–8–8–8 January branch structure.

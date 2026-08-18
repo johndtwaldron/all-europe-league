@@ -1,14 +1,17 @@
 import { useEffect, useMemo, useState } from 'react'
-import { ArrowDown, CalendarDays, ChevronLeft, ChevronRight, Database, List, RotateCcw, Shield, Sparkles, Table2, Trophy, Zap } from 'lucide-react'
+import { ArrowDown, CalendarDays, ChevronLeft, ChevronRight, Database, GitBranch, List, RotateCcw, Table2, Trophy, Zap } from 'lucide-react'
 import { seasonDatasets } from './data/seasons'
 import { loadSeasonManifest, type SeasonManifest } from './data/dataset'
-import { isValidProbabilityModel, simulationPresets, type OutcomeProbabilities, type SimulationPresetId } from './engine/probability'
+import { balanceLabel, balanceToProbabilities, isValidProbabilityModel } from './engine/probability'
 import { aelMatchweeks2026 } from './engine/calendar'
 import { assignProvisionalRatings } from './engine/ratings'
 import { generateSchedule, type GeneratedSchedule } from './engine/fixtures'
 import { simulateThrough } from './engine/season'
 import { clubInitials, matchupClass } from './engine/presentation'
+import { buildKnockoutPath, januaryRouteForRank, type KnockoutCompetition, type KnockoutPath, type SeededTie } from './engine/knockout'
 import './crest.css'
+import './strata.css'
+import './knockout.css'
 
 type ResultMode = 'real' | 'simulated'
 type Focus = 'AEL' | 'UCL' | 'UEL' | 'UECL'
@@ -18,8 +21,6 @@ const destinations = [
   { id: 'UEL' as const, range: '37–72', name: 'Europa League', colour: '#ff9f43', route: 'Continental challenge' },
   { id: 'UECL' as const, range: '73–108', name: 'Conference League', colour: '#36d39a', route: 'Open European path' },
 ]
-
-const presetIcons = { hierarchy: Shield, equal: Sparkles, underdog: Zap }
 
 const dots = Array.from({ length: 108 }, (_, index) => ({
   rank: index + 1,
@@ -36,10 +37,27 @@ function ClubDisplayName({ club }: { club: { name: string; qualificationLabel?: 
   return <strong>{club.name}{club.confirmed === false && club.qualificationLabel && <> <em>({club.qualificationLabel})</em></>}</strong>
 }
 
+const routeLabels = { direct: 'DIRECT TO ROUND OF 16', 'final-playoff': 'FINAL PLAY-OFF · ONE WIN', qualification: 'QUALIFICATION · TWO WINS', 'wild-card': 'WILD CARD · THREE WINS' }
+
+function TieCard({ tie }: { tie: SeededTie }) {
+  return <article className="bracket-tie"><span><i>{tie.homeSeed}</i>{tie.home && <ClubBadge club={tie.home.club}/>}<strong>{tie.home?.club.name}</strong><b>HOME</b></span><span><i>{tie.awaySeed ?? 'W'}</i>{tie.away ? <ClubBadge club={tie.away.club}/> : <em>ADVANCES</em>}<strong>{tie.away?.club.name ?? tie.awayLabel}</strong></span></article>
+}
+
+function KnockoutBracket({ path, onClose }: { path: KnockoutPath; onClose: () => void }) {
+  const meta = destinations.find((item) => item.id === path.competition)!
+  const stages: Array<{ name: string; note: string; ties: SeededTie[] }> = [
+    { name: 'Wild Card', note: 'Seeds 29–36', ties: path.wildCard }, { name: 'Qualification', note: 'Seeds 17–28 join', ties: path.qualification },
+    { name: 'Final Play-off', note: 'Seeds 9–16 join', ties: path.finalPlayoff }, { name: 'Round of 16', note: 'Seeds 1–8 join', ties: path.roundOf16 },
+  ]
+  return <section className="knockout-bracket" style={{ '--accent': meta.colour } as React.CSSProperties}>
+    <header><div><span>{meta.id} · JANUARY PATH</span><h3>{meta.name} branch</h3><p>Higher AEL seed hosts every January tie. Winners move one column to the right.</p></div><button onClick={onClose}>RETURN TO TABLE</button></header>
+    <div className="bracket-scroll">{stages.map((stage) => <section className="bracket-stage" key={stage.name}><header><span>{stage.name}</span><small>{stage.note}</small></header><div>{stage.ties.map((tie, index) => <TieCard tie={tie} key={`${stage.name}-${index}`}/>)}</div></section>)}</div>
+  </section>
+}
+
 export function App() {
   const [resultMode, setResultMode] = useState<ResultMode>('simulated')
-  const [presetId, setPresetId] = useState<SimulationPresetId>('hierarchy')
-  const [probabilities, setProbabilities] = useState<OutcomeProbabilities>(simulationPresets[0].probabilities)
+  const [balance, setBalance] = useState(70)
   const [focus, setFocus] = useState<Focus>('AEL')
   const [seed, setSeed] = useState(260826)
   const [seasonId, setSeasonId] = useState('2026-27')
@@ -49,6 +67,7 @@ export function App() {
   const [completedMatchweeks, setCompletedMatchweeks] = useState(0)
   const [viewMatchweek, setViewMatchweek] = useState(1)
   const [seasonView, setSeasonView] = useState<'table' | 'fixtures'>('table')
+  const [knockoutView, setKnockoutView] = useState<KnockoutCompetition | null>(null)
 
   useEffect(() => {
     const controller = new AbortController()
@@ -63,14 +82,12 @@ export function App() {
   const focusMeta = useMemo(() => destinations.find((item) => item.id === focus), [focus])
   const focusColour = focusMeta?.colour ?? '#e8f0ff'
   const season = seasonDatasets.find((item) => item.id === seasonId) ?? seasonDatasets[0]
+  const probabilities = useMemo(() => balanceToProbabilities(balance), [balance])
   const probabilityValid = isValidProbabilityModel(probabilities)
   const ratedClubs = useMemo(() => manifest ? assignProvisionalRatings(manifest.entries) : [], [manifest])
   const viewedSeason = useMemo(() => schedule ? simulateThrough(schedule, ratedClubs, probabilities, viewMatchweek) : null, [schedule, ratedClubs, probabilities, viewMatchweek])
-  const choosePreset = (id: SimulationPresetId) => {
-    const selected = simulationPresets.find((preset) => preset.id === id)!
-    setPresetId(id)
-    setProbabilities(selected.probabilities)
-  }
+  const finalStandings = useMemo(() => schedule ? simulateThrough(schedule, ratedClubs, probabilities, 8).standings : [], [schedule, ratedClubs, probabilities])
+  const knockoutPath = useMemo(() => knockoutView && finalStandings.length === 108 ? buildKnockoutPath(finalStandings, knockoutView) : null, [finalStandings, knockoutView])
   const buildSchedule = () => {
     if (ratedClubs.length !== 108 || !probabilityValid) return
     const generated = generateSchedule(ratedClubs, seed)
@@ -80,7 +97,7 @@ export function App() {
     if (!schedule) return
     setCompletedMatchweeks(matchweek); setViewMatchweek(matchweek)
   }
-  useEffect(() => { setSchedule(null); setCompletedMatchweeks(0); setViewMatchweek(1) }, [seasonId, seed, presetId])
+  useEffect(() => { setSchedule(null); setCompletedMatchweeks(0); setViewMatchweek(1); setKnockoutView(null) }, [seasonId, seed, balance])
 
   return (
     <main className={focus === 'AEL' ? '' : 'focus-mode'}>
@@ -152,13 +169,10 @@ export function App() {
 
         <div className="mode-switch"><button className={resultMode === 'real' ? 'active' : ''} onClick={() => setResultMode('real')}><Database/>Real results</button><button className={resultMode === 'simulated' ? 'active' : ''} onClick={() => setResultMode('simulated')}><Zap/>Simulated results</button><span>{resultMode === 'real' ? 'Replay recorded historical outcomes' : 'Generate a reproducible alternative season'}</span></div>
 
-        <div className={resultMode === 'simulated' ? 'scenario-grid' : 'scenario-grid disabled'}>
-          {simulationPresets.map(({ id, name, description }) => { const Icon = presetIcons[id]; return <button key={id} className={presetId === id ? 'scenario selected' : 'scenario'} onClick={() => choosePreset(id)} disabled={resultMode === 'real'}><Icon/><span><strong>{name}</strong><small>{description}</small></span>{presetId === id && resultMode === 'simulated' && <i>ACTIVE</i>}</button> })}
-        </div>
-
-        <div className={resultMode === 'simulated' ? 'probability-editor' : 'probability-editor disabled'}>
-          <header><div><span>EDIT PROBABILITY MODEL</span><strong>{probabilityValid ? 'Total · 100%' : `Invalid total · ${(probabilities.favouredWin + probabilities.draw + probabilities.underdogWin).toFixed(1)}%`}</strong></div><small>Applied when teams have different strength ratings. Equal-strength matches use the level-field model.</small></header>
-          {([['favouredWin','Stronger wins'],['draw','Draw'],['underdogWin','Smaller wins']] as const).map(([key,label]) => <label key={key}><span>{label}<strong>{probabilities[key].toFixed(1)}%</strong></span><input type="range" min="0" max="100" step="0.5" value={probabilities[key]} disabled={resultMode === 'real'} onChange={(event) => setProbabilities((current) => ({ ...current, [key]: Number(event.target.value) }))}/></label>)}
+        <div className={resultMode === 'simulated' ? 'balance-control' : 'balance-control disabled'}>
+          <header><div><span>COMPETITIVE BALANCE</span><strong>{balanceLabel(balance)}</strong></div><small>Ratings decide which club is favoured; the slider decides how much that advantage matters.</small></header>
+          <div className="balance-scale"><span>MORE RANDOM</span><input aria-label="Competitive balance" type="range" min="0" max="100" step="1" value={balance} disabled={resultMode === 'real'} onChange={(event) => setBalance(Number(event.target.value))}/><span>MORE HIERARCHICAL</span></div>
+          <div className="probability-readout"><span><strong>{probabilities.favouredWin.toFixed(1)}%</strong> stronger wins</span><span><strong>{probabilities.draw.toFixed(1)}%</strong> draw</span><span><strong>{probabilities.underdogWin.toFixed(1)}%</strong> smaller wins</span></div>
         </div>
 
         <div className="playable-panel">
@@ -176,13 +190,14 @@ export function App() {
             <div className={`season-stage ${seasonView}`}>
               {seasonView === 'table' ? <div className="ael-table">
                 <header><span>#</span><span>CLUB</span><span>TIER</span><span>P</span><span>GD</span><span>PTS</span></header>
-                {viewedSeason?.standings.map((row, index) => <div className={`table-row destination-${index < 36 ? 'ucl' : index < 72 ? 'uel' : 'uecl'} ${row.club.confirmed === false ? 'provisional-club' : ''}`} key={row.club.id} title={row.club.qualificationLabel}><i>{index + 1}</i><span className="club-name"><ClubBadge club={row.club}/><ClubDisplayName club={row.club}/></span><small className={`tier-pill tier-${row.club.tier.toLowerCase()}`}>{row.club.tier}</small><span>{row.played}</span><span>{row.goalsFor - row.goalsAgainst > 0 ? '+' : ''}{row.goalsFor - row.goalsAgainst}</span><b>{row.points}</b></div>)}
+                {viewedSeason?.standings.map((row, index) => { const rank = index + 1; const route = januaryRouteForRank(rank); const relative = index % 36; const routeStart = [0,8,16,28].includes(relative); return <div className={`table-row destination-${index < 36 ? 'ucl' : index < 72 ? 'uel' : 'uecl'} route-${route} ${routeStart ? 'route-start' : ''} ${index === 36 || index === 72 ? 'destination-break' : ''} ${row.club.confirmed === false ? 'provisional-club' : ''}`} data-route-label={routeStart ? routeLabels[route] : undefined} key={row.club.id} title={row.club.qualificationLabel}><i>{rank}</i><span className="club-name"><ClubBadge club={row.club}/><ClubDisplayName club={row.club}/></span><small className={`tier-pill tier-${row.club.tier.toLowerCase()}`}>{row.club.tier}</small><span>{row.played}</span><span>{row.goalsFor - row.goalsAgainst > 0 ? '+' : ''}{row.goalsFor - row.goalsAgainst}</span><b>{row.points}</b></div> })}
               </div> : <div className="fixture-board">
                 {schedule.matchweeks[viewMatchweek - 1].map((fixture) => <article className={matchupClass(fixture.home, fixture.away)} key={fixture.id}><span className="club"><ClubBadge club={fixture.home}/><ClubDisplayName club={fixture.home}/><small>{fixture.home.tier}</small></span><i>v</i><span className="club away"><ClubBadge club={fixture.away}/><ClubDisplayName club={fixture.away}/><small>{fixture.away.tier}</small></span></article>)}
               </div>}
             </div>
             <p className="crest-note">Official UEFA club imagery cached for this dated snapshot. Overlapping crests mark an unresolved qualifying path; hover a table row to inspect its route.</p>
-            {completedMatchweeks === 8 && <div className="handoff"><span>AEL COMPLETE</span><strong>The table is ready to populate the three stock knockout graphics.</strong><div>{['UCL · 1–36','UEL · 37–72','UECL · 73–108'].map((label) => <i key={label}>{label}</i>)}</div></div>}
+            {completedMatchweeks === 8 && <div className="handoff"><span>AEL COMPLETE</span><strong>Open a competition’s January branch.</strong><div>{destinations.map((destination) => <button key={destination.id} style={{ '--accent': destination.colour } as React.CSSProperties} onClick={() => setKnockoutView(destination.id)}><GitBranch/> {destination.id} · {destination.range}</button>)}</div></div>}
+            {knockoutPath && <KnockoutBracket path={knockoutPath} onClose={() => setKnockoutView(null)}/>}
           </>}
         </div>
 
