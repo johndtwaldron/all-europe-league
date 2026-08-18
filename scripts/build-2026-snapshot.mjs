@@ -75,12 +75,12 @@ function pathEntry(pair, competition, route, index) {
 
 const entries = [
   ...confirmed.UCL.map((name) => club(name, 'UCL')),
-  ...uclPlayoffs.map((pair, index) => pathEntry(pair, 'UCL', 'UCL play-off winner', index)),
+  ...uclPlayoffs.map((pair, index) => pathEntry(pair, 'UCL', 'UCL play-off', index)),
   ...confirmed.UEL.map((name) => club(name, 'UEL')),
-  ...uelPlayoffs.map((pair, index) => pathEntry(pair, 'UEL', 'UEL play-off winner', index)),
-  ...uclPlayoffs.map((pair, index) => pathEntry(pair, 'UEL', 'UCL play-off loser transfer', index)),
-  ...ueclPlayoffs.map((pair, index) => pathEntry(pair, 'UECL', 'UECL play-off winner', index)),
-  ...uelPlayoffs.map((pair, index) => pathEntry(pair, 'UECL', 'UEL play-off loser transfer', index)),
+  ...uelPlayoffs.map((pair, index) => pathEntry(pair, 'UEL', 'UEL play-off', index)),
+  ...uclPlayoffs.map((pair, index) => pathEntry(pair, 'UEL', 'UCL loser → UEL', index)),
+  ...ueclPlayoffs.map((pair, index) => pathEntry(pair, 'UECL', 'UECL play-off', index)),
+  ...uelPlayoffs.map((pair, index) => pathEntry(pair, 'UECL', 'UEL loser → UECL', index)),
 ]
 for (const competition of ['UCL','UEL','UECL']) {
   if (entries.filter((entry) => entry.sourceCompetition === competition).length !== 36) throw new Error(`${competition} snapshot is not 36 positions`)

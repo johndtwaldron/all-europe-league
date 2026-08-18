@@ -10,17 +10,17 @@
     {
       "competition": "UCL",
       "url": "https://www.uefa.com/uefachampionsleague/clubs/",
-      "retrievedAt": "2026-08-18T12:35:19.149Z"
+      "retrievedAt": "2026-08-18T14:12:01.392Z"
     },
     {
       "competition": "UEL",
       "url": "https://www.uefa.com/uefaeuropaleague/clubs/",
-      "retrievedAt": "2026-08-18T12:35:19.154Z"
+      "retrievedAt": "2026-08-18T14:12:01.393Z"
     },
     {
       "competition": "UECL",
       "url": "https://www.uefa.com/uefaconferenceleague/clubs/",
-      "retrievedAt": "2026-08-18T12:35:19.154Z"
+      "retrievedAt": "2026-08-18T14:12:01.393Z"
     }
   ],
   "entries": [
@@ -315,12 +315,12 @@
       "confirmed": true
     },
     {
-      "id": "ucl-ucl-play-off-winner-01",
+      "id": "ucl-ucl-play-off-01",
       "name": "Levski Sofia / AEK Athens",
       "sourceCompetition": "UCL",
       "recordType": "slot",
       "resolutionStatus": "unresolved",
-      "qualificationLabel": "UCL play-off winner",
+      "qualificationLabel": "UCL play-off",
       "candidates": [
         {
           "id": "levski-sofia",
@@ -343,12 +343,12 @@
       "confirmed": false
     },
     {
-      "id": "ucl-ucl-play-off-winner-02",
+      "id": "ucl-ucl-play-off-02",
       "name": "GNK Dinamo / Viking",
       "sourceCompetition": "UCL",
       "recordType": "slot",
       "resolutionStatus": "unresolved",
-      "qualificationLabel": "UCL play-off winner",
+      "qualificationLabel": "UCL play-off",
       "candidates": [
         {
           "id": "gnk-dinamo",
@@ -371,12 +371,12 @@
       "confirmed": false
     },
     {
-      "id": "ucl-ucl-play-off-winner-03",
+      "id": "ucl-ucl-play-off-03",
       "name": "Fenerbahçe / Lyon",
       "sourceCompetition": "UCL",
       "recordType": "slot",
       "resolutionStatus": "unresolved",
-      "qualificationLabel": "UCL play-off winner",
+      "qualificationLabel": "UCL play-off",
       "candidates": [
         {
           "id": "fenerbahce",
@@ -399,12 +399,12 @@
       "confirmed": false
     },
     {
-      "id": "ucl-ucl-play-off-winner-04",
+      "id": "ucl-ucl-play-off-04",
       "name": "H. Beer-Sheva / Sabah",
       "sourceCompetition": "UCL",
       "recordType": "slot",
       "resolutionStatus": "unresolved",
-      "qualificationLabel": "UCL play-off winner",
+      "qualificationLabel": "UCL play-off",
       "candidates": [
         {
           "id": "h-beer-sheva",
@@ -427,12 +427,12 @@
       "confirmed": false
     },
     {
-      "id": "ucl-ucl-play-off-winner-05",
+      "id": "ucl-ucl-play-off-05",
       "name": "Celtic / LASK",
       "sourceCompetition": "UCL",
       "recordType": "slot",
       "resolutionStatus": "unresolved",
-      "qualificationLabel": "UCL play-off winner",
+      "qualificationLabel": "UCL play-off",
       "candidates": [
         {
           "id": "celtic",
@@ -455,12 +455,12 @@
       "confirmed": false
     },
     {
-      "id": "ucl-ucl-play-off-winner-06",
+      "id": "ucl-ucl-play-off-06",
       "name": "S. Bratislava / Celje",
       "sourceCompetition": "UCL",
       "recordType": "slot",
       "resolutionStatus": "unresolved",
-      "qualificationLabel": "UCL play-off winner",
+      "qualificationLabel": "UCL play-off",
       "candidates": [
         {
           "id": "s-bratislava",
@@ -483,12 +483,12 @@
       "confirmed": false
     },
     {
-      "id": "ucl-ucl-play-off-winner-07",
+      "id": "ucl-ucl-play-off-07",
       "name": "N.E.C. / Bodø/Glimt",
       "sourceCompetition": "UCL",
       "recordType": "slot",
       "resolutionStatus": "unresolved",
-      "qualificationLabel": "UCL play-off winner",
+      "qualificationLabel": "UCL play-off",
       "candidates": [
         {
           "id": "n-e-c",
@@ -681,12 +681,12 @@
       "confirmed": true
     },
     {
-      "id": "uel-uel-play-off-winner-01",
+      "id": "uel-uel-play-off-01",
       "name": "Kairat Almaty / Anderlecht",
       "sourceCompetition": "UEL",
       "recordType": "slot",
       "resolutionStatus": "unresolved",
-      "qualificationLabel": "UEL play-off winner",
+      "qualificationLabel": "UEL play-off",
       "candidates": [
         {
           "id": "kairat-almaty",
@@ -709,12 +709,12 @@
       "confirmed": false
     },
     {
-      "id": "uel-uel-play-off-winner-02",
+      "id": "uel-uel-play-off-02",
       "name": "Jagiellonia / Iberia Tbilisi",
       "sourceCompetition": "UEL",
       "recordType": "slot",
       "resolutionStatus": "unresolved",
-      "qualificationLabel": "UEL play-off winner",
+      "qualificationLabel": "UEL play-off",
       "candidates": [
         {
           "id": "jagiellonia",
@@ -737,12 +737,12 @@
       "confirmed": false
     },
     {
-      "id": "uel-uel-play-off-winner-03",
+      "id": "uel-uel-play-off-03",
       "name": "Mjällby / Salzburg",
       "sourceCompetition": "UEL",
       "recordType": "slot",
       "resolutionStatus": "unresolved",
-      "qualificationLabel": "UEL play-off winner",
+      "qualificationLabel": "UEL play-off",
       "candidates": [
         {
           "id": "mjallby",
@@ -765,12 +765,12 @@
       "confirmed": false
     },
     {
-      "id": "uel-uel-play-off-winner-04",
+      "id": "uel-uel-play-off-04",
       "name": "Trabzonspor / Ferencváros",
       "sourceCompetition": "UEL",
       "recordType": "slot",
       "resolutionStatus": "unresolved",
-      "qualificationLabel": "UEL play-off winner",
+      "qualificationLabel": "UEL play-off",
       "candidates": [
         {
           "id": "trabzonspor",
@@ -793,12 +793,12 @@
       "confirmed": false
     },
     {
-      "id": "uel-uel-play-off-winner-05",
+      "id": "uel-uel-play-off-05",
       "name": "U. Craiova / Ararat-Armenia",
       "sourceCompetition": "UEL",
       "recordType": "slot",
       "resolutionStatus": "unresolved",
-      "qualificationLabel": "UEL play-off winner",
+      "qualificationLabel": "UEL play-off",
       "candidates": [
         {
           "id": "u-craiova",
@@ -821,12 +821,12 @@
       "confirmed": false
     },
     {
-      "id": "uel-uel-play-off-winner-06",
+      "id": "uel-uel-play-off-06",
       "name": "Egnatia / Lillestrøm",
       "sourceCompetition": "UEL",
       "recordType": "slot",
       "resolutionStatus": "unresolved",
-      "qualificationLabel": "UEL play-off winner",
+      "qualificationLabel": "UEL play-off",
       "candidates": [
         {
           "id": "egnatia",
@@ -849,12 +849,12 @@
       "confirmed": false
     },
     {
-      "id": "uel-uel-play-off-winner-07",
+      "id": "uel-uel-play-off-07",
       "name": "Beşiktaş / Kauno Žalgiris",
       "sourceCompetition": "UEL",
       "recordType": "slot",
       "resolutionStatus": "unresolved",
-      "qualificationLabel": "UEL play-off winner",
+      "qualificationLabel": "UEL play-off",
       "candidates": [
         {
           "id": "besiktas",
@@ -877,12 +877,12 @@
       "confirmed": false
     },
     {
-      "id": "uel-uel-play-off-winner-08",
+      "id": "uel-uel-play-off-08",
       "name": "Lech Poznań / Thun",
       "sourceCompetition": "UEL",
       "recordType": "slot",
       "resolutionStatus": "unresolved",
-      "qualificationLabel": "UEL play-off winner",
+      "qualificationLabel": "UEL play-off",
       "candidates": [
         {
           "id": "lech-poznan",
@@ -905,12 +905,12 @@
       "confirmed": false
     },
     {
-      "id": "uel-uel-play-off-winner-09",
+      "id": "uel-uel-play-off-09",
       "name": "Sint-Truidense / Omonia",
       "sourceCompetition": "UEL",
       "recordType": "slot",
       "resolutionStatus": "unresolved",
-      "qualificationLabel": "UEL play-off winner",
+      "qualificationLabel": "UEL play-off",
       "candidates": [
         {
           "id": "sint-truidense",
@@ -933,12 +933,12 @@
       "confirmed": false
     },
     {
-      "id": "uel-uel-play-off-winner-10",
+      "id": "uel-uel-play-off-10",
       "name": "Crvena Zvezda / Viktoria Plzeň",
       "sourceCompetition": "UEL",
       "recordType": "slot",
       "resolutionStatus": "unresolved",
-      "qualificationLabel": "UEL play-off winner",
+      "qualificationLabel": "UEL play-off",
       "candidates": [
         {
           "id": "crvena-zvezda",
@@ -961,12 +961,12 @@
       "confirmed": false
     },
     {
-      "id": "uel-uel-play-off-winner-11",
+      "id": "uel-uel-play-off-11",
       "name": "OFI Crete / CSKA Sofia",
       "sourceCompetition": "UEL",
       "recordType": "slot",
       "resolutionStatus": "unresolved",
-      "qualificationLabel": "UEL play-off winner",
+      "qualificationLabel": "UEL play-off",
       "candidates": [
         {
           "id": "ofi-crete",
@@ -989,12 +989,12 @@
       "confirmed": false
     },
     {
-      "id": "uel-uel-play-off-winner-12",
+      "id": "uel-uel-play-off-12",
       "name": "Benfica / Aarhus",
       "sourceCompetition": "UEL",
       "recordType": "slot",
       "resolutionStatus": "unresolved",
-      "qualificationLabel": "UEL play-off winner",
+      "qualificationLabel": "UEL play-off",
       "candidates": [
         {
           "id": "benfica",
@@ -1017,12 +1017,12 @@
       "confirmed": false
     },
     {
-      "id": "uel-ucl-play-off-loser-transfer-01",
+      "id": "uel-ucl-loser-uel-01",
       "name": "Levski Sofia / AEK Athens",
       "sourceCompetition": "UEL",
       "recordType": "slot",
       "resolutionStatus": "unresolved",
-      "qualificationLabel": "UCL play-off loser transfer",
+      "qualificationLabel": "UCL loser → UEL",
       "candidates": [
         {
           "id": "levski-sofia",
@@ -1045,12 +1045,12 @@
       "confirmed": false
     },
     {
-      "id": "uel-ucl-play-off-loser-transfer-02",
+      "id": "uel-ucl-loser-uel-02",
       "name": "GNK Dinamo / Viking",
       "sourceCompetition": "UEL",
       "recordType": "slot",
       "resolutionStatus": "unresolved",
-      "qualificationLabel": "UCL play-off loser transfer",
+      "qualificationLabel": "UCL loser → UEL",
       "candidates": [
         {
           "id": "gnk-dinamo",
@@ -1073,12 +1073,12 @@
       "confirmed": false
     },
     {
-      "id": "uel-ucl-play-off-loser-transfer-03",
+      "id": "uel-ucl-loser-uel-03",
       "name": "Fenerbahçe / Lyon",
       "sourceCompetition": "UEL",
       "recordType": "slot",
       "resolutionStatus": "unresolved",
-      "qualificationLabel": "UCL play-off loser transfer",
+      "qualificationLabel": "UCL loser → UEL",
       "candidates": [
         {
           "id": "fenerbahce",
@@ -1101,12 +1101,12 @@
       "confirmed": false
     },
     {
-      "id": "uel-ucl-play-off-loser-transfer-04",
+      "id": "uel-ucl-loser-uel-04",
       "name": "H. Beer-Sheva / Sabah",
       "sourceCompetition": "UEL",
       "recordType": "slot",
       "resolutionStatus": "unresolved",
-      "qualificationLabel": "UCL play-off loser transfer",
+      "qualificationLabel": "UCL loser → UEL",
       "candidates": [
         {
           "id": "h-beer-sheva",
@@ -1129,12 +1129,12 @@
       "confirmed": false
     },
     {
-      "id": "uel-ucl-play-off-loser-transfer-05",
+      "id": "uel-ucl-loser-uel-05",
       "name": "Celtic / LASK",
       "sourceCompetition": "UEL",
       "recordType": "slot",
       "resolutionStatus": "unresolved",
-      "qualificationLabel": "UCL play-off loser transfer",
+      "qualificationLabel": "UCL loser → UEL",
       "candidates": [
         {
           "id": "celtic",
@@ -1157,12 +1157,12 @@
       "confirmed": false
     },
     {
-      "id": "uel-ucl-play-off-loser-transfer-06",
+      "id": "uel-ucl-loser-uel-06",
       "name": "S. Bratislava / Celje",
       "sourceCompetition": "UEL",
       "recordType": "slot",
       "resolutionStatus": "unresolved",
-      "qualificationLabel": "UCL play-off loser transfer",
+      "qualificationLabel": "UCL loser → UEL",
       "candidates": [
         {
           "id": "s-bratislava",
@@ -1185,12 +1185,12 @@
       "confirmed": false
     },
     {
-      "id": "uel-ucl-play-off-loser-transfer-07",
+      "id": "uel-ucl-loser-uel-07",
       "name": "N.E.C. / Bodø/Glimt",
       "sourceCompetition": "UEL",
       "recordType": "slot",
       "resolutionStatus": "unresolved",
-      "qualificationLabel": "UCL play-off loser transfer",
+      "qualificationLabel": "UCL loser → UEL",
       "candidates": [
         {
           "id": "n-e-c",
@@ -1213,12 +1213,12 @@
       "confirmed": false
     },
     {
-      "id": "uecl-uecl-play-off-winner-01",
+      "id": "uecl-uecl-play-off-01",
       "name": "L. Red Imps / Larne",
       "sourceCompetition": "UECL",
       "recordType": "slot",
       "resolutionStatus": "unresolved",
-      "qualificationLabel": "UECL play-off winner",
+      "qualificationLabel": "UECL play-off",
       "candidates": [
         {
           "id": "l-red-imps",
@@ -1241,12 +1241,12 @@
       "confirmed": false
     },
     {
-      "id": "uecl-uecl-play-off-winner-02",
+      "id": "uecl-uecl-play-off-02",
       "name": "Klaksvík / Riga",
       "sourceCompetition": "UECL",
       "recordType": "slot",
       "resolutionStatus": "unresolved",
-      "qualificationLabel": "UECL play-off winner",
+      "qualificationLabel": "UECL play-off",
       "candidates": [
         {
           "id": "klaksvik",
@@ -1269,12 +1269,12 @@
       "confirmed": false
     },
     {
-      "id": "uecl-uecl-play-off-winner-03",
+      "id": "uecl-uecl-play-off-03",
       "name": "Víkingur R. / Borac",
       "sourceCompetition": "UECL",
       "recordType": "slot",
       "resolutionStatus": "unresolved",
-      "qualificationLabel": "UECL play-off winner",
+      "qualificationLabel": "UECL play-off",
       "candidates": [
         {
           "id": "vikingur-r",
@@ -1297,12 +1297,12 @@
       "confirmed": false
     },
     {
-      "id": "uecl-uecl-play-off-winner-04",
+      "id": "uecl-uecl-play-off-04",
       "name": "Drita / Inter Escaldes",
       "sourceCompetition": "UECL",
       "recordType": "slot",
       "resolutionStatus": "unresolved",
-      "qualificationLabel": "UECL play-off winner",
+      "qualificationLabel": "UECL play-off",
       "candidates": [
         {
           "id": "drita",
@@ -1325,12 +1325,12 @@
       "confirmed": false
     },
     {
-      "id": "uecl-uecl-play-off-winner-05",
+      "id": "uecl-uecl-play-off-05",
       "name": "Shamrock Rovers / KuPS Kuopio",
       "sourceCompetition": "UECL",
       "recordType": "slot",
       "resolutionStatus": "unresolved",
-      "qualificationLabel": "UECL play-off winner",
+      "qualificationLabel": "UECL play-off",
       "candidates": [
         {
           "id": "shamrock-rovers",
@@ -1353,12 +1353,12 @@
       "confirmed": false
     },
     {
-      "id": "uecl-uecl-play-off-winner-06",
+      "id": "uecl-uecl-play-off-06",
       "name": "Inter Turku / Copenhagen",
       "sourceCompetition": "UECL",
       "recordType": "slot",
       "resolutionStatus": "unresolved",
-      "qualificationLabel": "UECL play-off winner",
+      "qualificationLabel": "UECL play-off",
       "candidates": [
         {
           "id": "inter-turku",
@@ -1381,12 +1381,12 @@
       "confirmed": false
     },
     {
-      "id": "uecl-uecl-play-off-winner-07",
+      "id": "uecl-uecl-play-off-07",
       "name": "Tromsø / Brighton",
       "sourceCompetition": "UECL",
       "recordType": "slot",
       "resolutionStatus": "unresolved",
-      "qualificationLabel": "UECL play-off winner",
+      "qualificationLabel": "UECL play-off",
       "candidates": [
         {
           "id": "troms",
@@ -1409,12 +1409,12 @@
       "confirmed": false
     },
     {
-      "id": "uecl-uecl-play-off-winner-08",
+      "id": "uecl-uecl-play-off-08",
       "name": "Midtjylland / Rijeka",
       "sourceCompetition": "UECL",
       "recordType": "slot",
       "resolutionStatus": "unresolved",
-      "qualificationLabel": "UECL play-off winner",
+      "qualificationLabel": "UECL play-off",
       "candidates": [
         {
           "id": "midtjylland",
@@ -1437,12 +1437,12 @@
       "confirmed": false
     },
     {
-      "id": "uecl-uecl-play-off-winner-09",
+      "id": "uecl-uecl-play-off-09",
       "name": "Nordsjælland / St. Gallen",
       "sourceCompetition": "UECL",
       "recordType": "slot",
       "resolutionStatus": "unresolved",
-      "qualificationLabel": "UECL play-off winner",
+      "qualificationLabel": "UECL play-off",
       "candidates": [
         {
           "id": "nordsj-lland",
@@ -1465,12 +1465,12 @@
       "confirmed": false
     },
     {
-      "id": "uecl-uecl-play-off-winner-10",
+      "id": "uecl-uecl-play-off-10",
       "name": "PAOK / Brann",
       "sourceCompetition": "UECL",
       "recordType": "slot",
       "resolutionStatus": "unresolved",
-      "qualificationLabel": "UECL play-off winner",
+      "qualificationLabel": "UECL play-off",
       "candidates": [
         {
           "id": "paok",
@@ -1493,12 +1493,12 @@
       "confirmed": false
     },
     {
-      "id": "uecl-uecl-play-off-winner-11",
+      "id": "uecl-uecl-play-off-11",
       "name": "Górnik Zabrze / Monaco",
       "sourceCompetition": "UECL",
       "recordType": "slot",
       "resolutionStatus": "unresolved",
-      "qualificationLabel": "UECL play-off winner",
+      "qualificationLabel": "UECL play-off",
       "candidates": [
         {
           "id": "gornik-zabrze",
@@ -1521,12 +1521,12 @@
       "confirmed": false
     },
     {
-      "id": "uecl-uecl-play-off-winner-12",
+      "id": "uecl-uecl-play-off-12",
       "name": "Twente / Qarabağ",
       "sourceCompetition": "UECL",
       "recordType": "slot",
       "resolutionStatus": "unresolved",
-      "qualificationLabel": "UECL play-off winner",
+      "qualificationLabel": "UECL play-off",
       "candidates": [
         {
           "id": "twente",
@@ -1549,12 +1549,12 @@
       "confirmed": false
     },
     {
-      "id": "uecl-uecl-play-off-winner-13",
+      "id": "uecl-uecl-play-off-13",
       "name": "Sion / Ajax",
       "sourceCompetition": "UECL",
       "recordType": "slot",
       "resolutionStatus": "unresolved",
-      "qualificationLabel": "UECL play-off winner",
+      "qualificationLabel": "UECL play-off",
       "candidates": [
         {
           "id": "sion",
@@ -1577,12 +1577,12 @@
       "confirmed": false
     },
     {
-      "id": "uecl-uecl-play-off-winner-14",
+      "id": "uecl-uecl-play-off-14",
       "name": "Motherwell / Freiburg",
       "sourceCompetition": "UECL",
       "recordType": "slot",
       "resolutionStatus": "unresolved",
-      "qualificationLabel": "UECL play-off winner",
+      "qualificationLabel": "UECL play-off",
       "candidates": [
         {
           "id": "motherwell",
@@ -1605,12 +1605,12 @@
       "confirmed": false
     },
     {
-      "id": "uecl-uecl-play-off-winner-15",
+      "id": "uecl-uecl-play-off-15",
       "name": "Gent / Hibernian",
       "sourceCompetition": "UECL",
       "recordType": "slot",
       "resolutionStatus": "unresolved",
-      "qualificationLabel": "UECL play-off winner",
+      "qualificationLabel": "UECL play-off",
       "candidates": [
         {
           "id": "gent",
@@ -1633,12 +1633,12 @@
       "confirmed": false
     },
     {
-      "id": "uecl-uecl-play-off-winner-16",
+      "id": "uecl-uecl-play-off-16",
       "name": "Atalanta / H. Tel-Aviv",
       "sourceCompetition": "UECL",
       "recordType": "slot",
       "resolutionStatus": "unresolved",
-      "qualificationLabel": "UECL play-off winner",
+      "qualificationLabel": "UECL play-off",
       "candidates": [
         {
           "id": "atalanta",
@@ -1661,12 +1661,12 @@
       "confirmed": false
     },
     {
-      "id": "uecl-uecl-play-off-winner-17",
+      "id": "uecl-uecl-play-off-17",
       "name": "Panathinaikos / Hradec Králové",
       "sourceCompetition": "UECL",
       "recordType": "slot",
       "resolutionStatus": "unresolved",
-      "qualificationLabel": "UECL play-off winner",
+      "qualificationLabel": "UECL play-off",
       "candidates": [
         {
           "id": "panathinaikos",
@@ -1689,12 +1689,12 @@
       "confirmed": false
     },
     {
-      "id": "uecl-uecl-play-off-winner-18",
+      "id": "uecl-uecl-play-off-18",
       "name": "Lugano / M. Tel-Aviv",
       "sourceCompetition": "UECL",
       "recordType": "slot",
       "resolutionStatus": "unresolved",
-      "qualificationLabel": "UECL play-off winner",
+      "qualificationLabel": "UECL play-off",
       "candidates": [
         {
           "id": "lugano",
@@ -1717,12 +1717,12 @@
       "confirmed": false
     },
     {
-      "id": "uecl-uecl-play-off-winner-19",
+      "id": "uecl-uecl-play-off-19",
       "name": "Hearts / SK Rapid",
       "sourceCompetition": "UECL",
       "recordType": "slot",
       "resolutionStatus": "unresolved",
-      "qualificationLabel": "UECL play-off winner",
+      "qualificationLabel": "UECL play-off",
       "candidates": [
         {
           "id": "hearts",
@@ -1745,12 +1745,12 @@
       "confirmed": false
     },
     {
-      "id": "uecl-uecl-play-off-winner-20",
+      "id": "uecl-uecl-play-off-20",
       "name": "Rangers / Jablonec",
       "sourceCompetition": "UECL",
       "recordType": "slot",
       "resolutionStatus": "unresolved",
-      "qualificationLabel": "UECL play-off winner",
+      "qualificationLabel": "UECL play-off",
       "candidates": [
         {
           "id": "rangers",
@@ -1773,12 +1773,12 @@
       "confirmed": false
     },
     {
-      "id": "uecl-uecl-play-off-winner-21",
+      "id": "uecl-uecl-play-off-21",
       "name": "Hajduk Split / Raków",
       "sourceCompetition": "UECL",
       "recordType": "slot",
       "resolutionStatus": "unresolved",
-      "qualificationLabel": "UECL play-off winner",
+      "qualificationLabel": "UECL play-off",
       "candidates": [
         {
           "id": "hajduk-split",
@@ -1801,12 +1801,12 @@
       "confirmed": false
     },
     {
-      "id": "uecl-uecl-play-off-winner-22",
+      "id": "uecl-uecl-play-off-22",
       "name": "Dinamo City / Pafos",
       "sourceCompetition": "UECL",
       "recordType": "slot",
       "resolutionStatus": "unresolved",
-      "qualificationLabel": "UECL play-off winner",
+      "qualificationLabel": "UECL play-off",
       "candidates": [
         {
           "id": "dinamo-city",
@@ -1829,12 +1829,12 @@
       "confirmed": false
     },
     {
-      "id": "uecl-uecl-play-off-winner-23",
+      "id": "uecl-uecl-play-off-23",
       "name": "Braga / Austria Wien",
       "sourceCompetition": "UECL",
       "recordType": "slot",
       "resolutionStatus": "unresolved",
-      "qualificationLabel": "UECL play-off winner",
+      "qualificationLabel": "UECL play-off",
       "candidates": [
         {
           "id": "braga",
@@ -1857,12 +1857,12 @@
       "confirmed": false
     },
     {
-      "id": "uecl-uecl-play-off-winner-24",
+      "id": "uecl-uecl-play-off-24",
       "name": "Getafe / Partizan",
       "sourceCompetition": "UECL",
       "recordType": "slot",
       "resolutionStatus": "unresolved",
-      "qualificationLabel": "UECL play-off winner",
+      "qualificationLabel": "UECL play-off",
       "candidates": [
         {
           "id": "getafe",
@@ -1885,12 +1885,12 @@
       "confirmed": false
     },
     {
-      "id": "uecl-uel-play-off-loser-transfer-01",
+      "id": "uecl-uel-loser-uecl-01",
       "name": "Kairat Almaty / Anderlecht",
       "sourceCompetition": "UECL",
       "recordType": "slot",
       "resolutionStatus": "unresolved",
-      "qualificationLabel": "UEL play-off loser transfer",
+      "qualificationLabel": "UEL loser → UECL",
       "candidates": [
         {
           "id": "kairat-almaty",
@@ -1913,12 +1913,12 @@
       "confirmed": false
     },
     {
-      "id": "uecl-uel-play-off-loser-transfer-02",
+      "id": "uecl-uel-loser-uecl-02",
       "name": "Jagiellonia / Iberia Tbilisi",
       "sourceCompetition": "UECL",
       "recordType": "slot",
       "resolutionStatus": "unresolved",
-      "qualificationLabel": "UEL play-off loser transfer",
+      "qualificationLabel": "UEL loser → UECL",
       "candidates": [
         {
           "id": "jagiellonia",
@@ -1941,12 +1941,12 @@
       "confirmed": false
     },
     {
-      "id": "uecl-uel-play-off-loser-transfer-03",
+      "id": "uecl-uel-loser-uecl-03",
       "name": "Mjällby / Salzburg",
       "sourceCompetition": "UECL",
       "recordType": "slot",
       "resolutionStatus": "unresolved",
-      "qualificationLabel": "UEL play-off loser transfer",
+      "qualificationLabel": "UEL loser → UECL",
       "candidates": [
         {
           "id": "mjallby",
@@ -1969,12 +1969,12 @@
       "confirmed": false
     },
     {
-      "id": "uecl-uel-play-off-loser-transfer-04",
+      "id": "uecl-uel-loser-uecl-04",
       "name": "Trabzonspor / Ferencváros",
       "sourceCompetition": "UECL",
       "recordType": "slot",
       "resolutionStatus": "unresolved",
-      "qualificationLabel": "UEL play-off loser transfer",
+      "qualificationLabel": "UEL loser → UECL",
       "candidates": [
         {
           "id": "trabzonspor",
@@ -1997,12 +1997,12 @@
       "confirmed": false
     },
     {
-      "id": "uecl-uel-play-off-loser-transfer-05",
+      "id": "uecl-uel-loser-uecl-05",
       "name": "U. Craiova / Ararat-Armenia",
       "sourceCompetition": "UECL",
       "recordType": "slot",
       "resolutionStatus": "unresolved",
-      "qualificationLabel": "UEL play-off loser transfer",
+      "qualificationLabel": "UEL loser → UECL",
       "candidates": [
         {
           "id": "u-craiova",
@@ -2025,12 +2025,12 @@
       "confirmed": false
     },
     {
-      "id": "uecl-uel-play-off-loser-transfer-06",
+      "id": "uecl-uel-loser-uecl-06",
       "name": "Egnatia / Lillestrøm",
       "sourceCompetition": "UECL",
       "recordType": "slot",
       "resolutionStatus": "unresolved",
-      "qualificationLabel": "UEL play-off loser transfer",
+      "qualificationLabel": "UEL loser → UECL",
       "candidates": [
         {
           "id": "egnatia",
@@ -2053,12 +2053,12 @@
       "confirmed": false
     },
     {
-      "id": "uecl-uel-play-off-loser-transfer-07",
+      "id": "uecl-uel-loser-uecl-07",
       "name": "Beşiktaş / Kauno Žalgiris",
       "sourceCompetition": "UECL",
       "recordType": "slot",
       "resolutionStatus": "unresolved",
-      "qualificationLabel": "UEL play-off loser transfer",
+      "qualificationLabel": "UEL loser → UECL",
       "candidates": [
         {
           "id": "besiktas",
@@ -2081,12 +2081,12 @@
       "confirmed": false
     },
     {
-      "id": "uecl-uel-play-off-loser-transfer-08",
+      "id": "uecl-uel-loser-uecl-08",
       "name": "Lech Poznań / Thun",
       "sourceCompetition": "UECL",
       "recordType": "slot",
       "resolutionStatus": "unresolved",
-      "qualificationLabel": "UEL play-off loser transfer",
+      "qualificationLabel": "UEL loser → UECL",
       "candidates": [
         {
           "id": "lech-poznan",
@@ -2109,12 +2109,12 @@
       "confirmed": false
     },
     {
-      "id": "uecl-uel-play-off-loser-transfer-09",
+      "id": "uecl-uel-loser-uecl-09",
       "name": "Sint-Truidense / Omonia",
       "sourceCompetition": "UECL",
       "recordType": "slot",
       "resolutionStatus": "unresolved",
-      "qualificationLabel": "UEL play-off loser transfer",
+      "qualificationLabel": "UEL loser → UECL",
       "candidates": [
         {
           "id": "sint-truidense",
@@ -2137,12 +2137,12 @@
       "confirmed": false
     },
     {
-      "id": "uecl-uel-play-off-loser-transfer-10",
+      "id": "uecl-uel-loser-uecl-10",
       "name": "Crvena Zvezda / Viktoria Plzeň",
       "sourceCompetition": "UECL",
       "recordType": "slot",
       "resolutionStatus": "unresolved",
-      "qualificationLabel": "UEL play-off loser transfer",
+      "qualificationLabel": "UEL loser → UECL",
       "candidates": [
         {
           "id": "crvena-zvezda",
@@ -2165,12 +2165,12 @@
       "confirmed": false
     },
     {
-      "id": "uecl-uel-play-off-loser-transfer-11",
+      "id": "uecl-uel-loser-uecl-11",
       "name": "OFI Crete / CSKA Sofia",
       "sourceCompetition": "UECL",
       "recordType": "slot",
       "resolutionStatus": "unresolved",
-      "qualificationLabel": "UEL play-off loser transfer",
+      "qualificationLabel": "UEL loser → UECL",
       "candidates": [
         {
           "id": "ofi-crete",
@@ -2193,12 +2193,12 @@
       "confirmed": false
     },
     {
-      "id": "uecl-uel-play-off-loser-transfer-12",
+      "id": "uecl-uel-loser-uecl-12",
       "name": "Benfica / Aarhus",
       "sourceCompetition": "UECL",
       "recordType": "slot",
       "resolutionStatus": "unresolved",
-      "qualificationLabel": "UEL play-off loser transfer",
+      "qualificationLabel": "UEL loser → UECL",
       "candidates": [
         {
           "id": "benfica",

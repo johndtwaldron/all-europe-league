@@ -32,6 +32,10 @@ function ClubBadge({ club }: { club: { name: string; tier: string; crestUrl?: st
   return <span className={`club-badge-stack ${crests.length > 1 ? 'contested' : ''}`}>{crests.length ? crests.slice(0, 2).map((crest, index) => <b className={`club-crest tier-${club.tier.toLowerCase()}`} key={crest}><img src={`${import.meta.env.BASE_URL}${crest}`} alt={index === 0 ? `${club.name} crest` : ''}/></b>) : <b className={`club-crest tier-${club.tier.toLowerCase()}`}>{clubInitials(club.name)}</b>}</span>
 }
 
+function ClubDisplayName({ club }: { club: { name: string; qualificationLabel?: string; confirmed?: boolean } }) {
+  return <strong>{club.name}{club.confirmed === false && club.qualificationLabel && <> <em>({club.qualificationLabel})</em></>}</strong>
+}
+
 export function App() {
   const [resultMode, setResultMode] = useState<ResultMode>('simulated')
   const [presetId, setPresetId] = useState<SimulationPresetId>('hierarchy')
@@ -172,9 +176,9 @@ export function App() {
             <div className={`season-stage ${seasonView}`}>
               {seasonView === 'table' ? <div className="ael-table">
                 <header><span>#</span><span>CLUB</span><span>TIER</span><span>P</span><span>GD</span><span>PTS</span></header>
-                {viewedSeason?.standings.map((row, index) => <div className={`table-row destination-${index < 36 ? 'ucl' : index < 72 ? 'uel' : 'uecl'} ${row.club.confirmed === false ? 'provisional-club' : ''}`} key={row.club.id} title={row.club.qualificationLabel}><i>{index + 1}</i><span className="club-name"><ClubBadge club={row.club}/><span><strong>{row.club.name}</strong>{row.club.qualificationLabel && <em>({row.club.qualificationLabel})</em>}</span></span><small className={`tier-pill tier-${row.club.tier.toLowerCase()}`}>{row.club.tier}</small><span>{row.played}</span><span>{row.goalsFor - row.goalsAgainst > 0 ? '+' : ''}{row.goalsFor - row.goalsAgainst}</span><b>{row.points}</b></div>)}
+                {viewedSeason?.standings.map((row, index) => <div className={`table-row destination-${index < 36 ? 'ucl' : index < 72 ? 'uel' : 'uecl'} ${row.club.confirmed === false ? 'provisional-club' : ''}`} key={row.club.id} title={row.club.qualificationLabel}><i>{index + 1}</i><span className="club-name"><ClubBadge club={row.club}/><ClubDisplayName club={row.club}/></span><small className={`tier-pill tier-${row.club.tier.toLowerCase()}`}>{row.club.tier}</small><span>{row.played}</span><span>{row.goalsFor - row.goalsAgainst > 0 ? '+' : ''}{row.goalsFor - row.goalsAgainst}</span><b>{row.points}</b></div>)}
               </div> : <div className="fixture-board">
-                {schedule.matchweeks[viewMatchweek - 1].map((fixture) => <article className={matchupClass(fixture.home, fixture.away)} key={fixture.id}><span className="club"><ClubBadge club={fixture.home}/><strong>{fixture.home.name}</strong><small>{fixture.home.tier}</small></span><i>v</i><span className="club away"><ClubBadge club={fixture.away}/><strong>{fixture.away.name}</strong><small>{fixture.away.tier}</small></span></article>)}
+                {schedule.matchweeks[viewMatchweek - 1].map((fixture) => <article className={matchupClass(fixture.home, fixture.away)} key={fixture.id}><span className="club"><ClubBadge club={fixture.home}/><ClubDisplayName club={fixture.home}/><small>{fixture.home.tier}</small></span><i>v</i><span className="club away"><ClubBadge club={fixture.away}/><ClubDisplayName club={fixture.away}/><small>{fixture.away.tier}</small></span></article>)}
               </div>}
             </div>
             <p className="crest-note">Official UEFA club imagery cached for this dated snapshot. Overlapping crests mark an unresolved qualifying path; hover a table row to inspect its route.</p>

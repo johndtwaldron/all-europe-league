@@ -208,3 +208,8 @@ Turn the format discussion into a public, explorable GitHub project.
 - Cached 132 official UEFA crest images locally for reliable GitHub Pages rendering.
 - Added overlapping crest treatment, qualification-path labels, provisional markers and provenance metadata.
 - Added a reproducible snapshot builder so the field can be refreshed after the 27–28 August league-phase confirmations.
+# 2026-08-18 — Canonical qualifying-path labels
+
+- Standardised every unresolved field position as `Team A / Team B (route)` in both the AEL table and matchweek fixtures.
+- Shortened route labels to UCL/UEL/UECL play-off and explicit loser-transfer arrows.
+- Kept paired crests as the visual marker until each tie resolves to one club.
